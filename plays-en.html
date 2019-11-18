@@ -17,19 +17,61 @@
 	
 
 	<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+   
+  }
+}
+
+/* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #ffffff;
+  min-height: 300px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+#header {
+  position: relative;
+  min-height: 300px;
 }
 
-.container {
-  padding: 2px 16px;
+#header-content {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
 }
+
 </style>
 <!--<![endif]-->
 <!--[if lt IE 9]>
@@ -45,71 +87,50 @@
 		<![endif]-->
 <noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
 </head>
-<body class="page-type-search" vocab="http://schema.org/" typeof="WebPage">
-<nav>
-<ul id="wb-tphp">
-<li class="wb-slc">
-<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-</li>
-<li class="wb-slc">
-<a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-</li>
-</ul>
-</nav>
-<header>
-<div id="wb-bnr" class="container">
-<section id="wb-lng" class="text-right">
-<h2 class="wb-inv">Language selection</h2>
-<ul class="list-inline margin-bottom-none">
-<li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
-</ul>
-</section>
-<div class="row">
-<div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-<a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
-<meta property="areaServed" typeof="Country" content="Canada">
-<link property="logo" href="../GCWeb/assets/wmms-blk.svg">
-</div>
-<section id="wb-srch" class="col-lg-8 text-right">
-<h2>Search</h2>
-<form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
-<div class="form-group">
-<label for="wb-srch-q" class="wb-inv">Search this site</label>
-<input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Search Canada.ca">
-<datalist id="wb-srch-q-ac">
-</datalist>
-</div>
-<div class="form-group submit">
-<button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-</div>
-</form>
-</section>
-</div>
-</div>
-<nav class="gcweb-menu" typeof="SiteNavigationElement">
-<div class="container">
-<h2 class="wb-inv">Menu</h2>
-<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span class="expicon glyphicon glyphicon-chevron-down"></span></button>
-<ul role="menu" aria-orientation="vertical">
-<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">About Us</a></li>
-<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">Assessing Your Needs</a></li>
-<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">The How We Work Game Plans</a></li>
-<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">The How We Work Plays</a></li>
-<li role="presentation"><a role="menuitem" href="https://www.canada.ca/en/services/science.html">How To Submit A Play</a></li>
-</ul>
-</div>
-</nav>
+
 <nav id="wb-bc" property="breadcrumb">
 <h2>You are here:</h2>
 <div class="container">
 <ol class="breadcrumb">
-<li><a href="https://plpilon.github.io/hww-cnt/index-en.html">Home</a></li>
+<li><a href="https://plpilon.github.io/hww-cnt/index-en.html">How We Work </a></li>
+<li><a href="#">The Plays</a></li>
+<li
 </ol>
 </div>
 </nav>
 </header>
 <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-<h1 property="name" id="wb-cont">Search facets/filters results</h1>
+<h1 property="name" id="wb-cont">The  Plays</h1>
+
+<div class="row">
+<div class="col-md-4 mrgn-tp-md">
+<section>
+<h2 class="wb-inv">Filters</h2>
+
+<div>Filter by:</div>
+
+<details open>
+<summary>How We Work Theme</summary>
+<ul class="list-unstyled">
+<li><span class="glyphicon glyphicon-ok"></span><span class="wb-inv">Remove active filter:</span><a href="#">Any (45<span class="wb-inv"> results</span>)</a></li>
+<li> <a href="#">Achieving Service Excellence (20<span class="wb-inv"> results</span>)</a></li>
+<li><a href="#">Collaboration and Engaging (12<span class="wb-inv"> results</span>)</a></li>
+<li><a href="#">Imporing, Modernizing and Transforming (18<span class="wb-inv"> results</span>)</a></li>
+<li><a href="#">Integrating Project and Change Management (8<span class="wb-inv"> results</span>)</a></li>
+</ul>
+<button class="btn btn-link small" type="button">Show more <span class="glyphicon glyphicon-chevron-down small"></span></button>
+</details>
+
+
+
+<div class="text-right">
+<button class="btn btn-link" type="button">Clear all</button>
+</section>
+</div>
+
+
+
+<div class="col-md-8 mrgn-tp-md">
 <form>
 <label class="wb-inv" for="sch-inp">Search Government of Canada websites</label>
 <div class="input-group mrgn-tp-lg">
@@ -119,95 +140,107 @@
 </span>
 </div>
 </form>
-<div class="row">
-<div class="col-md-4 mrgn-tp-md">
-<section>
-<h2 class="wb-inv">Filters</h2>
-<div class="text-right">
-<button class="btn btn-link" type="button">Clear all</button>
-</div>
-<details open>
-<summary>By department</summary>
-<ul class="list-unstyled">
-<li><a href="#">Health Canada (471<span class="wb-inv"> results</span>)</a></li>
-<li><span class="glyphicon glyphicon-ok"></span><span class="wb-inv">Remove active filter:</span> <a href="#">Global Affairs Canada (403<span class="wb-inv"> results</span>)</a></li>
-<li><a href="#">Employment and Social Development Canada (130<span class="wb-inv"> results</span>)</a></li>
-<li><a href="#">Environment and Climate Change Canada (43<span class="wb-inv"> results</span>)</a></li>
-<li><a href="#">Canadian Heritage (29<span class="wb-inv"> results</span>)</a></li>
-</ul>
-<button class="btn btn-link small" type="button">Show more <span class="glyphicon glyphicon-chevron-down small"></span></button>
-</details>
-</section>
-</div>
-<div class="col-md-8 mrgn-tp-md">
 <section class="results">
 <h2 class="wb-inv">Search results</h2>
-<p class="h4">[number] search results for "[search term]"</p>
+<p class="h4">Results</p>
 
-<div class="container">
-    <div class="card-deck">
-        <div class="w-100 d-none d-sm-block d-md-none">
-        <div class="card col-md-4 mrgn-tp-md">
-            <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="w-100 d-none d-sm-block d-md-none"">
-	<div class="card col-md-4 mrgn-tp-md">
-            <div class="card-body">
-                <h4 class="card-title">10 Card title</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
+<div class="row">
+  <div class="column">
+    <div class="card" id="header">
+      <h5>Card 1</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum rutrum sodales. Nullam mattis fermentum libero, non volutpat.</p>
+      <p id="header-content"><a href="#">Start the play →</a></p>
     </div>
-</div>
+  </div>
 
-
-
-<!-- Pagination -->
-<div class="text-center">
-<p class="wb-inv">Search results pages</p>
-<ul class="pagination">
-<li class="active" aria-current="page">
-<a href="#">1<span class="wb-inv">: Page 1 of search results</span></a>
-</li>
-<li>
-<a href="#">2<span class="wb-inv">: Page 2 of search results</span></a>
-</li>
-<li>
-<a href="#">3<span class="wb-inv">: Page 3 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm">
-<a href="#">4<span class="wb-inv">: Page 4 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm">
-<a href="#">5<span class="wb-inv">: Page 5 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm hidden-md">
-<a href="#">6<span class="wb-inv">: Page 6 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm hidden-md">
-<a href="#">7<span class="wb-inv">: Page 7 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm hidden-md">
-<a href="#">8<span class="wb-inv">: Page 8 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm hidden-md">
-<a href="#">9<span class="wb-inv">: Page 9 of search results</span></a>
-</li>
-<li class="hidden-xs hidden-sm hidden-md">
-<a href="#">10<span class="wb-inv">: Page 10 of search results</span></a>
-</li>
-<li>
-<a rel="next" href="#">Next<span class="wb-inv"> page of search results</span></a>
-</li>
-</ul>
+  <div class="column">
+    <div class="card">
+      <h5>Card 2</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 3</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 4</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
 </div>
-</section>
-</div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h5>Card 1</h5>
+      <p>Some text</p>
+      <p><a href="#">Start the play →</a></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h5>Card 2</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 3</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 4</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div><div class="row">
+  <div class="column">
+    <div class="card">
+      <h5>Card 1</h5>
+      <p>Some text</p>
+      <p><a href="#">Start the play →</a></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h5>Card 2</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 3</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h5>Card 4</h5>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
 </div>
 <div class="pagedetails">
 <div class="row">
