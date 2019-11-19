@@ -2,8 +2,8 @@
 
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows'
+  itemSelector: '.grid-item',
+  layoutMode: 'cellByRows'
 });
 // filter functions
 var filterFns = {
