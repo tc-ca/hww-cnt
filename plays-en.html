@@ -85,7 +85,14 @@
          <!--[if lte IE 9]>
          <![endif]-->
 
-               
+          <script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>   
       </head>
       <body>
          <nav>
@@ -175,23 +182,23 @@
                   <details open>
                   <summary>How We Work Theme</summary>
                  
-                  <div class="button-group filters-button-group">
+                  <div id="filters" class="button-group">
                      <button class="btn btn-link" style="text-align:left;" data-filter=".achieve">Achive Service Excellence</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter=".collaborate">Collaborate and Engage</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter=".improve">Improve, Modernize and Transform</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter=".manage">Integrate Change and Project Management</button>
                      <div class="text-right">
-                        <button class="btn btn-link button is-checked" onclick="myFunction()" type="button" data-filter="*">Clear all</button>
+                        <button class="btn btn-link button is-checked" type="button" data-filter="*">Clear all</button>
                      </div>
                </section>
                </div>
                <div class="col-md-8 mrgn-tp-md">
                   <form>
-                     <label class="wb-inv" for="sch-inp">Search Government of Canada websites</label>
+                     <label class="wb-inv" for="sch-inp">Search our Inventory of Plays</label>
                      <div class="input-group mrgn-tp-lg">
-                        <input spellcheck="false" autocomplete="off" id="sch-inp" class="form-control" type="search">
+                        <input type="text" id="quicksearch" placeholder="Search our Inventory of Plays" class="form-control" />
                         <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary"> <span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                        <button class="btn btn-primary"> <span class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
                         </span>
                      </div>
                   </form>
@@ -208,12 +215,14 @@
                            <h5>grid-item 2</h5>
                            <p>Some text</p>
                            <p>Some text</p>
+                           <span class="wb-inv">surprise</span>
                         </div>
-                        <div class="grid-item manage " data-category="manage">
-                           <h5>grid-item 3</h5>
-                           <p>Some text</p>
-                           <p>Some text</p>
-                        </div>
+                        <div class="grid-item manage improve " data-category="manage">
+                           <h5>Capacity Planning</h5>
+                           <p>Create a capacity plan for your team, with your team.</p>
+                           <p id="header-content"><a href="#">Start the play →</a></p>
+                        <span class="wb-inv">team, capacity, planning, plan</span></div>
+                         
                         <div class="grid-item improve " data-category="improve">
                            <h5>grid-item 4</h5>
                            <p>Some text</p>
@@ -338,61 +347,60 @@
 		  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
          <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
         <script>
-// external js: isotope.pkgd.js
+ // quick search regex
+var qsRegex;
+var buttonFilter;
 
 // init Isotope
-var iso = new Isotope( '.grid', {
+var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  layoutMode: 'fitRows',
+  filter: function () {
+    var $this = $(this);
+    var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+    var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+    return searchResult && buttonResult;
+  } });
+
+
+$('#filters').on('click', 'button', function () {
+  buttonFilter = $(this).attr('data-filter');
+  $grid.isotope();
 });
 
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  numberGreaterThan50: function( itemElem ) {
-    var number = itemElem.querySelector('.number').textContent;
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function( itemElem ) {
-    var name = itemElem.querySelector('.name').textContent;
-    return name.match( /ium$/ );
-  }
-};
+// use value of search field to filter
+var $quicksearch = $('#quicksearch').keyup(debounce(function () {
+  qsRegex = new RegExp($quicksearch.val(), 'gi');
+  $grid.isotope();
+}));
 
-// bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
-filtersElem.addEventListener( 'click', function( event ) {
-  // only work with buttons
-  if ( !matchesSelector( event.target, 'button' ) ) {
-    return;
-  }
-  var filterValue = event.target.getAttribute('data-filter');
-  // use matching filter function
-  filterValue = filterFns[ filterValue ] || filterValue;
-  iso.arrange({ filter: filterValue });
-});
 
 // change is-checked class on buttons
-var buttonGroups = document.querySelectorAll('.button-group');
-for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-  var buttonGroup = buttonGroups[i];
-  radioButtonGroup( buttonGroup );
-}
-
-function radioButtonGroup( buttonGroup ) {
-  buttonGroup.addEventListener( 'click', function( event ) {
-    // only work with buttons
-    if ( !matchesSelector( event.target, 'button' ) ) {
-      return;
-    }
-    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-    event.target.classList.add('is-checked');
+$('.button-group').each(function (i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup);
+  $buttonGroup.on('click', 'button', function () {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $(this).addClass('is-checked');
   });
+});
+
+
+// debounce so filtering doesn't happen every millisecond
+function debounce(fn, threshold) {
+  var timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout(timeout);
+    var args = arguments;
+    var _this = this;
+    function delayed() {
+      fn.apply(_this, args);
+    }
+    timeout = setTimeout(delayed, threshold);
+  };
 }
-
-
-  </script>
+ </script>
+ 
       </body>
    </html>
 
