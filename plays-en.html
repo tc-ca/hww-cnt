@@ -16,10 +16,10 @@
          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
          <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css"/>
-                  <noscript>
+              
             <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-         </noscript>
-         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+         
+         
          <style>
             * {
             box-sizing: border-box;
@@ -83,48 +83,7 @@
          <!--[if lte IE 9]>
          <![endif]-->
 
-         
-         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-         <script>
-         // external js: isotope.pkgd.js
-
-// init Isotope
-var iso = new Isotope( '.grid', {
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
-
-// bind filter button click
-var filtersElem = document.querySelector('.filters-button-group');
-filtersElem.addEventListener( 'click', function( event ) {
-  // only work with buttons
-  if ( !matchesSelector( event.target, 'button' ) ) {
-    return;
-  }
-  var filterValue = event.target.getAttribute('data-filter');
-  // use matching filter function
-  filterValue = filterFns[ filterValue ] || filterValue;
-  iso.arrange({ filter: filterValue });
-});
-
-// change is-checked class on buttons
-var buttonGroups = document.querySelectorAll('.button-group');
-for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
-  var buttonGroup = buttonGroups[i];
-  radioButtonGroup( buttonGroup );
-}
-
-function radioButtonGroup( buttonGroup ) {
-  buttonGroup.addEventListener( 'click', function( event ) {
-    // only work with buttons
-    if ( !matchesSelector( event.target, 'button' ) ) {
-      return;
-    }
-    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-    event.target.classList.add('is-checked');
-  });
-}
-         </script>         
+               
       </head>
       <body>
          <nav>
@@ -374,6 +333,48 @@ function radioButtonGroup( buttonGroup ) {
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+		  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+         <script>
+         // external js: isotope.pkgd.js
+
+// init Isotope
+var iso = new Isotope( '.grid', {
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+
+// bind filter button click
+var filtersElem = document.querySelector('.filters-button-group');
+filtersElem.addEventListener( 'click', function( event ) {
+  // only work with buttons
+  if ( !matchesSelector( event.target, 'button' ) ) {
+    return;
+  }
+  var filterValue = event.target.getAttribute('data-filter');
+  // use matching filter function
+  filterValue = filterFns[ filterValue ] || filterValue;
+  iso.arrange({ filter: filterValue });
+});
+
+// change is-checked class on buttons
+var buttonGroups = document.querySelectorAll('.button-group');
+for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+  var buttonGroup = buttonGroups[i];
+  radioButtonGroup( buttonGroup );
+}
+
+function radioButtonGroup( buttonGroup ) {
+  buttonGroup.addEventListener( 'click', function( event ) {
+    // only work with buttons
+    if ( !matchesSelector( event.target, 'button' ) ) {
+      return;
+    }
+    buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+    event.target.classList.add('is-checked');
+  });
+}
+         </script>  
       </body>
    </html>
 
