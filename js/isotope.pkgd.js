@@ -1,8 +1,8 @@
 // external js: isotope.pkgd.js
 
 // init Isotope
-var $grid = $('.row').isotope({
-  itemSelector: '.grid',
+var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
   layoutMode: 'cellByRows'
 });
 // filter functions
