@@ -335,14 +335,28 @@
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
 		  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
          <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-         <script>
-         // external js: isotope.pkgd.js
+        <script>
+// external js: isotope.pkgd.js
 
 // init Isotope
 var iso = new Isotope( '.grid', {
   itemSelector: '.grid-item',
   layoutMode: 'fitRows'
 });
+
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function( itemElem ) {
+    var number = itemElem.querySelector('.number').textContent;
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function( itemElem ) {
+    var name = itemElem.querySelector('.name').textContent;
+    return name.match( /ium$/ );
+  }
+};
 
 // bind filter button click
 var filtersElem = document.querySelector('.filters-button-group');
@@ -374,7 +388,9 @@ function radioButtonGroup( buttonGroup ) {
     event.target.classList.add('is-checked');
   });
 }
-         </script>  
+
+
+  </script>
       </body>
    </html>
 
