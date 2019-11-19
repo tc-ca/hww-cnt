@@ -2,7 +2,7 @@
 
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
+  itemSelector: '.grid',
   layoutMode: 'cellByRows'
 });
 // filter functions
