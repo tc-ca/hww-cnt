@@ -23,7 +23,35 @@
    <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
 
    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-
+         <script>
+            function includeHTML() {
+              var z, i, elmnt, file, xhttp;
+              /*loop through a collection of all HTML elements:*/
+              z = document.getElementsByTagName("*");
+              for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                  /*make an HTTP request using the attribute value as the file name:*/
+                  xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      /*remove the attribute, and call this function once more:*/
+                      elmnt.removeAttribute("w3-include-html");
+                      includeHTML();
+                    }
+                  }      
+                  xhttp.open("GET", file, true);
+                  xhttp.send();
+                  /*exit the function:*/
+                  return;
+                }
+              }
+            };
+         </script>
    <style>
       * {
          box-sizing: border-box;
@@ -169,39 +197,7 @@
             </section>
          </div>
       </div>
-      <nav class="gcweb-v2 gcweb-menu" typeof="SiteNavigationElement">
-         <div class="container">
-            <h2 class="wb-inv">Menu</h2>
-            <button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu <span
-                  class="expicon glyphicon glyphicon-chevron-down"></span></button>
-            <ul role="menu" aria-orientation="vertical">
-               <li role="presentation">
-                  <a role="menuitem" tabindex="-1" aria-haspopup="true" aria-controls="gc-mnu-hww" aria-expanded="false"
-                     href="#">TC Everyday</a>
-                  <ul id="gc-mnu-jobs" role="menu" aria-orientation="vertical">
-                     <li role="presentation"> <a role="menuitem" tabindex="-1" href="#">This is How We Work<span
-                              class="visible-xs-inline visible-sm-inline">: home</span></a> </li>
-                     <li role="separator"></li>
-                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">What is "How We Work"</a></li>
-                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Assessing your Needs</a></li>
-                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">View our Gameplans</a></li>
-                     <li role="presentation"><a role="menuitem" tabindex="-1" hhref="#">Search our Plays</a></li>
-                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Submit a Play</a></li>
-                     <li role="separator" aria-orientation="vertical"></li>
-                     <li role="presentation">
-                        <a data-keep-expanded="md-min" href="#" role="menuitem" tabindex="-1" aria-haspopup="true"
-                           aria-controls="gc-mnu-jobs-sub" aria-expanded="true">About</a>
-                        <ul id="gc-mnu-jobs-sub" role="menu" aria-orientation="vertical">
-                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About the Authors</a></li>
-                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact Us</a></li>
-                           <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tell Us What You Think</a>
-                           </li>
-                        </ul>
-                     </li>
-                  </ul>
-               </li>
-         </div>
-      </nav>
+                 <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/nav.html"></div>
       <nav id="wb-bc" property="breadcrumb">
          <h2>You are here:</h2>
          <div class="container">
@@ -251,24 +247,25 @@
             </form>
             <section class="results">
                <h2 class="wb-inv">Search results</h2>
+               
                <p class="h4">Results</p>
                <div class="grid">
                   <div class="grid-item manage collaborate " data-category="achieve" id="header">
                      <h5>Dependency Mapping</h5>
                      <p>Understand and prevent bottlenecks before they happen.</p>
-                     <p id="header-content"><a href="#">Start the play →</a></p>
+                     <p id="header-content">Start the play →</p>
                   </div>
-                  <div class="grid-item collaborate manager " data-category="collaborate" id="header">
+                  <div class="grid-item collaborate manage " data-category="collaborate" id="header">
                      <h5>DACI Decision-making Framework</h5>
                      <p>Define each person's role in making high-impact group </p>
-                     <p id="header-content"><a href="#">Start the play →</a></p>
+                     <p id="header-content">Start the play →</p>
                      <span class="wb-inv">driver, approver, influencer, collaborator, </span>
                      <span class="wb-inv">surprise</span>
                   </div>
                   <div class="grid-item manage improve " data-category="manage" id="header">
                      <h5>Capacity Planning</h5>
                      <p>Create a capacity plan for your team, with your team.</p>
-                     <p id="header-content"><a href="#">Start the play →</a></p>
+                     <p id="header-content">Start the play →</p>
                      <span class="wb-inv">team, capacity, planning, plan</span>
                   </div>
 
@@ -276,8 +273,13 @@
                      <h5>Customer Journey Mapping</h5>
                      <p>Understand the customer journey from a specific </p> <span class="wb-inv">journey, customer,
                         client, service design</span>
-                     <p id="header-content"><a href="#">Start the play →</a></p>
-
+                     <p id="header-content"><Start the play →</p>
+               <div class="grid">
+                  <div class="grid-item manage collaborate achieve  " data-category="achieve" id="header">
+                     <h5>Indigenous Right Holders</h5>
+                     <p>Understand the relationship between your work and Indigenous Peoples of Canada.</p>
+                     <p id="header-content"><a href="https://plpilon.github.io/hww-cnt/plaus/indigenous.html">Start the play →</a></p>
+                  </div>
                   </div>
                </div>
             </section>
