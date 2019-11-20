@@ -2,24 +2,176 @@
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-   <!--[if gt IE 8]><!-->
-   <html class="no-js" lang="en" dir="ltr">
-      <!--<![endif]-->
-      <head>
-         <meta charset="utf-8">
-         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+   <meta charset="utf-8">
+   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-         <title>How We Work - Search Plays </title>
-         <meta content="width=device-width,initial-scale=1" name="viewport">
-         <meta name="description"
-            content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
-         <!--[if gte IE 9 | !IE ]><!-->
-         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
-         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+   <title>How We Work - Indigenous Right Holders Play </title>
+   <meta content="width=device-width,initial-scale=1" name="viewport">
+   <meta name="description"
+      content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+   <!--[if gte IE 9 | !IE ]><!-->
+   <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+   <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
+
+   <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      div.tip {background-color: #eaeaea ;}
+      
+      .button-group:after {
+         content: '';
+         display: block;
+         clear: both;
+      }
+      .grid {
+         margin: 0 -5px;
+      }
+      /* Clear floats after the columns */
+      .grid:after {
+         content: '';
+         display: block;
+         clear: both;
+      }
+      /* Float 2 columns side by side */
+      .grid-item {
+         float: left;
+         position: relative;
+         width: 47%;
+         padding: 10px 10px 10px 10px;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         text-align: left;
+         background-color: #ffffff;
+         min-height: 300px;
+         margin: 10px 10px 10px 10px;
+      }
+      .grid-item>* {
+         margin: 0px;
+         padding: 10px 10px;
+      }
+      /* Remove extra left and right margins, due to padding */
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+         .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+         }
+         .grid-item {
+            width: 95%;
+            min-height: 0px;
+         }
+         #header {
+            min-height: 200px;
+         }
+      }
+      /* Card Layout */
+      #header {
+         position: relative;
+         min-height: 300px;
+      }
+      #header-content {
+         position: absolute;
+         bottom: 0;
+         left: 15px;
+      }
+      .gcweb-menu {
+         min-height: 0px;
+      }
+       /* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+} 
+   </style>
+   <!--<![endif]-->
+   <!--[if lt IE 9]>
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+         <![endif]-->
+   <!--[if lte IE 9]>
+         <![endif]-->
          <script>
             function includeHTML() {
               var z, i, elmnt, file, xhttp;
@@ -49,95 +201,20 @@
               }
             };
          </script>
-         <style>
-            * {
-            box-sizing: border-box;
-            }
-            body {
-            font-family: Arial, Helvetica, sans-serif;
-            }
-            .button-group:after {
-            content: '';
-            display: block;
-            clear: both;
-            }
-            .grid {
-            margin: 0 -5px;
-            }
-            /* Clear floats after the columns */
-            .grid:after {
-            content: '';
-            display: block;
-            clear: both;
-            }
-            /* Float 2 columns side by side */
-            .grid-item {
-            float: left;
-            position: relative;
-            width: 47%;
-            padding: 10px 10px 10px 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            text-align: left;
-            background-color: #ffffff;
-            min-height: 300px;
-            margin: 10px 10px 10px 10px;
-            }
-            .grid-item>* {
-            margin: 0px;
-            padding: 10px 10px;
-            }
-            /* Remove extra left and right margins, due to padding */
-            /* Responsive columns */
-            @media screen and (max-width: 600px) {
-            .column {
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
-            }
-            .grid-item {
-            width: 95%;
-            min-height: 0px;
-            }
-            #header {
-            min-height: 200px;
-            }
-            }
-            /* Card Layout */
-            #header {
-            position: relative;
-            min-height: 300px;
-            }
-            #header-content {
-            position: absolute;
-            bottom: 0;
-            left: 15px;
-            }
-            .gcweb-menu {
-            min-height: 0px;
-            }
-         </style>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
-         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
-         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
-         <![endif]-->
-         <!--[if lte IE 9]>
-         <![endif]-->
-         <script>
-            window.console = window.console || function (t) { };
-         </script>
-         <script>
-            if (document.location.search.match(/type=embed/gi)) {
-               window.parent.postMessage("resize", "*");
-            }
-         </script>
-      </head>
-      <body>
+   <script>
+      window.console = window.console || function (t) { };
+   </script>
+   <script>
+      if (document.location.search.match(/type=embed/gi)) {
+         window.parent.postMessage("resize", "*");
+      }
+   </script>
+</head>
+
+<body>
 <nav>
 <ul id="wb-tphp">
-<li class="wb-slc"><a class="wb-sl" href="#wb-cont">kip to main content</a></li>
+<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
 <li class="wb-slc"><a class="wb-sl" href="#wb-info">Skip to "About government"</a></li>
 </ul>
 </nav><header>
@@ -160,27 +237,49 @@
 </form></section>
 </div>
 </div>
-<div w3-include-html="https://plpilon.github.io/hww-cnt/incl/nav.html"></div>
-<nav id="wb-bc">
+<nav class="gcweb-v2 gcweb-menu">
+<div class="container">
+<h2 class="wb-inv">Menu</h2>
+<button type="button" aria-haspopup="true" aria-expanded="false"><span class="wb-inv">Main </span>Menu </button>
+<ul role="menu" aria-orientation="vertical">
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#" aria-haspopup="true" aria-controls="gc-mnu-hww" aria-expanded="false">TC Everyday</a>
+<ul id="gc-mnu-jobs" role="menu" aria-orientation="vertical">
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">How We Work<span class="visible-xs-inline visible-sm-inline">: home</span></a></li>
+<li role="separator">&nbsp;</li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">This is How We Work</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">Assessing your Needs</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">View our Gameplans</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem">Search our Plays</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">Submit a Play</a></li>
+<li role="separator" aria-orientation="vertical">&nbsp;</li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#" data-keep-expanded="md-min" aria-haspopup="true" aria-controls="gc-mnu-jobs-sub" aria-expanded="true">About</a>
+<ul id="gc-mnu-jobs-sub" role="menu" aria-orientation="vertical">
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">About the Authors</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">Contact Us</a></li>
+<li role="presentation"><a tabindex="-1" role="menuitem" href="#">Tell Us What You Think</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav><nav id="wb-bc">
 <h2>You are here:</h2>
 <div class="container">
 <ol class="breadcrumb">
-<li><a href="https://plpilon.github.io/hww-cnt/plays/indigenous.html">Transport Canada</a></li>
+<li><a href="#">Transport Canada</a></li>
 <li><a href="https://plpilon.github.io/hww-cnt/index-en.html">How We Work</a></li>
 <li><a href="https://plpilon.github.io/hww-cnt/plays-en.html">Plays</a></li>
-<li><a href="https://plpilon.github.io/hww-cnt/plays/indigenous.html">Indigenous Right Holders</a></li>
+<li><a href="#">Indigenous Right Holders</a></li>
 </ol>
 </div>
 </nav></header><main class="container">
+<h1 id="wb-cont">Indigenous Right Holders</h1>
+<p class="gc-byline">Understand the relationship between your work and Indigenous Peoples of Canada.</p>
 <div class="row">
 <div class="col-md-12">
-
-<h1 id="wb-cont">Indigenous Right Holders</h1>
-<p>Understand the relationship between your work and Indigenous Peoples of Canada.</p>
-<div>
-<div>
 <p>This play will provide you with an overview of the Government of Canada&rsquo;s relationship with Indigenous Peoples as it relates to modern treaties.</p>
-<p>Use this play to...</p>
+<p><strong>Use this play to...</strong></p>
 <ul>
 <li>Increase your cultural comprehension of Indigenous Peoples in Canada</li>
 <li>Gain a basic understanding of treaties</li>
@@ -188,18 +287,21 @@
 </ul>
 <section>
 <h2>Running the Play</h2>
-<div>
-<div>
+<div class="row" style="background-color:#ececec;">
+<div class="col-md-12">
 <div>
 <p>This play will provide you with an understanding of treaties, both historical and modern, as well as the Government of Canada&rsquo;s &ndash; and each employee&rsquo;s &ndash; roles and responsibilities when it comes to treaty implementation, consulting Indigenous Peoples, and building and maintaining strong relationships.</p>
-<p>By independently reading through Treaties and Modern Treaties you will be given a basic understanding of each section as well as additional tools and resources to further develop your working knowledge; this is a large, complex, and evolving topic of great importance, requiring constant work and commitment.</p>
-</div>
-</div>
-</div>
+<p>By independently reading through Treaties and Modern Treaties you will be given a basic understanding of each section as well as additional tools and resources to further develop your working knowledge; this is a large, complex, and evolving topic of great importance, requiring constant work and commitment.</p></div>
+<!-- 
+<div class="col-md-4"> -->
+
+
+</div></section>
 <section>
 <h2>Treaties</h2>
-<div>
-<div>
+<div class="row">
+<div class="col-md-8">
+
 <p>Treaties are agreements made between the Government of Canada, Indigenous groups and often provinces and territories that define ongoing rights and obligations on all sides as it relates to land.</p>
 <p>These agreements set out continuing treaty rights and benefits for each group. Treaty rights and Aboriginal rights (commonly referred to as Indigenous rights) are recognized and affirmed in Section 35 of the Constitution Act, 1982 and are also a key part of the United Nations Declaration on the Rights of Indigenous Peoples which the Government of Canada has committed to adopt.</p>
 <p>Treaties with Indigenous peoples include both:</p>
@@ -208,31 +310,33 @@
 <li>modern treaties (also called comprehensive land claim agreements) with Indigenous groups.</li>
 </ul>
 <h4>Historic Treaties and Treaty First Nations in Canada - An infographic</h4>
-<div><img id="myImg" style="width: 100%;" src="https://www.rcaanc-cirnac.gc.ca/DAM/DAM-CIRNAC-RCAANC/DAM-TAG/STAGING/images-images/treatyMaking-infopic_1477402542118_eng.JPG" alt="Treaties Infographics" /></div>
+<div style="width: 100%; max-width: 300px; height: 250px; overflow: hidden;"><img id="myImg" style="width: 100%; max-width: 300px;" src="https://www.rcaanc-cirnac.gc.ca/DAM/DAM-CIRNAC-RCAANC/DAM-TAG/STAGING/images-images/treatyMaking-infopic_1477402542118_eng.JPG" alt="Treaties Infographics" /></div>
 <p>Click on the image to view the complete infographic</p>
-<p>&nbsp;</p>
+<p><!-- The Modal --></p>
+<div id="myModal" class="modal"><span class="close">&times;</span> <img id="img01" class="modal-content" />
+<div id="caption">Historic Treaties and Treaty First Nations in Canada - An infographic</div>
 </div>
-<div>
-<div>
+</div>
+<div class="col-md-4 ">
+<div class="tip ">
 <h4>Tip</h4>
 <p>The Treaties and agreements page from Crown-Indigenous Relations and Northern Affairs is your launch pad and main source to gain a significant understanding on treaties &ndash; it provides links to more specific and detailed information on the topic.</p>
 </div>
 </div>
 </div>
 </section>
-</section>
 </div>
 <section>
 <h2>Modern Treaties</h2>
-<div>
-<div>
+<div class="row">
+<div class="col-md-8">
 <p>The modern treaty era began in 1973 after the Supreme Court of Canada decision (Calder et al. v. Attorney-General of British Columbia), which recognized Aboriginal rights for the first time. This decision led to the development of the Comprehensive Land Claims Policy and the first modern treaty, the James Bay and Northern Qu&eacute;bec Agreement signed in 1975.</p>
 <p>Since 1975, Canada has signed 25 additional treaties (called modern treaties or comprehensive land claim agreements) with Indigenous groups in Canada. Some of these treaties include self-government.</p>
 <p>These treaties are the basis of the relationship between 97 Indigenous communities (representing about 89,000 Indigenous peoples) and the provincial or territorial and federal governments.</p>
 <p>As part of modern treaty negotiations, joint work is done to lay the groundwork for moving forward together after a final agreement has been signed (implementation of the agreement).</p>
 <p>Consult the Modern treaties &ndash; Comprehensive Land Claims and Self-Government agreements map to learn about the modern treaties in effect to date across Canada and search the Aboriginal and Treaty Rights Information System to find out more about each agreement, including the full text of the agreement and summary information.</p>
 <blockquote>
-<p>The Statement of Principles on the Federal Approach to Modern Treaty Implementation</p>
+<p><strong>The Statement of Principles on the Federal Approach to Modern Treaty Implementation</strong></p>
 <ol>
 <li>Modern treaties are a key component of Canadian nation-building</li>
 <li>Modern treaties are reconciliation in action</li>
@@ -249,8 +353,8 @@
 </ol>
 </blockquote>
 </div>
-<div>
-<div>
+<div class="col-md-4 ">
+<div class="tip ">
 <h4>Context</h4>
 <p>The <a href="https://www.rcaanc-cirnac.gc.ca/eng/1436450503766/1544714947616" target="_blank" rel="noopener">Cabinet Directive on the Federal Approach to Modern Treaty Implementation</a> provides an operational framework to manage treaty obligations, outlining the responsibilities of federal departments and agencies.</p>
 </div>
@@ -259,13 +363,13 @@
 </section>
 <section>
 <h2>Government of Canada Employees - Treaties and Consultation / Your working relationship with Indigenous Peoples / Duty to Consult</h2>
-<div>
-<div>
+<div class="row">
+<div class="col-md-8">
 <p>The Government of Canada has a duty to consult with Indigenous Peoples when carrying out many federal activities; the duty to consult is an important part of the federal government's activities, including for regulatory project approvals, licensing and authorization of permits, operational decisions, policy development, negotiations and more.</p>
 <p>Government of Canada departments and agencies are responsible for understanding how and when their activities could have an adverse impact on Aboriginal and treaty rights. Crown-Indigenous Relations and Northern Affairs Canada coordinates and advises federal officials on the duty to consult. The attached resource provides information on training, guidelines, protocols, and Memoranda of Understanding.</p>
 </div>
-<div>
-<div>
+<div class="col-md-4 ">
+<div class="tip ">
 <h4>Tip</h4>
 <p>Visit Transport Canada&rsquo;s intranet for information on <a href="http://mytc/aboriginal-consultation-at-tc-2697.html" target="_blank" rel="noopener" aria-invalid="true">Consultation at TC</a>.</p>
 </div>
@@ -274,24 +378,23 @@
 </section>
 <section>
 <h2>Other resources on this topic</h2>
-<div>
-<div>
+<div class="row">
+<div class="col-md-12">
 <ul>
-<li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1436450503766/1544714947616" target="_blank" rel="noopener">Cabinet Directive on the Federal Approach to Modern Treaty Implementation</a></li>
+<li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1436450503766/1544714947616" target="_blank" rel="noopener">Cabinet Directive on the Federal Approach to Modern Treaty Implementation</a> </li>
 <li><a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231" target="_blank" rel="noopener">Treaties and agreements</a></li>
 <li><a href="https://www.aadnc-aandc.gc.ca/eng/1331832510888/1331832636303" target="_blank" rel="noopener">Government of Canada and the duty to consult</a></li>
-<li><a href="https://www.aadnc-aandc.gc.ca/eng/1307644732392/1307644769769" target="_blank" rel="noopener">Consultation and engagement</a> at Crown-Indigenous Relations and Northern Affairs Canada and Indigenous Services Canada:</li>
+<li><a href="https://www.aadnc-aandc.gc.ca/eng/1307644732392/1307644769769" target="_blank" rel="noopener">Consultation and engagement</a> at Crown-Indigenous Relations and Northern Affairs Canada and Indigenous Services Canada: </li>
 <li><a href="http://mytc/aboriginal-consultation-at-tc-2697.html" target="_blank" rel="noopener" aria-invalid="true">Consultation at TC</a></li>
-<li><a href="https://www.csps-efpc.gc.ca/ils-eng.aspx" target="_blank" rel="noopener">Canada School of Public Service's Indigenous Learning Series</a>:
+<li><a href="https://www.csps-efpc.gc.ca/ils-eng.aspx" target="_blank" rel="noopener">Canada School of Public Service's Indigenous Learning Series</a>:</li>
 <ul>
 <li><a href="https://www.csps-efpc.gc.ca/Catalogue/courses-eng.aspx?code=k108" target="_blank" rel="noopener">Fundamentals of Modern Treaty and Self-Government Agreement Implementation (K108)</a></li>
 <li><a href="https://www.csps-efpc.gc.ca/Catalogue/courses-eng.aspx?code=k208" target="_blank" rel="noopener">Modern Treaty and Self-Government Agreement Implementation for Policy and Program Officers (K208)</a></li>
 </ul>
-</li>
 </ul>
 <h2>Terms of Use</h2>
-<div>
-<div>
+<div class="row">
+<div class="col-md-12">
 <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following Terms and conditions.</p>
 <p>This work is a derivative from <a href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028574/1529354437231" target="_blank" rel="noopener">Treaties and agreements</a> and <a href="https://www.aadnc-aandc.gc.ca/eng/1331832510888/1331832636303" target="_blank" rel="noopener">Duty to consult</a> by Crown-Indigenous Relations and Northern Affairs Canada, as well as Indigenous Services Canada, and used under the <a href="https://open.canada.ca/en/open-government-licence-canada" target="_blank" rel="noopener">Open Government Licence &ndash; Canada</a>.</p>
 </div>
@@ -300,9 +403,34 @@
 </div>
 </section>
 </div>
-</div>
-</div>
 <div class="pagedetails">
+<div class="row">
+<div class="col-sm-6 col-md-5 col-lg-4"><details class="brdr-0" open="open">
+<summary class="btn btn-default text-center">Please provide us feedback on this page</summary>
+<div class="well row">
+<div class="gc-rprt-prblm">
+<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl"><form action="#"><fieldset><legend><span class="field-name">Please select all that apply: </span></legend>
+<div class="checkbox"><label for="problem1"><input id="problem1" name="problem" type="checkbox" value="Something is broken" data-reveal="#broken" />Something is broken</label></div>
+<div id="broken" class="form-group hide"><label for="problem1-detail">Provide more details (optional):</label> <input id="problem1-detail" class="form-control full-width" type="text" /></div>
+<div class="checkbox"><label for="problem2"><input id="problem2" name="problem" type="checkbox" value="It has spelling or grammar mistakes" data-reveal="#spelling" />The page has spelling or grammar mistakes</label></div>
+<div id="spelling" class="form-group hide"><label for="problem2-detail">Provide more details (optional):</label> <input id="problem2-detail" class="form-control full-width" type="text" /></div>
+<div class="checkbox"><label for="problem3"><input id="problem3" name="problem" type="checkbox" value="The information is wrong" data-reveal="#wrong" />The information is wrong</label></div>
+<div id="wrong" class="form-group hide"><label for="problem3-detail">Provide more details (optional):</label> <input id="problem3-detail" class="form-control full-width" type="text" /></div>
+<div class="checkbox"><label for="problem4"><input id="problem4" name="problem" type="checkbox" value="The information is outdated" data-reveal="#outdated" />The information is outdated</label></div>
+<div id="outdated" class="form-group hide"><label for="problem4-detail">Provide more details (optional):</label> <input id="problem4-detail" class="form-control full-width" type="text" /></div>
+<div class="checkbox"><label for="problem5"><input id="problem5" name="problem" type="checkbox" value="I can&rsquo;t find what I&rsquo;m looking for" data-reveal="#find" />I can&rsquo;t find what I&rsquo;m looking for</label></div>
+<div id="find" class="form-group hide"><label for="problem5-detail">Describe what you&rsquo;re looking for (optional):</label> <input id="problem5-detail" class="form-control full-width" type="text" /></div>
+<div class="checkbox"><label for="problem6"><input id="problem6" name="problem" type="checkbox" value="It&rsquo;s confusing" data-reveal="#confusing" />Other</label></div>
+<div id="confusing" class="form-group hide"><label for="problem6-detail">Provide more details (optional):</label> <input id="problem6-detail" class="form-control full-width" type="text" /></div>
+</fieldset><button class="btn btn-primary wb-toggle" type="submit" data-toggle="{&quot;stateOff&quot;: &quot;hide&quot;, &quot;stateOn&quot;: &quot;show&quot;, &quot;selector&quot;: &quot;.gc-rprt-prblm-tggl&quot;}">Submit</button></form></div>
+<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+<h3>Thank you for your help!</h3>
+<p>You will not receive a reply. For enquiries, please <a href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
+</div>
+</div>
+</div>
+</details></div>
+</div>
 <dl id="wb-dtmd">
 <dt>Date modified:</dt>
 <dd><time>2019-11-19</time></dd>
@@ -340,8 +468,28 @@
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
 <p>&nbsp;</p>
-         <script>
+   <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+} 
+        </script>
+           <script>
                includeHTML();
             </script>
 </body>
-   </html>
+
+</html>
