@@ -1,414 +1,393 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
-
-<head>
-   <meta charset="utf-8">
-   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+   <!--[if gt IE 8]><!-->
+   <html class="no-js" lang="en" dir="ltr">
+      <!--<![endif]-->
+      <head>
+         <meta charset="utf-8">
+         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-   <title>How We Work - Search Plays </title>
-   <meta content="width=device-width,initial-scale=1" name="viewport">
-   <meta name="description"
-      content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
-   <!--[if gte IE 9 | !IE ]><!-->
-   <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-   <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-   <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
-
-   <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-   <style>
-      * {
-         box-sizing: border-box;
-      }
-
-      body {
-         font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .button-group:after {
-         content: '';
-         display: block;
-         clear: both;
-      }
-
-      .grid {
-         margin: 0 -5px;
-      }
-
-      /* Clear floats after the columns */
-      .grid:after {
-         content: '';
-         display: block;
-         clear: both;
-      }
-
-      /* Float 2 columns side by side */
-      .grid-item {
-         float: left;
-         position: relative;
-         width: 47%;
-         padding: 10px 10px 10px 10px;
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-         text-align: left;
-         background-color: #ffffff;
-         min-height: 300px;
-         margin: 10px 10px 10px 10px;
-      }
-
-      .grid-item>* {
-         margin: 0px;
-         padding: 10px 10px;
-      }
-
-      /* Remove extra left and right margins, due to padding */
-
-      /* Responsive columns */
-      @media screen and (max-width: 600px) {
-         .column {
+         <title>How We Work - Search Plays </title>
+         <meta content="width=device-width,initial-scale=1" name="viewport">
+         <meta name="description"
+            content="Web Experience Toolkit (WET) includes reusable components for building and maintaining innovative Web sites that are accessible, usable, and interoperable. These reusable components are open source software and free for use by departments and external Web communities">
+         <!--[if gte IE 9 | !IE ]><!-->
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
+         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+         <script>
+            function includeHTML() {
+              var z, i, elmnt, file, xhttp;
+              /*loop through a collection of all HTML elements:*/
+              z = document.getElementsByTagName("*");
+              for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                  /*make an HTTP request using the attribute value as the file name:*/
+                  xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      /*remove the attribute, and call this function once more:*/
+                      elmnt.removeAttribute("w3-include-html");
+                      includeHTML();
+                    }
+                  }      
+                  xhttp.open("GET", file, true);
+                  xhttp.send();
+                  /*exit the function:*/
+                  return;
+                }
+              }
+            };
+         </script>
+         <style>
+            * {
+            box-sizing: border-box;
+            }
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            .button-group:after {
+            content: '';
+            display: block;
+            clear: both;
+            }
+            .grid {
+            margin: 0 -5px;
+            }
+            /* Clear floats after the columns */
+            .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+            }
+            /* Float 2 columns side by side */
+            .grid-item {
+            float: left;
+            position: relative;
+            width: 47%;
+            padding: 10px 10px 10px 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: left;
+            background-color: #ffffff;
+            min-height: 300px;
+            margin: 10px 10px 10px 10px;
+            }
+            .grid-item>* {
+            margin: 0px;
+            padding: 10px 10px;
+            }
+            /* Remove extra left and right margins, due to padding */
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+            .column {
             width: 100%;
             display: block;
             margin-bottom: 20px;
-         }
-
-         .grid-item {
+            }
+            .grid-item {
             width: 95%;
             min-height: 0px;
-         }
-
-         #header {
+            }
+            #header {
             min-height: 200px;
-         }
-      }
-
-      /* Card Layout */
-      #header {
-         position: relative;
-         min-height: 300px;
-      }
-
-      #header-content {
-         position: absolute;
-         bottom: 0;
-         left: 15px;
-      }
-
-      .gcweb-menu {
-         min-height: 0px;
-      }
-   </style>
-   <!--<![endif]-->
-   <!--[if lt IE 9]>
+            }
+            }
+            /* Card Layout */
+            #header {
+            position: relative;
+            min-height: 300px;
+            }
+            #header-content {
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            }
+            .gcweb-menu {
+            min-height: 0px;
+            }
+         </style>
+         <!--<![endif]-->
+         <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-   <!--[if lte IE 9]>
+         <!--[if lte IE 9]>
          <![endif]-->
-
-   <script>
-      window.console = window.console || function (t) { };
-   </script>
-   <script>
-      if (document.location.search.match(/type=embed/gi)) {
-         window.parent.postMessage("resize", "*");
-      }
-   </script>
-</head>
-
-<body>
-   <nav>
-      <ul id="wb-tphp">
-         <li class="wb-slc">
-            <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-         </li>
-         <li class="wb-slc">
-            <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-         </li>
-      </ul>
-   </nav>
-   <header>
-      <div id="wb-bnr" class="container">
-         <section id="wb-lng" class="text-right">
-            <h2 class="wb-inv">Language selection</h2>
-            <ul class="list-inline margin-bottom-none">
-               <li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
-            </ul>
-         </section>
-         <div class="row">
-            <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-               <a href="https://www.canada.ca/en.html" property="url"><img
-                     src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""
-                     property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
-                        lang="fr">Gouvernement du Canada</span></span></a>
-               <meta property="areaServed" typeof="Country" content="Canada">
-               <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-            </div>
-            <section id="wb-srch" class="col-lg-8 text-right">
-               <h2>Search</h2>
-               <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
-                  <div class="form-group">
-                     <label for="wb-srch-q" class="wb-inv">Search this site</label>
-                     <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
-                        value="" size="34" maxlength="170" placeholder="Search Canada.ca">
-                     <datalist id="wb-srch-q-ac"></datalist>
-                  </div>
-                  <div class="form-group submit">
-                     <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
-                           class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
-                  </div>
-               </form>
-            </section>
-         </div>
-      </div>
-<div w3-include-html="https://plpilon.github.io/hww-cnt/incl/nav.html"></div> 
-      <nav id="wb-bc" property="breadcrumb">
-         <h2>You are here:</h2>
-         <div class="container">
-            <ol class="breadcrumb">
-               <li><a href="#">Transport Canada</a></li>
-               <li><a href="https://plpilon.github.io/hww-cnt/index-en.html">How We Work</a></li>
-                           </ol>
-         </div>
-      </nav>
-   </header>
-  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-<h1 property="name" id="wb-cont">The How We Work Playbook</h1>
-<p class="gc-byline"><strong>From <a href="./institution-en.html">Transport Canada</a></strong></p>
-<div class="row">
-<div class="col-md-12">
-<p>[Service name], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
-
-<section>
-<h2>How to get started</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
-</section>
-<p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">Complete your self-assessment</a></p>
-<section class="gc-cntct-lst">
-<h2>I know what I am looking for</h2>
-<p>Have you previously completed your self-assessment or simply want to browse our playbook?</p>
-<ul>
-<li>Consult our preset gameplans</li>
-<li>Browse our plays by themes and keywords</li>
-</ul>
-
-</section>
-</div>
-<!--<div class="col-md-4">
-<aside class="lnkbx">
-<h2>Guides and help</h2>
-<ul class="lst-spcd">
-<li><a href="#">[Related guides and help 1]</a></li>
-<li><a href="#">[Related guides and help 2]</a></li>
-<li><a href="#">[Related guides and help 3]</a></li>
-</ul>
-</aside>
-<aside class="lnkbx">
-<h2>Contact us</h2>
-<p>[Office name or location]<br>
-1300-70 Somerset St. W<br>
-Moncton NB E1C 8P2</p>
-<dl>
-<dt>Telephone:</dt>
-<dd>506-857-2400 ext. 123</dd>
-<dd>506-857-2400 ext. 124</dd>
-<dt>Email:</dt>
-<dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
-</dl>
-<ul>
-<li><a href="#">Contact [Institution name] for help</a></li>
-<li><a href="#">Contact [Institution name] for help</a></li>
-<li><a href="#">Contact [Institution name] for help</a></li>
-<li><a href="#">Contact [Institution name] for help</a></li>
-</ul>
-</aside>
-<aside class="lnkbx">
-<h2>Related services and information</h2>
-<ul class="lst-spcd">
-<li><a href="#">[Related services 1]</a></li>
-<li><a href="#">[Related services 2]</a></li>
-<li><a href="#">[Related information 1]</a></li>
-<li><a href="#">[Related information 2]</a></li>
-</ul>
-</aside>
-<aside class="lnkbx">
-<h2>Related program</h2>
-<ul class="lst-spcd">
-<li><a href="#">[Program name]</a></li>
-</ul>
-</aside> -->
-</div>
-</div>
-      <div class="pagedetails">
-         <div class="row">
-            <div class="col-sm-6 col-md-5 col-lg-4">
-               <details class="brdr-0">
-                  <summary class="btn btn-default text-center">Please provide us feedback on this page</summary>
-                  <div class="well row">
-                     <div class="gc-rprt-prblm">
-                        <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
-                           <form action="#">
-                              <fieldset>
-                                 <legend><span class="field-name">Please select all that apply: </span></legend>
-                                 <div class="checkbox">
-                                    <label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem"
-                                          value="Something is broken" id="problem1">Something is broken</label>
-                                 </div>
-                                 <div class="form-group hide" id="broken">
-                                    <label for="problem1-detail">Provide more details (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem1-detail">
-                                 </div>
-                                 <div class="checkbox">
-                                    <label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem"
-                                          value="It has spelling or grammar mistakes" id="problem2">The page has
-                                       spelling or grammar mistakes</label>
-                                 </div>
-                                 <div class="form-group hide" id="spelling">
-                                    <label for="problem2-detail">Provide more details (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem2-detail">
-                                 </div>
-                                 <div class="checkbox">
-                                    <label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem"
-                                          value="The information is wrong" id="problem3">The information is
-                                       wrong</label>
-                                 </div>
-                                 <div class="form-group hide" id="wrong">
-                                    <label for="problem3-detail">Provide more details (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem3-detail">
-                                 </div>
-                                 <div class="checkbox">
-                                    <label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem"
-                                          value="The information is outdated" id="problem4">The information is
-                                       outdated</label>
-                                 </div>
-                                 <div class="form-group hide" id="outdated">
-                                    <label for="problem4-detail">Provide more details (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem4-detail">
-                                 </div>
-                                 <div class="checkbox">
-                                    <label for="problem5"><input type="checkbox" data-reveal="#find" name="problem"
-                                          value="I can’t find what I’m looking for" id="problem5">I can’t find what I’m
-                                       looking for</label>
-                                 </div>
-                                 <div class="form-group hide" id="find">
-                                    <label for="problem5-detail">Describe what you’re looking for (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem5-detail">
-                                 </div>
-                                 <div class="checkbox">
-                                    <label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem"
-                                          value="It’s confusing" id="problem6">Other</label>
-                                 </div>
-                                 <div class="form-group hide" id="confusing">
-                                    <label for="problem6-detail">Provide more details (optional):</label>
-                                    <input type="text" class="form-control full-width" id="problem6-detail">
-                                 </div>
-                              </fieldset>
-                              <button type="submit" class="btn btn-primary wb-toggle"
-                                 data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
-                           </form>
-                        </div>
-                        <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
-                           <h3>Thank you for your help!</h3>
-                           <p>You will not receive a reply. For enquiries, please <a
-                                 href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
-                        </div>
-                     </div>
-                  </div>
-               </details>
-            </div>
-         </div>
-         <dl id="wb-dtmd">
-            <dt>Date modified:&#32;</dt>
-            <dd><time property="dateModified">2019-11-19</time></dd>
-         </dl>
-      </div>
-   <script>
-includeHTML();
-</script>
-   </main>
-   <footer id="wb-info">
-      <div class="landscape">
-         <nav class="container wb-navcurr">
-            <h2 class="wb-inv">About government</h2>
-            <ul class="list-unstyled colcount-sm-2 colcount-md-3">
-               <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+         <script>
+            window.console = window.console || function (t) { };
+         </script>
+         <script>
+            if (document.location.search.match(/type=embed/gi)) {
+               window.parent.postMessage("resize", "*");
+            }
+         </script>
+      </head>
+      <body>
+         <nav>
+            <ul id="wb-tphp">
+               <li class="wb-slc">
+                  <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+               </li>
+               <li class="wb-slc">
+                  <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+               </li>
             </ul>
          </nav>
-      </div>
-      <div class="brand">
-         <div class="container">
-            <div class="row">
-               <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
-                  <h2 class="wb-inv">About this site</h2>
-                  <ul>
-                     <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
-                     <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
-                     <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
-                     <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
-                     <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+         <header>
+            <div id="wb-bnr" class="container">
+               <section id="wb-lng" class="text-right">
+                  <h2 class="wb-inv">Language selection</h2>
+                  <ul class="list-inline margin-bottom-none">
+                     <li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
                   </ul>
-               </nav>
-               <div class="col-xs-6 visible-sm visible-xs tofpg">
-                  <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-               </div>
-               <div class="col-xs-6 col-md-3 col-lg-2 text-right">
-                  <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg"
-                     alt="Symbol of the Government of Canada">
+               </section>
+               <div class="row">
+                  <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+                     <a href="https://www.canada.ca/en.html" property="url"><img
+                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""
+                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span></a>
+                     <meta property="areaServed" typeof="Country" content="Canada">
+                     <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+                  </div>
+                  <section id="wb-srch" class="col-lg-8 text-right">
+                     <h2>Search</h2>
+                     <form action="#" method="post" name="cse-search-box" role="search" class="form-inline">
+                        <div class="form-group">
+                           <label for="wb-srch-q" class="wb-inv">Search this site</label>
+                           <input id="wb-srch-q" list="wb-srch-q-ac" class="wb-srch-q form-control" name="q" type="search"
+                              value="" size="34" maxlength="170" placeholder="Search Canada.ca">
+                           <datalist id="wb-srch-q-ac"></datalist>
+                        </div>
+                        <div class="form-group submit">
+                           <button type="submit" id="wb-srch-sub" class="btn btn-primary btn-small" name="wb-srch-sub"><span
+                              class="glyphicon-search glyphicon"></span><span class="wb-inv">Search</span></button>
+                        </div>
+                     </form>
+                  </section>
                </div>
             </div>
-         </div>
-      </div>
-   </footer>
-   <!--[if gte IE 9 | !IE ]><!-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-   <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-   <!--<![endif]-->
-   <!--[if lt IE 9]>
+            <div w3-include-html="/incl/nav.html"></div>
+            <nav id="wb-bc" property="breadcrumb">
+               <h2>You are here:</h2>
+               <div class="container">
+                  <ol class="breadcrumb">
+                     <li><a href="#">Transport Canada</a></li>
+                     <li><a href="https://plpilon.github.io/hww-cnt/index-en.html">How We Work</a></li>
+                  </ol>
+               </div>
+            </nav>
+         </header>
+         <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+            <h1 property="name" id="wb-cont">The How We Work Playbook</h1>
+            <p class="gc-byline"><strong>From <a href="./institution-en.html">Transport Canada</a></strong></p>
+            <div class="row">
+               <div class="col-md-12">
+                  <p>[Service name], lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam deserunt, doloremque mollitia laudantium quas ut accusamus perspiciatis repellendus quaerat omnis corporis laborum quasi magni possimus qui necessitatibus, aperiam enim.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cupiditate voluptatem praesentium, facilis corporis magni esse reiciendis distinctio. Vitae totam iste porro, esse facere obcaecati? Laborum earum minus harum enim.</p>
+                  <section>
+                     <h2>How to get started</h2>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic minima magni nesciunt nam. Facilis perferendis, adipisci voluptates, enim illo perspiciatis molestias itaque iste qui distinctio asperiores quidem voluptatum sunt.</p>
+                  </section>
+                  <p><a href="#" class="btn btn-lg btn-primary mrgn-tp-md">Complete your self-assessment</a></p>
+                  <section class="gc-cntct-lst">
+                     <h2>I know what I am looking for</h2>
+                     <p>Have you previously completed your self-assessment or simply want to browse our playbook?</p>
+                     <ul>
+                        <li>Consult our preset gameplans</li>
+                        <li>Browse our plays by themes and keywords</li>
+                     </ul>
+                  </section>
+               </div>
+               <!--<div class="col-md-4">
+                  <aside class="lnkbx">
+                  <h2>Guides and help</h2>
+                  <ul class="lst-spcd">
+                  <li><a href="#">[Related guides and help 1]</a></li>
+                  <li><a href="#">[Related guides and help 2]</a></li>
+                  <li><a href="#">[Related guides and help 3]</a></li>
+                  </ul>
+                  </aside>
+                  <aside class="lnkbx">
+                  <h2>Contact us</h2>
+                  <p>[Office name or location]<br>
+                  1300-70 Somerset St. W<br>
+                  Moncton NB E1C 8P2</p>
+                  <dl>
+                  <dt>Telephone:</dt>
+                  <dd>506-857-2400 ext. 123</dd>
+                  <dd>506-857-2400 ext. 124</dd>
+                  <dt>Email:</dt>
+                  <dd><a href="mailto:firstname.lastname@canada.ca">firstname.lastname@canada.ca</a></dd>
+                  </dl>
+                  <ul>
+                  <li><a href="#">Contact [Institution name] for help</a></li>
+                  <li><a href="#">Contact [Institution name] for help</a></li>
+                  <li><a href="#">Contact [Institution name] for help</a></li>
+                  <li><a href="#">Contact [Institution name] for help</a></li>
+                  </ul>
+                  </aside>
+                  <aside class="lnkbx">
+                  <h2>Related services and information</h2>
+                  <ul class="lst-spcd">
+                  <li><a href="#">[Related services 1]</a></li>
+                  <li><a href="#">[Related services 2]</a></li>
+                  <li><a href="#">[Related information 1]</a></li>
+                  <li><a href="#">[Related information 2]</a></li>
+                  </ul>
+                  </aside>
+                  <aside class="lnkbx">
+                  <h2>Related program</h2>
+                  <ul class="lst-spcd">
+                  <li><a href="#">[Program name]</a></li>
+                  </ul>
+                  </aside> -->
+            </div>
+            </div>
+            <div class="pagedetails">
+               <div class="row">
+                  <div class="col-sm-6 col-md-5 col-lg-4">
+                     <details class="brdr-0">
+                        <summary class="btn btn-default text-center">Please provide us feedback on this page</summary>
+                        <div class="well row">
+                           <div class="gc-rprt-prblm">
+                              <div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+                                 <form action="#">
+                                    <fieldset>
+                                       <legend><span class="field-name">Please select all that apply: </span></legend>
+                                       <div class="checkbox">
+                                          <label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem"
+                                             value="Something is broken" id="problem1">Something is broken</label>
+                                       </div>
+                                       <div class="form-group hide" id="broken">
+                                          <label for="problem1-detail">Provide more details (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem1-detail">
+                                       </div>
+                                       <div class="checkbox">
+                                          <label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem"
+                                             value="It has spelling or grammar mistakes" id="problem2">The page has
+                                          spelling or grammar mistakes</label>
+                                       </div>
+                                       <div class="form-group hide" id="spelling">
+                                          <label for="problem2-detail">Provide more details (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem2-detail">
+                                       </div>
+                                       <div class="checkbox">
+                                          <label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem"
+                                             value="The information is wrong" id="problem3">The information is
+                                          wrong</label>
+                                       </div>
+                                       <div class="form-group hide" id="wrong">
+                                          <label for="problem3-detail">Provide more details (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem3-detail">
+                                       </div>
+                                       <div class="checkbox">
+                                          <label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem"
+                                             value="The information is outdated" id="problem4">The information is
+                                          outdated</label>
+                                       </div>
+                                       <div class="form-group hide" id="outdated">
+                                          <label for="problem4-detail">Provide more details (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem4-detail">
+                                       </div>
+                                       <div class="checkbox">
+                                          <label for="problem5"><input type="checkbox" data-reveal="#find" name="problem"
+                                             value="I can’t find what I’m looking for" id="problem5">I can’t find what I’m
+                                          looking for</label>
+                                       </div>
+                                       <div class="form-group hide" id="find">
+                                          <label for="problem5-detail">Describe what you’re looking for (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem5-detail">
+                                       </div>
+                                       <div class="checkbox">
+                                          <label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem"
+                                             value="It’s confusing" id="problem6">Other</label>
+                                       </div>
+                                       <div class="form-group hide" id="confusing">
+                                          <label for="problem6-detail">Provide more details (optional):</label>
+                                          <input type="text" class="form-control full-width" id="problem6-detail">
+                                       </div>
+                                    </fieldset>
+                                    <button type="submit" class="btn btn-primary wb-toggle"
+                                       data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
+                                 </form>
+                              </div>
+                              <div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+                                 <h3>Thank you for your help!</h3>
+                                 <p>You will not receive a reply. For enquiries, please <a
+                                    href="https://www.canada.ca/en/contact.html">contact us</a>.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </details>
+                  </div>
+               </div>
+               <dl id="wb-dtmd">
+                  <dt>Date modified:&#32;</dt>
+                  <dd><time property="dateModified">2019-11-19</time></dd>
+               </dl>
+            </div>
+            <script>
+               includeHTML();
+            </script>
+         </main>
+         <footer id="wb-info">
+            <div class="landscape">
+               <nav class="container wb-navcurr">
+                  <h2 class="wb-inv">About government</h2>
+                  <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                     <li><a href="https://www.canada.ca/en/contact.html">Contact us</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="brand">
+               <div class="container">
+                  <div class="row">
+                     <nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+                        <h2 class="wb-inv">About this site</h2>
+                        <ul>
+                           <li><a href="https://www.canada.ca/en/social.html">Social media</a></li>
+                           <li><a href="https://www.canada.ca/en/mobile.html">Mobile applications</a></li>
+                           <li><a href="https://www1.canada.ca/en/newsite.html">About Canada.ca</a></li>
+                           <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+                           <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+                        </ul>
+                     </nav>
+                     <div class="col-xs-6 visible-sm visible-xs tofpg">
+                        <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+                     </div>
+                     <div class="col-xs-6 col-md-3 col-lg-2 text-right">
+                        <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg"
+                           alt="Symbol of the Government of Canada">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+         <!--[if gte IE 9 | !IE ]><!-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+         <!--<![endif]-->
+         <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-   <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
- 
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+      </body>
+   </html>
 
-</body>
-
-</html>
