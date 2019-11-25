@@ -1,0 +1,65 @@
+* {
+            box-sizing: border-box;
+            }
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            .button-group:after {
+            content: '';
+            display: block;
+            clear: both;
+            }
+            .grid {
+            margin: 0 -5px;
+            }
+            /* Clear floats after the columns */
+            .grid:after {
+            content: '';
+            display: block;
+            clear: both;
+            }
+            /* Float 2 columns side by side */
+            .grid-item {
+            float: left;
+            position: relative;
+            width: 47%;
+            padding: 10px 10px 10px 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: left;
+            background-color: #ffffff;
+            min-height: 300px;
+            margin: 10px 10px 10px 10px;
+            }
+            .grid-item>* {
+            margin: 0px;
+            padding: 10px 10px;
+            }
+            /* Remove extra left and right margins, due to padding */
+            /* Responsive columns */
+            @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            }
+            .grid-item {
+            width: 95%;
+            min-height: 0px;
+            }
+            #header {
+            min-height: 200px;
+            }
+            }
+            /* Card Layout */
+            #header {
+            position: relative;
+            min-height: 300px;
+            }
+            #header-content {
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            }
+            .gcweb-menu {
+            min-height: 0px;
+            }
