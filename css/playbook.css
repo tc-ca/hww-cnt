@@ -63,4 +63,13 @@
             .gcweb-menu {
             min-height: 0px;
             }
-div.tip {background-color: #eaeaea ;}
+div.tip {background-color: #eaeaea ;
+background-color: #eaeaea;
+
+padding-left: 10px;
+
+border-left-color: #26374a;
+
+border-left-width: 5px;
+
+border-left-style: solid;}
