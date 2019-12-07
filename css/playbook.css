@@ -6,6 +6,9 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.checkbox, .checkbox-inline, .radio, .radio-inline, :not(#wb-srch) form, form .btn:not(.btn-call-to-action) {
+font-size: 1em;
+}
 p.lp:before {
    font-family: "Font Awesome 5 Free";
    content: "\f101";
