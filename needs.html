@@ -2,397 +2,517 @@
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-   <!--[if gt IE 8]><!-->
-   <html class="no-js" lang="en" dir="ltr">
-      <!--<![endif]-->
-      <head>
-         <meta charset="utf-8">
-         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-         <title>How We Work - Needs Assessment </title>
-         <meta content="width=device-width,initial-scale=1" name="viewport">
-         <meta name="description"
-            content=" ">
-         <!--[if gte IE 9 | !IE ]><!-->
-         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
-         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/playbook.css" />
-         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-         <script>
-            function includeHTML() {
-              var z, i, elmnt, file, xhttp;
-              /*loop through a collection of all HTML elements:*/
-              z = document.getElementsByTagName("*");
-              for (i = 0; i < z.length; i++) {
+    <title>How We Work - Needs assessment</title>
+    <meta name="title" content="How We Work - Needs assessment">
+    <meta name="description" content="Though a series of statements, this needs assessment will help you determine the plays that are relevant to your team.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/needs.html">
+    <meta property="og:title" content="How We Work - Needs assessment">
+    <meta property="og:description" content="Though a series of statements, this needs assessment will help you determine the plays that are relevant to your team.">
+    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/needs.html">
+    <meta property="twitter:title" content="How We Work - Needs assessment">
+    <meta property="twitter:description" content="Though a series of statements, this needs assessment will help you determine the plays that are relevant to your team.">
+    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+    <link rel="stylesheet" href="hww-cnt/css/playbook.css" />
+    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
                 elmnt = z[i];
                 /*search for elements with a certain atrribute:*/
                 file = elmnt.getAttribute("w3-include-html");
                 if (file) {
-                  /*make an HTTP request using the attribute value as the file name:*/
-                  xhttp = new XMLHttpRequest();
-                  xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                      /*remove the attribute, and call this function once more:*/
-                      elmnt.removeAttribute("w3-include-html");
-                      includeHTML();
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
                     }
-                  }      
-                  xhttp.open("GET", file, true);
-                  xhttp.send();
-                  /*exit the function:*/
-                  return;
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
                 }
-              }
-            };
-         </script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+            }
+        };
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-         <!--[if lte IE 9]>
+    <!--[if lte IE 9]>
          <![endif]-->
-         <script>
-            window.console = window.console || function (t) { };
-         </script>
-         <script>
-            if (document.location.search.match(/type=embed/gi)) {
-               window.parent.postMessage("resize", "*");
-            }
-         </script>
-      </head>
-      <body>
-         <nav>
-            <ul id="wb-tphp">
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-               </li>
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-               </li>
-            </ul>
-         </nav>
-         <header>
-            <div id="wb-bnr" class="container">
-               <section id="wb-lng" class="text-right">
-                  <h2 class="wb-inv">Language selection</h2>
-                  <ul class="list-inline margin-bottom-none">
-                     <li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
-                  </ul>
-               </section>
-               <div class="row">
-                  <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                     <a href="https://www.canada.ca/en.html" property="url"><img
-                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""
-                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
-                        lang="fr">Gouvernement du Canada</span></span></a>
-                     <meta property="areaServed" typeof="Country" content="Canada">
-                     <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                  </div>
-               </div>
-            </div>
-            <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/nav.html"></div>
-            <nav id="wb-bc" property="breadcrumb">
-               <h2>You are here:</h2>
-               <div class="container">
-                  <ol class="breadcrumb">
-                     <li><a href="#">Transport Canada</a></li>
-                     <li><a href="https://plpilon.github.io/hww-cnt/index-en.html">How We Work</a></li>
-                     <li><a href="#">Needs Assessment</a></li>
-                  </ol>
-               </div>
-            </nav>
-         </header>
-         
-            <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-            <h1 property="name" id="wb-cont">Assessing your needs</h1>
-            <p class="gc-byline">Don’t know where to start? Let us show you the way.</strong></p>
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id="wb-bnr" class="container">
+            <section id="wb-lng" class="text-right">
+                <h2 class="wb-inv">Language selection</h2>
+                <ul class="list-inline margin-bottom-none">
+                    <li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
+                </ul>
+            </section>
             <div class="row">
-               <div class="col-md-12">
-               
-
-<p>Though a series of statement, our Needs Assessment tool with help you determine the game plans and plays that are relevant to you at this point in time. </p>
-
-<p>We recommend that you go back to your results every couple of months and that you complete a new Needs assessment every 4 to 6 months.</p>
-<h3>Step 1: Tell us who you are.</h3>
-<p>Please complete the following fields:</p>
-<form>
-<fieldset>
-
-<!-- Text input-->
-<div class="form-group row">
-  <label class="col-md-4 control-label" for="name">What is your name?</label>  
-  <div class="col-md-6">
-  <input id="name" name="name" style="width: 60%;" type="text" placeholder="Tran Sporh       " class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-
-<div class="form-group row">
-  <label class="col-md-4 control-label" for="email">What is your email address?</label>  
-  <div class="col-md-6">
-  <input id="email" style="width: 60%;" name="email" type="text" placeholder="trans.pohr@tc.gc.ca             " class="form-control input-md">
-      </div>
-</div>
-
-<!-- Select Basic -->
-<div class="form-group row">
-  <label class="col-md-4 control-label" for="org">In which group do you work in?</label>
-  <div class="col-md-4">
-    <select id="org" name="org" class="form-control">
-      <option value="Safety and Security Group">Safety and Security Group</option>
-      <option value="Programs Group">Programs Group</option>
-      <option value="Policy Group">Policy Group</option>
-      <option value="Corporate Services">Corporate Services</option>
-      <option value="Digital Services and Transformation Office">Digital Services and Transformation Office</option>
-      <option value="Oceans Protection Plan Office">Oceans Protection Plan Office</option>
-      <option value="Communications">Communications</option>
-      <option value="Audit and Evaluation">Audit and Evaluation</option>
-      <option value="Atlantic Region">Atlantic Region</option>
-      <option value="Quebec Region">Quebec Region</option>
-      <option value="Ontario Region">Ontario Region</option>
-      <option value="Prairie and Northern Region">Prairie and Northern Region</option>
-      <option value="Pacific Region">Pacific Region</option>
-    </select>
-  </div>
-</div>
-<div class="form-group row">
-  <label class="col-md-4 control-label" for="description">What do you need help on?</label>
-  <div class="col-md-8">                     
-    <textarea class="form-control input-lg" id="description" style="width: 100%;" name="description"></textarea>
-  </div>
-</div>
-
-</fieldset>
-</form>
-   <h3>Step 2: Complete the Needs Assessment individually or as a group.</h3>
-   <p>For each questions, determine the following:<br /></p>
-<table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden; font-size: 0.8em;">
-<tbody>
-<tr>
-<td style="width: 38.3155%; border-style: none;">
-<p><strong>Collaborate and engage</strong></p>
-</td>
-<td style="width: 15.4211%; text-align: center;">
-<div>I agree</div>
-</td>
-<td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
-<td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
-<td style="width: 15.4211%; text-align: center;">Not applicable</td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We don&rsquo;t work in a silo. We are well-connected with other teams (i.e. modes, branches, and other departments).</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We learn from each other and share ideas.</td>
-<td style="text-align: center;"><input id="q2a" name="q2" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q2b" name="q2" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q2c" name="q2" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q2d" name="q2" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">As a team, we provide a safe space to discuss what worked and didn't work. We have a high level of trust and respect, and each team member has a great sense of belonging.</td>
-<td style="text-align: center;"><input id="q3a" name="q3" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q3b" name="q3" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q3c" name="q3" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q3d" name="q3" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We know who our stakeholders are, and we have a trusting relationship with them. We continually consult with them and keep them informed in a timely manner. We are viewed as &ldquo;easy to do business with&rdquo; by key stakeholders.</td>
-<td style="text-align: center;"><input id="q4a" name="q4" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q4b" name="q4" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q4c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q4d" name="q4" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">Our decision-making process considers impacts on people, including their diverse needs, beliefs, and culture as well as impacts on the economy and the environment.</td>
-<td style="text-align: center;"><input id="q5a" name="q5" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q5b" name="q5" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q5c" name="q5" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q5d" name="q5" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">Given the complexity, infrastructure involved, risks, resources, effort, and timeline for our initiative/project, we know who we depend on, and who depends on us.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-
-   </tbody>
-</table>
- <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden; font-size: 0.8em;">
-<tbody>  
-   <tr>
-<td style="width: 38.3155%;">
-<p><strong>Manage projects and change</strong></p>
-</td>
-<td style="width: 15.4211%; text-align: center;">
-<div>I agree</div>
-</td>
-<td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
-<td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
-<td style="width: 15.4211%; text-align: center;">Not applicable</td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We have consensus on the most important aspects of our initiative/project main objective, scope, timing, trade-offs, and decision ownership. We practice effective project management throughout our planning, implementation and reporting.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We are aligned with the purpose and value of the change and we have created a plan of action to help us successfully navigate through it.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We have a strategy and plan for informing and communicating our initiative/project. We have determined our audience, objectives, key messages, tactics, timeline, and evaluation measures.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">Our activities are aligned with TC&rsquo;s Transformation Strategy.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We know what skills and competencies our team needs to fulfill our mandate (or complete our project/initiative). We prepare for those needs through effective HR planning and learning and development opportunities.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-      </tbody>
-</table>
- <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden;  font-size: 0.8em;">
-<tbody>  
-   
-<tr>
-<td style="width: 38.3155%;">
-<p><strong>Deliver service excellence</strong></p>
-</td>
-<td style="width: 15.4211%; text-align: center;">
-<div>I agree</div>
-</td>
-<td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
-<td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
-<td style="width: 15.4211%; text-align: center;">Not applicable</td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We have clear team or project objectives and they align with TC&rsquo;s mission, vision, and goals. Our activities are evaluated against them.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We are skilled at understanding, empathizing and resolving requests from clients. Our process drives improvements and services.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-   </tbody>
-</table>
- <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden;  font-size: 0.8em;">
-<tbody>  
-   <tr>
-<td style="width: 38.3155%;">
-<p><strong>Improve, modernize, and transform</strong></p>
-</td>
-<td style="width: 15.4211%; text-align: center;">
-<div>I agree</div>
-</td>
-<td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
-<td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
-<td style="width: 15.4211%; text-align: center;">Not applicable</td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We understand the importance of using digital tools to accomplish tasks and goals. We explore and use digital capabilities to improve our business processes and services.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We understand the meaning and importance of data. We have a clear process for collecting, storing, analyzing, sharing, and reporting data. We make data-driven decisions.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We experiment and find new ways of doing things to solve problems and to provide better products or services.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">We identify, assess, and understand the risks to which we are exposed, and take mitigation measures appropriate to the level of risk.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-<tr>
-<td style="width: 38.3155%;">Our project/initiative is cost-effective, which means that we are producing good value for money paid. We have also considered options on how we might recover our costs.</td>
-<td style="text-align: center;"><input id="q1a" name="q1" type="radio" value="yes" /></td>
-<td style="text-align: center;"><input id="q1b" name="q1" type="radio" value="somewhat" /></td>
-<td style="text-align: center;"><input id="q1c" name="q1" type="radio" value="no" /></td>
-<td style="text-align: center;"><input id="q1d" name="q1" type="radio" value="na" /></td>
-</tr>
-</tbody>
-</table>
-</fieldset>
-</form>
-</body>
-</html>
-               
-               
-               </div>
-               </div>
-                     <div class="pagedetails">
-               <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/feedback.html"></div>
-               <dl id="wb-dtmd">
-                  <dt>Date modified:&#32;</dt>
-                  <dd><time property="dateModified">2019-11-19</time></dd>
-               </dl>
+                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span>
+                    </a>
+                    <meta property="areaServed" typeof="Country" content="Canada">
+                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+                </div>
             </div>
-           <script>
-               includeHTML();
-            </script>
-         </main>
-         <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/footer.html"></div>
-         <!--[if gte IE 9 | !IE ]><!-->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+        </div>
+        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+        <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">Transport Canada</a></li>
+                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+                    <li><a href="/hww-cnt/aboutneeds.html">About the needs assessment</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+        <h1 property="name" id="wb-cont">Assessing your needs</h1>
+        <p class="gc-byline">Don’t know where to start? Let us show you the way.</strong>
+        </p>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Though a series of statement, our Needs Assessment tool with help you determine the game plans and plays that are relevant to you at this point in time. </p>
+                <p>We recommend that you go back to your results every couple of months and that you complete a new Needs assessment every 4 to 6 months.</p>
+                <h3>Before you start: Tell us who you are.</h3>
+                <p>Please complete the following fields:</p>
+                <!-- Form -->
+                <form>
+                    <fieldset>
+                        <!-- Form -->
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label" for="name">What is your name?</label>
+                            <div class="col-md-6">
+                                <input id="name" name="name" style="width: 60%;" type="text" placeholder="Tran Sporh" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label" for="email">What is your email address?</label>
+                            <div class="col-md-6">
+                                <input id="email" style="width: 60%;" name="email" type="text" placeholder="tran.spohr@tc.gc.ca" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label" for="email">What is your team's name (if you are completing this as a group)?</label>
+                            <div class="col-md-6">
+                                <input id="email" style="width: 60%;" name="teamName" type="text" placeholder="" class="form-control input-md">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label" for="org">In which group do you work in?</label>
+                            <div class="col-md-4">
+                                <select id="org" name="org" class="form-control">
+                                    <option value="Safety and Security Group">Safety and Security Group</option>
+                                    <option value="Programs Group">Programs Group</option>
+                                    <option value="Policy Group">Policy Group</option>
+                                    <option value="Corporate Services">Corporate Services</option>
+                                    <option value="Digital Services and Transformation Office">Digital Services and Transformation Office</option>
+                                    <option value="Oceans Protection Plan Office">Oceans Protection Plan Office</option>
+                                    <option value="Communications">Communications</option>
+                                    <option value="Audit and Evaluation">Audit and Evaluation</option>
+                                    <option value="Atlantic Region">Atlantic Region</option>
+                                    <option value="Quebec Region">Quebec Region</option>
+                                    <option value="Ontario Region">Ontario Region</option>
+                                    <option value="Prairie and Northern Region">Prairie and Northern Region</option>
+                                    <option value="Pacific Region">Pacific Region</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-4 control-label" for="description">What do you need help on?</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control input-lg" id="description" style="width: 100%;" name="description"></textarea>
+                            </div>
+                        </div>
+                        <h3>Step 1: Tell us how much you agree (or disagree) with various statements</h3>
+                        <p><em>* You can complete the questionnaire individually or as a group.</em></p>
+                        <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden; font-size: 0.8em;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 38.3155%; border-style: none;"><strong>Section 1 – Collaborate and engage</strong></td>
+                                    <td style="width: 15.4211%; text-align: center;">I agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
+                                    <td style="width: 15.4211%; text-align: center;">Not applicable</td>
+                                </tr>
+                                <tr>
+                                 <td style="width: 38.3155%;">We don’t work in a silo. We are well-connected with other teams (i.e. modes, branches, or other departments). We learn from each other and share ideas.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q1a" name="q1" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q1b" name="q1" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q1c" name="q1" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q1d" name="q1" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">As a team, we provide a safe space to discuss what worked and didn’t work. We have a high level of trust and respect, and each team member has a great sense of belonging.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q2a" name="q2" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q2b" name="q2" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q2c" name="q2" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q2d" name="q2" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We know who our stakeholders are, and we have a trusting relationship with them. We continually consult with them and keep them informed in a timely manner. We are viewed as “easy to do business with” by key stakeholders. </td>
+                                    <td style="text-align: center;">
+                                        <input id="q3a" name="q3" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q3b" name="q3" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q3c" name="q3" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q3d" name="q3" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">Given the complexity, infrastructure involved, risks, resources, effort, and timeline for our initiative/project, we know who we depend on, and who depends on us. </td>
+                                    <td style="text-align: center;">
+                                        <input id="q4a" name="q4" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q4b" name="q4" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q4c" name="q1" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q4d" name="q4" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                             </tbody>
+                        </table>
+                        <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden; font-size: 0.8em;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 38.3155%;"><strong>Section 2 – Deliver service excellence </strong><td>                                   </td>
+                                    <td style="width: 15.4211%; text-align: center;">I agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
+                                    <td style="width: 15.4211%; text-align: center;">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We have clear team or project objectives and they align with Transport Canada’s mission, vision, and goals. Our activities are evaluated against them.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q5a" name="q5" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q5b" name="q5" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q5c" name="q5" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q5d" name="q5" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">Our decision-making process considers impacts on people, including their diverse needs, beliefs, and culture as well as impacts on the economy and the environment.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q6a" name="q6" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q6b" name="q6" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q6c" name="q6" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q6d" name="q6" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We are skilled at understanding, empathizing and resolving requests from users. Our process drives improvements and services.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q7a" name="q7" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q7b" name="q7" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q7c" name="q7" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q7d" name="q7" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden;  font-size: 0.8em;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 38.3155%;"><strong>Section 3 – Improve, modernize, and transform</strong></td>
+                                    <td style="width: 15.4211%; text-align: center;">I agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
+                                    <td style="width: 15.4211%; text-align: center;">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We understand the importance of using digital tools to accomplish tasks and goals. We explore and use digital capabilities to improve our business processes and services.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q8a" name="q8" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q8b" name="q8" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q8c" name="q8" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q8d" name="q8" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We understand the meaning and importance of data. We have a clear process for collecting, storing, analyzing, sharing, and reporting data. We make data-driven decisions.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q9a" name="q9" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q9b" name="q9" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q9c" name="q9" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q9d" name="q9" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We experiment and find new ways of doing things to solve problems and to provide better products or services.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q10a" name="q10" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q10b" name="q10" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q10c" name="q10" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q10d" name="q10" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We identify, assess, and understand the risks to which we are exposed, and take mitigation measures appropriate to the level of risk.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q11a" name="q11" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q11b" name="q11" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q11c" name="q11" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q11d" name="q11" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">Our project/initiative is cost-effective, which means that we are producing good value for money paid. We have also considered options on how we might recover our costs.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q12a" name="q12" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q12b" name="q12" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q12c" name="q12" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q12d" name="q12" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }' style="border-style: hidden;  font-size: 0.8em;">
+                            <tbody>
+                                <tr>
+                                    <td style="width: 38.3155%;"><strong>Section 4 – Manage projects and change</strong></td>
+                                    <td style="width: 15.4211%; text-align: center;">I agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I somewhat agree</td>
+                                    <td style="width: 15.4211%; text-align: center;">I disagree/I don't know</td>
+                                    <td style="width: 15.4211%; text-align: center;">Not applicable</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We have consensus on the most important aspects of our initiative/project: main objective, scope, timing, trade-offs, and decision ownership. We practice effective project management throughout our planning, implementation and reporting.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q13a" name="q13" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q13b" name="q13" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q13c" name="q13" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q13d" name="q13" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We are aligned with the purpose and value of the change and we have created a plan of action to help us successfully navigate through it.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q14a" name="q14" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q14b" name="q14" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q14c" name="q14" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q14d" name="q14" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We have a strategy and plan for informing and communicating our initiative/project. We have determined our audience, objectives, key messages, tactics, timeline, and evaluation measures.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q15a" name="q15" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q15b" name="q15" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q15c" name="q15" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q15d" name="q15" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">Our activities are aligned with Transport Canada’s Transformation Strategy.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q16a" name="q16" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q16b" name="q16" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q16c" name="q16" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q16d" name="q16" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 38.3155%;">We know what skills and competencies our team needs to fulfill our mandate (or complete our project/initiative). We prepare for those needs through effective HR planning and learning and development opportunities.</td>
+                                    <td style="text-align: center;">
+                                        <input id="q17a" name="q17" type="radio" value="yes" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q17b" name="q17" type="radio" value="somewhat" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q17c" name="q17" type="radio" value="no" />
+                                    </td>
+                                    <td style="text-align: center;">
+                                        <input id="q17d" name="q17" type="radio" value="na" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="pagedetails">
+            <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/feedback.html"></div>
+            <dl id="wb-dtmd">
+                <dt>Date modified:&#32;</dt>
+                <dd>
+                    <time property="dateModified">2019-11-19</time>
+                </dd>
+            </dl>
+        </div>
+        <script>
+            includeHTML();
+        </script>
+    </main>
+    <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/footer.html"></div>
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-      </body>
-   </html>
+    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+</html>
