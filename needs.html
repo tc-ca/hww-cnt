@@ -139,7 +139,7 @@
                 <h3>Before you start: Tell us who you are.</h3>
                 <p>Please complete the following fields:</p>
                 <!-- Form -->
-                <form>
+                <form id="test-form">
                     <fieldset>
                         <!-- Form -->
                         <div class="form-group row">
@@ -506,11 +506,28 @@
         <script>
             includeHTML();
         </script>
+   <script>
+      var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbyd-kdO8Kqn-JbnNOmIlcd7HIuUMrmQesBiZswFEQvfpElAF6A/exec'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
     </main>
     <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/footer.html"></div>
     <!--[if gte IE 9 | !IE ]><!-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+
+
     <!--<![endif]-->
     <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
