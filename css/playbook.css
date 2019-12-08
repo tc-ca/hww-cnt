@@ -86,7 +86,7 @@ a >p.lp {
 		display: block;
 		margin-bottom: 20px;
 	}
-	.grid-item {
+	.grid-item, .grid-item-3 {
 		width: 95%;
 		min-height: 0px;
 	}
