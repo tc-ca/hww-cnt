@@ -145,13 +145,14 @@
                 <h3>Before you start: Tell us who you are.</h3>
                 <p>Please complete the following fields:</p>
                 <!-- Form -->
-                <form id="test-form">
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='/thanks.html';}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbww0RWqSl32ErcBGCdhZzFR9s1sLpE0PdsdtqD_wr5bnk3g/formResponse" target="hidden_iframe" onsubmit="submitted=false;" method="POST" id="mG61Hd" >
                     <fieldset>
                         <!-- Form -->
                         <div class="form-group row">
-                            <label class="col-md-4 control-label" for="name">What is your name?</label>
+                            <label class="col-md-4 control-label" for="entry.786939657">What is your name?</label>
                             <div class="col-md-6">
-                                <input id="name" name="name" style="width: 60%;" type="text" placeholder="Tran Sporh" class="form-control input-md">
+                                <input id="name" name="entry.786939657" style="width: 60%;" type="text" placeholder="Tran Sporh" class="form-control input-md">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -512,22 +513,7 @@
         <script>
             includeHTML();
         </script>
-   <script>
-      var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbyd-kdO8Kqn-JbnNOmIlcd7HIuUMrmQesBiZswFEQvfpElAF6A/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-    </main>
+       </main>
     <div w3-include-html="https://plpilon.github.io/hww-cnt/incl/footer.html"></div>
     <!--[if gte IE 9 | !IE ]><!-->
 
