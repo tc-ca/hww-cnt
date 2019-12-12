@@ -15,14 +15,15 @@
    <meta name="description"
       content="Add description here!!! Yes, I'm taling to you PLP!">
    <!--[if gte IE 9 | !IE ]><!-->
-   <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-   <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
+         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/playbook.css" />
+         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
 
-   <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
 
-   <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
          <script>
             function includeHTML() {
               var z, i, elmnt, file, xhttp;
@@ -132,21 +133,7 @@
          min-height: 0px;
       }
 	   
-	   /* Style the active class, and buttons on mouse-over */
-.active:before, .btn:hover:before{
-    content: "\f105";
-    font-family: Font Awesome 5 Free;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-/*--adjust as necessary--*/
-    color: #000;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: relative;
-    top: 0px;
-    left: 0;
-}
+	   
    </style>
    <!--<![endif]-->
    <!--[if lt IE 9]>
@@ -250,6 +237,7 @@
 		       <details open>
                   <summary>Preset game plan</summary>
                   <div id="filters" class="button-group">
+			  <button class="btn btn-link lp" style="display: none;"> </button>
                      <button class="btn btn-link" style="text-align:left;" data-filter="Becoming more agile">Becoming more agile</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter="Effective operational planning">Effective operational planning</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter="Goal-Setting">Goal-Setting</button>
@@ -661,12 +649,12 @@
    </script>
 	      <script>
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myDIV");
+var header = document.getElementById("button-group");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
+  var current = document.getElementsByClassName("lp");
+  current[0].className = current[0].className.replace(" lp", "");
   this.className += " active";
   });
 }
