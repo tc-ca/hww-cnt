@@ -131,6 +131,22 @@
       .gcweb-menu {
          min-height: 0px;
       }
+	   
+	   /* Style the active class, and buttons on mouse-over */
+.active:before, .btn:hover:before{
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: relative;
+    top: 0px;
+    left: 0;
+}
    </style>
    <!--<![endif]-->
    <!--[if lt IE 9]>
@@ -228,7 +244,7 @@
                      <button class="btn btn-link" style="text-align:left;" data-filter=".manage">Integrate Change and
                         Project Management</button>
 			    <div class="text-right">
-                        <button class="btn btn-link button is-checked" type="button" data-filter="*">Clear all</button>
+                        <button class="btn btn-link active button is-checked" type="button" data-filter="*">Clear all</button>
                      </div>
                       </details>
 		       <details open>
@@ -238,7 +254,9 @@
                      <button class="btn btn-link" style="text-align:left;" data-filter="Effective operational planning">Effective operational planning</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter="Goal-Setting">Goal-Setting</button>
                      <button class="btn btn-link" style="text-align:left;" data-filter="Integrating change in your project management">Integrating change in your project management </button>
-                     
+                     <div class="text-right">
+                        <button class="btn btn-link active button is-checked" type="button" data-filter="*">Clear all</button>
+                     </div>
 				  
 	          
 		   </details>
