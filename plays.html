@@ -258,8 +258,8 @@
                   <input type="text" id="quicksearch" placeholder="Search our Inventory of Plays"
                      class="form-control" />
                   <span class="input-group-btn">
-                     <button class="btn btn-primary"> <span class="glyphicon-search glyphicon"></span><span
-                           class="wb-inv">Search</span></button>
+                     <button class="btn btn-primary" onclick="resetHash()"> X <span
+                           class="wb-inv">Reset</span></button>
                   </span>
                </div>
             </form>
@@ -658,6 +658,12 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " lp";
   });
 }
+		      
+		      <script>
+function resetHash() {
+    document.getElementById("quicksearch").reset();
+}
+</script>
 </script>
 <script> includeHTML(); </script>
 </body>
