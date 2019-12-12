@@ -252,14 +252,13 @@
             </section>
          </div>
          <div class="col-md-8 mrgn-tp-md">
-            <form>
+         <form>
                <label class="wb-inv" for="sch-inp">Search our Inventory of Plays</label>
                <div class="input-group mrgn-tp-lg">
                   <input type="text" id="quicksearch" placeholder="Search our Inventory of Plays"
                      class="form-control" />
                   <span class="input-group-btn">
-                     <button class="btn btn-primary" onclick="resetHash()"> X <span
-                           class="wb-inv">Reset</span></button>
+                     <input type="reset" class="form-control" />
                   </span>
                </div>
             </form>
@@ -650,7 +649,7 @@
 	      <script>
 // Add active class to the current button (highlight it)
 var header = document.getElementById("button-group");
-var btns = header.getElementsByClassName("btn");
+var btns = header.getElementsByClassName("btn-link");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("lp");
@@ -659,12 +658,7 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 	</script>	      
-		      <script>
-function resetHash() {
-    document.getElementById("quicksearch").reset();
-}
-
-</script>
+		     
 <script> includeHTML(); </script>
 </body>
 
