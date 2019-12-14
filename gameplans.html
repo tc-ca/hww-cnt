@@ -2,216 +2,238 @@
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-   <!--[if gt IE 8]><!-->
-   <html class="no-js" lang="en" dir="ltr">
-      <!--<![endif]-->
-      <head>
-         <meta charset="utf-8">
-         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-         <title>How We Work - Game plans</title>
-         <meta content="width=device-width,initial-scale=1" name="viewport">
-         <meta name="title" content="How We Work - Game plans">
-         <meta name="description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
+    <title>How We Work - Game plans</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="title" content="How We Work - Game plans">
+    <meta name="description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
 
-         <!-- Open Graph / Facebook -->
-         <meta property="og:type" content="website">
-         <meta property="og:url" content="https://plpilon.github.io/hww-cnt/gameplans.html">
-         <meta property="og:title" content="How We Work - Game plans">
-         <meta property="og:description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
-         <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/gameplans.html">
+    <meta property="og:title" content="How We Work - Game plans">
+    <meta property="og:description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
+    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
 
-         <!-- Twitter -->
-         <meta property="twitter:card" content="summary_large_image">
-         <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/gameplans.html">
-         <meta property="twitter:title" content="How We Work - Game plans">
-         <meta property="twitter:description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
-         <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
-         
-         <!--[if gte IE 9 | !IE ]><!-->
-         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
-         <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/playbook.css" />
-         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-         <script>
-            function includeHTML() {
-              var z, i, elmnt, file, xhttp;
-              /*loop through a collection of all HTML elements:*/
-              z = document.getElementsByTagName("*");
-              for (i = 0; i < z.length; i++) {
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/gameplans.html">
+    <meta property="twitter:title" content="How We Work - Game plans">
+    <meta property="twitter:description" content="Select from our on our game plans. They are sets of recommended plays grouped by desired outcomes.">
+    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+
+    <!--[if gte IE 9 | !IE ]><!-->
+    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/theme.min.css" />
+    <link rel="stylesheet" href="https://plpilon.github.io/hww-cnt/css/playbook.css" />
+    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
                 elmnt = z[i];
                 /*search for elements with a certain atrribute:*/
                 file = elmnt.getAttribute("w3-include-html");
                 if (file) {
-                  /*make an HTTP request using the attribute value as the file name:*/
-                  xhttp = new XMLHttpRequest();
-                  xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                      /*remove the attribute, and call this function once more:*/
-                      elmnt.removeAttribute("w3-include-html");
-                      includeHTML();
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
                     }
-                  }      
-                  xhttp.open("GET", file, true);
-                  xhttp.send();
-                  /*exit the function:*/
-                  return;
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
                 }
-              }
-            };
-         </script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+            }
+        };
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-         <!--[if lte IE 9]>
+    <!--[if lte IE 9]>
          <![endif]-->
-         <script>
-            window.console = window.console || function (t) { };
-         </script>
-         <script>
-            if (document.location.search.match(/type=embed/gi)) {
-               window.parent.postMessage("resize", "*");
-            }
-         </script>
-      </head>
-      <body>
-         <nav>
-            <ul id="wb-tphp">
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-               </li>
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-               </li>
-            </ul>
-         </nav>
-         <header>
-            <div id="wb-bnr" class="container">
-               <section id="wb-lng" class="text-right">
-                  <h2 class="wb-inv">Language selection</h2>
-                  <ul class="list-inline margin-bottom-none">
-                     <li><a lang="fr" hreflang="fr" href="plansdematch.html">Français</a></li>
-                  </ul>
-               </section>
-               <div class="row">
-                  <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                     <a href="https://www.canada.ca/en.html" property="url"><img
-                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""
-                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
-                        lang="fr">Gouvernement du Canada</span></span></a>
-                     <meta property="areaServed" typeof="Country" content="Canada">
-                     <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                  </div>
-               </div>
-            </div>
-            <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-            <nav id="wb-bc" property="breadcrumb">
-               <h2>You are here:</h2>
-               <div class="container">
-                  <ol class="breadcrumb">
-                     <li><a href="https://www.tc.gc.ca/en/transport-canada.html">Transport Canada</a></li>
-                     <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                  </ol>
-               </div>
-            </nav>
-         </header>
-            <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-            <h1 property="name" id="wb-cont">The How We Work game plans</h1>
+    <script>
+        window.console = window.console || function(t) {};
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul id="wb-tphp">
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+            </li>
+            <li class="wb-slc">
+                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div id="wb-bnr" class="container">
+            <section id="wb-lng" class="text-right">
+                <h2 class="wb-inv">Language selection</h2>
+                <ul class="list-inline margin-bottom-none">
+                    <li><a lang="fr" hreflang="fr" href="plansdematch.html">Français</a></li>
+                </ul>
+            </section>
             <div class="row">
-               <div class="col-md-12">
-               <p>Select from from one of our suggested game plans. They are sets of recommended plays grouped by desired outcomes. Remember, you can always tailor your own game plan by conducting a <a href="/hww-cnt/aboutneeds.html">needs assessment</a>.</p>
-               <h3>List of game plans</h3>
-                  <div class="grid">
-			    <div class="grid-item-3 " id="header" >
-	                        <h5 class="name">Becoming more agile</h5>
-	                        <p>Help your team, project or process be more nimble and responsive.  </p>
-	                        <p id="header-content"><a href="/hww-cnt/gameplans/agile.html">View the game plan →</a></p>
-	                    </div>
-			    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Effective operational planning </h5>
-                          	<p>Improving your operational planning process doesn't require extra work – just better ways of working. </p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/operationalplanning.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-                      	    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Goal-Setting</h5>
-                          	<p>Go-to techniques for aligning cross-functional product teams, building momentum, and keeping morale high.</p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/goalsetting.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-	                    <div class="grid-item-3 id="header">
-	                        <h5 class="name">Integrating change in your project management </h5>
-	                        <p>Bring the right people together to prepare a training, roll-out, and communication plan.</p> 
-                          	<span class="wb-inv">journey, customer, user, client, service design</span>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/change.html">View the game plan →</a></p>   
-                     	    </div>
-			    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Making better decisions </h5>
-                          	<p>Weigh your options, take input, and stay true to your larger goals.</p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/betterdecisions.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-			    </div>
-                      	    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Next-level project management activities</h5>
-                          	<p>Go beyond the basics with these activities designed to manage risks and keep bottlenecks at bay. </p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/nextlevelproject.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-			    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Building Belonging </h5>
-                          	<p>Having a balanced, diverse team is great. But if people don't feel they belong there, you're missing half the equation.</p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/belonging.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-			    <div class="grid-item-3 id="header">
-                         	<h5 class="name">Building effective and healthy teams </h5>
-                        	<p>Forget the trust falls and silly games. Doing great work together is what really helps teams bond. Start with these teamwork techniques.</p>
-				<p id="header-content"><a href="/hww-cnt/gameplans/effectivehealthyteams.html">View the game plan →</a></p>
-                         	<span class="wb-inv"> </span>
-                     	    </div>
-	                    <div class="grid-item-3 id="header">
-                          	<h5 class="name">Creating open lines of communication </h5>
-                          	<p>Build your communication skills by exercising it in a variety of situations.</p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/linesofcommunication.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-                      	    <div class="grid-item-3 id="header">
-                          	<h5 >Develop a project or initiative</h5>
-                          	<p>Start a project or initiative and align it with TC Transformation from the get-go.</p>
-                          	<p id="header-content"><a href="/hww-cnt/gameplans/develop.html">View the game plan →</a></p>
-                          	<span class="wb-inv"> </span>
-                      	    </div>
-                    </div>
-               <div class="pagedetails">
-               <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-               <dl id="wb-dtmd">
-                  <dt>Date modified:&#32;</dt>
-                  <dd><time property="dateModified">2019-12-07</time></dd>
-               </dl>
+                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span>
+                    </a>
+                    <meta property="areaServed" typeof="Country" content="Canada">
+                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+                </div>
             </div>
-           <script>
-               includeHTML();
-            </script>
-         </main>
-         <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-         <!--[if gte IE 9 | !IE ]><!-->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+        </div>
+        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+        <nav id="wb-bc" property="breadcrumb">
+            <h2>You are here:</h2>
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="https://www.tc.gc.ca/en/transport-canada.html">Transport Canada</a></li>
+                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+                </ol>
+            </div>
+        </nav>
+    </header>
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+        <h1 property="name" id="wb-cont">The How We Work game plans</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Select from from one of our suggested game plans. They are sets of recommended plays grouped by desired outcomes. Remember, you can always tailor your own game plan by conducting a <a href="/hww-cnt/aboutneeds.html">needs assessment</a>.</p>
+                <h3>List of game plans</h3>
+                <h4>&nbsp;&nbsp;Getting started</h4>
+                <div class="grid">
+                    <div class="grid-item-3" id="header">
+                        <h5>Develop a project or initiative</h5>
+                        <p>Start a project or initiative and align it with TC Transformation from the get-go.</p>
+                        <p id="header-content"><a href="/hww-cnt/gameplans/develop.html">View the game plan →</a></p>
+                        <span class="wb-inv"> </span>
+                    </div>
+                </div>
+             </div>
+          </div>
+                     <div class="grid">
+                    
+                     <h4>&nbsp;&nbsp;Working together</h4>
+                    <div class="grid">
+
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Building Belonging </h5>
+                            <p>Having a balanced, diverse team is great. But if people don't feel they belong there, you're missing half the equation.</p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/belonging.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Building effective and healthy teams </h5>
+                            <p>Forget the trust falls and silly games. Doing great work together is what really helps teams bond. Start with these teamwork techniques.</p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/effectivehealthyteams.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Creating open lines of communication </h5>
+                            <p>Build your communication skills by exercising it in a variety of situations.</p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/linesofcommunication.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div> 
+                        <br /><h4>&nbsp;&nbsp;Working smarter</h4>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Becoming more agile</h5>
+                            <p>Help your team, project or process be more nimble and responsive. </p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/agile.html">View the game plan →</a></p>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Effective operational planning </h5>
+                            <p>Improving your operational planning process doesn't require extra work – just better ways of working. </p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/operationalplanning.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Goal-Setting</h5>
+                            <p>Go-to techniques for aligning cross-functional product teams, building momentum, and keeping morale high.</p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/goalsetting.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Integrating change in your project management </h5>
+                            <p>Bring the right people together to prepare a training, roll-out, and communication plan.</p>
+                            <span class="wb-inv">journey, customer, user, client, service design</span>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/change.html">View the game plan →</a></p>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Making better decisions </h5>
+                            <p>Weigh your options, take input, and stay true to your larger goals.</p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/betterdecisions.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+                        <div class="grid-item-3" id="header">
+                            <h5 class="name">Next-level project management activities</h5>
+                            <p>Go beyond the basics with these activities designed to manage risks and keep bottlenecks at bay. </p>
+                            <p id="header-content"><a href="/hww-cnt/gameplans/nextlevelproject.html">View the game plan →</a></p>
+                            <span class="wb-inv"> </span>
+                        </div>
+
+                    </div>
+
+                    
+
+                    </div>
+                    <div class="pagedetails">
+                        <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+                        <dl id="wb-dtmd">
+                            <dt>Date modified:&#32;</dt>
+                            <dd>
+                                <time property="dateModified">2019-12-07</time>
+                            </dd>
+                        </dl>
+                    </div>
+                    <script>
+                        includeHTML();
+                    </script>
+    </main>
+    <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+    <!--[if gte IE 9 | !IE ]><!-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-      </body>
-   </html>
+    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
