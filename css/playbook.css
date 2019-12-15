@@ -18,6 +18,16 @@ p.lp:before {
    font-weight:900;
 }
 
+li.checkbox:before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f0c8";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight:500;
+   list-style-type:none;
+}
+
 a >p.lp {
     text-decoration: none;
     color: #515151;
