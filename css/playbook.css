@@ -22,9 +22,9 @@ li.checkbox:before {
    font-family: "Font Awesome 5 Free";
    content: "\f0c8";
    display: inline-block;
-   padding-right: 3px;
+   padding-right: 10px;
    vertical-align: middle;
-   font-weight:500;
+   font-weight:300;
    list-style-type:none;
 }
 
