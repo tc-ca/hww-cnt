@@ -105,7 +105,7 @@
             <section id="wb-lng" class="text-right">
                 <h2 class="wb-inv">Language selection</h2>
                 <ul class="list-inline margin-bottom-none">
-                    <li><a lang="fr" hreflang="fr" href="plays-fr.html">Français</a></li>
+                    <li><a lang="fr" hreflang="fr" href="/hww-cnt/plays-fr.html">Français</a></li>
                 </ul>
             </section>
             <div class="row">
@@ -148,15 +148,38 @@
                 <section>
                     <h2>Running the play</h2>
                     <div class="row" style="background-color:#ececec;">
-                        <div class="col-md-18">
+                        <div class="col-md-12">
                             <div>
                                 <p>[1st paragraph of the Running the play section.]</p>
                                 <p>[2nd paragraph of the Running the play section.]</p>
                                 <p class="lp"><a href="#">[Last paragraph of the Running the play section.]</a></p>
-
                             </div>
-                            <!-- 
-                              <div class="col-md-4"> -->
+              
+                           </section>
+              <section>  
+                 <h2>Section with Tip</h2>
+                   <div class="row">
+                     <div class="col-md-8">
+                        <p></p>
+                        <p></p>
+                     </div>
+                     <div class="col-md-4 ">
+                        <div class="tip ">
+                           <h4>Tip</h4>
+                           <p></p>
+                        </div>
+                     </div>
+                  </div>
+               </section> 
+              
+               <section>
+                  <h2>Section w/o Tip</h2>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <p></p>
+                                <p></p>
+                           </div>
                         </div>
                     </div>
                 </section>
@@ -183,6 +206,28 @@
         <script>
             includeHTML();
         </script>
+       <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+         </script>
     </main>
     <div w3-include-html="/hww-cnt/incl/footer.html"></div>
     <!--[if gte IE 9 | !IE ]><!-->
