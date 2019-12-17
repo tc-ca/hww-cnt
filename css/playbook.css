@@ -127,6 +127,8 @@ div.tip {
 	background-color: #eaeaea;
 	background-color: #eaeaea;
 	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 	border-left-color: #26374a;
 	border-left-width: 5px;
 	border-left-style: solid;
