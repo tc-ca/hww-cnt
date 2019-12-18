@@ -12,7 +12,7 @@
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
     <!-- Primary Meta Tags -->
-    <title>How We Work - Play - [Title]</title>
+    <title>How We Work - Plays</title>
     <meta name="title" content="How We Work - Plays">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta name="description" content="Browse and consult the How We Work plays.">
@@ -130,7 +130,7 @@
         </nav>
     </header>
     <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-        <h1 property="name" id="wb-cont">The How We Work plays</h1>
+        <h1 property="name" id="wb-cont">The Plays</h1>
         <div class="row">
             <div class="col-md-4 mrgn-tp-md">
                 <section>
@@ -427,7 +427,7 @@ Integrating change in your project management, Goal-setting all</span>
 				</div>
 			</section>
 		</div>
-                </div>
+        </div>
 			<div class="pagedetails">
 				<div w3-include-html="/hww-cnt/incl/feedback.html"></div>
 				<dl id="wb-dtmd">
@@ -438,142 +438,120 @@ Integrating change in your project management, Goal-setting all</span>
 				</dl>
 			</div>
 			<script>
-				includeHTML();
+			// quick search regex
+			var qsRegex;
+			var buttonFilter;
+
+			// init Isotope
+			var $grid = $('.grid').isotope({
+			itemSelector: '.grid-item',
+			layoutMode: 'fitRows',
+			filter: function () {
+			var $this = $(this);
+			var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
+			var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
+			return searchResult && buttonResult;
+			}
+			});
+
+			$('#filters').on('click', 'button', function () {
+			buttonFilter = $(this).attr('data-filter');
+			$grid.isotope();
+			});
+
+
+			// change is-checked class on buttons
+			$('.button-group').each(function (i, buttonGroup) {
+			var $buttonGroup = $(buttonGroup);
+			$buttonGroup.on('click', 'button', function () {
+			$buttonGroup.find('.is-checked').removeClass('is-checked');
+			$(this).addClass('is-checked');
+
+			//alert("fired");
+			var filterAttr = $(this).attr('data-filter');
+			// set filter in hash
+			// Sinan's feedback. Probably dont need to, but I usally prefix
+			// and window calls with window.blah to be more explicit
+			window.location.hash = 'filter=' + encodeURIComponent(filterAttr);
+			});
+			});
+
+
+			// debounce so filtering doesn't happen every millisecond
+			function debounce(fn, threshold) {
+			var timeout;
+			threshold = threshold || 100;
+			return function debounced() {
+			clearTimeout(timeout);
+			var args = arguments;
+			var _this = this;
+			function delayed() {
+			fn.apply(_this, args);
+			}
+			timeout = setTimeout(delayed, threshold);
+			};
+			}
+
+
+			// minor modification to initialization of var
+			var $quicksearch = $('#quicksearch');
+			$quicksearch.keyup(debounce(function () {
+			qsRegex = new RegExp($quicksearch.val(), 'gi');
+			$grid.isotope();
+			}));
+
+
+			// a little hacky, but it works
+			// grab the hash and throw it in the search box as input
+			// trigger the keyup when done
+			function useHashFilter() {
+			// get filter=filterName
+			var matches = location.hash.match(/filter=([^&]+)/i);
+			var hashFilter = matches && matches[1];
+			var pkg = hashFilter && decodeURIComponent(hashFilter);
+			//console.log(pkg);
+
+			if (!hashFilter) {
+			console.log("Null or Undefined hashfilter");
+			return;
+			}
+			if (hashFilter.startsWith(".")) {
+			// class based, do the checking unchecking
+			console.log("useHashFilter: starts with .");
+			$("#filter .button-group").find('.is-checked').removeClass('is-checked');
+			$("#filter .button-group").find('[data-filter="' + hashFilter + '"]').addClass('is-checked');
+			} else {
+			console.log("useHashFilter: not class based");
+			$("#filter .button-group").find('.is-checked').removeClass('is-checked');
+			if (window.location.hash != 'filter=' + hashFilter) {
+			console.log("useHashFilter: new hash filter");
+			window.location.hash = 'filter=' + hashFilter;
+			$quicksearch.val(pkg).trigger("keyup");
+			} else {
+			console.log("useHashFilter: same hash filter");
+			$quicksearch.val(pkg).trigger("keyup");
+			}
+			}
+			}
+			// start it up to catch changes
+			$(window).on('hashchange', useHashFilter);
+			// fire it on initial load
+			useHashFilter();
 			</script>
 			<script>
-				// Get the modal
-				var modal = document.getElementById("myModal");
-
-				// Get the image and insert it inside the modal - use its "alt" text as a caption
-				var img = document.getElementById("myImg");
-				var modalImg = document.getElementById("img01");
-				var captionText = document.getElementById("caption");
-				img.onclick = function() {
-					modal.style.display = "block";
-					modalImg.src = this.src;
-					captionText.innerHTML = this.alt;
-				}
-
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
-
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() {
-					modal.style.display = "none";
-				}
-			</script>
+			// Add active class to the current button (highlight it)
+			var header = document.getElementById("button-group");
+			var btns = header.getElementsByClassName("btn-link");
+			for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("lp");
+			current[0].className = current[0].className.replace(" lp", "");
+			this.className += " lp";
+			});
+			}
+			</script>	
 			<script>
-				// quick search regex
-				var qsRegex;
-				var buttonFilter;
-
-				// init Isotope
-				var $grid = $('.grid').isotope({
-					itemSelector: '.grid-item',
-					layoutMode: 'fitRows',
-					filter: function() {
-						var $this = $(this);
-						var searchResult = qsRegex ? $this.text().match(qsRegex) : true;
-						var buttonResult = buttonFilter ? $this.is(buttonFilter) : true;
-						return searchResult && buttonResult;
-					}
-				});
-
-				$('#filters').on('click', 'button', function() {
-					buttonFilter = $(this).attr('data-filter');
-					$grid.isotope();
-				});
-
-				// change is-checked class on buttons
-				$('.button-group').each(function(i, buttonGroup) {
-					var $buttonGroup = $(buttonGroup);
-					$buttonGroup.on('click', 'button', function() {
-						$buttonGroup.find('.is-checked').removeClass('is-checked');
-						$(this).addClass('is-checked');
-
-						//alert("fired");
-						var filterAttr = $(this).attr('data-filter');
-						// set filter in hash
-						// Sinan's feedback. Probably dont need to, but I usally prefix
-						// and window calls with window.blah to be more explicit
-						window.location.hash = 'filter=' + encodeURIComponent(filterAttr);
-					});
-				});
-
-				// debounce so filtering doesn't happen every millisecond
-				function debounce(fn, threshold) {
-					var timeout;
-					threshold = threshold || 100;
-					return function debounced() {
-						clearTimeout(timeout);
-						var args = arguments;
-						var _this = this;
-
-						function delayed() {
-							fn.apply(_this, args);
-						}
-						timeout = setTimeout(delayed, threshold);
-					};
-				}
-
-				// minor modification to initialization of var
-				var $quicksearch = $('#quicksearch');
-				$quicksearch.keyup(debounce(function() {
-					qsRegex = new RegExp($quicksearch.val(), 'gi');
-					$grid.isotope();
-				}));
-
-				// a little hacky, but it works
-				// grab the hash and throw it in the search box as input
-				// trigger the keyup when done
-				function useHashFilter() {
-					// get filter=filterName
-					var matches = location.hash.match(/filter=([^&]+)/i);
-					var hashFilter = matches && matches[1];
-					var pkg = hashFilter && decodeURIComponent(hashFilter);
-					//console.log(pkg);
-
-					if (!hashFilter) {
-						console.log("Null or Undefined hashfilter");
-						return;
-					}
-					if (hashFilter.startsWith(".")) {
-						// class based, do the checking unchecking
-						console.log("useHashFilter: starts with .");
-						$("#filter .button-group").find('.is-checked').removeClass('is-checked');
-						$("#filter .button-group").find('[data-filter="' + hashFilter + '"]').addClass('is-checked');
-					} else {
-						console.log("useHashFilter: not class based");
-						$("#filter .button-group").find('.is-checked').removeClass('is-checked');
-						if (window.location.hash != 'filter=' + hashFilter) {
-							console.log("useHashFilter: new hash filter");
-							window.location.hash = 'filter=' + hashFilter;
-							$quicksearch.val(pkg).trigger("keyup");
-						} else {
-							console.log("useHashFilter: same hash filter");
-							$quicksearch.val(pkg).trigger("keyup");
-						}
-					}
-				}
-				// start it up to catch changes
-				$(window).on('hashchange', useHashFilter);
-				// fire it on initial load
-				useHashFilter();
-			</script>
-			<script>
-				// Add active class to the current button (highlight it)
-				var header = document.getElementById("button-group");
-				var btns = header.getElementsByClassName("btn-link");
-				for (var i = 0; i < btns.length; i++) {
-					btns[i].addEventListener("click", function() {
-						var current = document.getElementsByClassName("lp");
-						current[0].className = current[0].className.replace(" lp", "");
-						this.className += " lp";
-					});
-				}
-			</script>
-			<script>
-				includeHTML();
+			includeHTML();
 			</script>
     </main>
     <div w3-include-html="/hww-cnt/incl/footer.html"></div>
