@@ -39,7 +39,7 @@ a >p.lp {
 	clear: both;
 }
 
-.btn.active, .btn:active {
+.is-checked {
 font-weight: bold;
 }
 
