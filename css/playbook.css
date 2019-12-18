@@ -39,6 +39,10 @@ a >p.lp {
 	clear: both;
 }
 
+.btn.active, .btn:active {
+font-weight: bold;
+}
+
 .grid {
 	margin: 0 -5px;
 }
