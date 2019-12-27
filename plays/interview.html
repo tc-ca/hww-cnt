@@ -7,318 +7,345 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-    <!-- Primary Meta Tags -->
-    <title>How We Work - Play - Interview your users</title>
-    <meta name="title" content="How We Work - Play - Interview your users">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="Understand your users’ needs and environment.">
+  <!-- Primary Meta Tags -->
+  <title>How We Work - Play - Interview your users</title>
+  <meta name="title" content="How We Work - Play - Interview your users">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Understand your users’ needs and environment.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/interview.html">
-    <meta property="og:title" content="How We Work - Play - Interview your users">
-    <meta property="og:description" content="Understand your users’ needs and environment.">
-    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/interview.html">
+  <meta property="og:title" content="How We Work - Play - Interview your users">
+  <meta property="og:description" content="Understand your users’ needs and environment.">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/interview.html">
-    <meta property="twitter:title" content="How We Work - Play - Interview your users">
-    <meta property="twitter:description" content="Understand your users’ needs and environment.">
-    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/interview.html">
+  <meta property="twitter:title" content="How We Work - Play - Interview your users">
+  <meta property="twitter:description" content="Understand your users’ needs and environment.">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
 
-    <!--[if gte IE 9 | !IE ]><!-->
-    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
-    <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
-    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
-        };
-    </script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-    <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
          <![endif]-->
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
 </head>
 
 <body>
-    <nav>
-        <ul id="wb-tphp">
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-            </li>
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-            </li>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/entrevue.html">Français</a></li>
         </ul>
-    </nav>
-    <header>
-        <div id="wb-bnr" class="container">
-            <section id="wb-lng" class="text-right">
-                <h2 class="wb-inv">Language selection</h2>
-                <ul class="list-inline margin-bottom-none">
-                    <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/entrevue.html">Français</a></li>
-                </ul>
-            </section>
-            <div class="row">
-                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
                         lang="fr">Gouvernement du Canada</span></span>
                     </a>
-                    <meta property="areaServed" typeof="Country" content="Canada">
-                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                </div>
-            </div>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
         </div>
-        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-        <nav id="wb-bc" property="breadcrumb">
-            <h2>You are here:</h2>
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="#">Transport Canada</a></li>
-                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                    <li><a href="/hww-cnt/plays.html">Plays</a></li>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transport Canada</a></li>
+          <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+          <li><a href="/hww-cnt/plays.html">Plays</a></li>
 
-                </ol>
-            </div>
-        </nav>
-    </header>
+        </ol>
+      </div>
+    </nav>
+  </header>
 
-    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-        <h1 property="name" id="wb-cont">Interview your users</h1>
-        <p class="gc-byline"><strong>To make better decisions about your service or initiative, go straight to the source and interview your users. </strong></p>
-        <div class="row">
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Interview your users</h1>
+    <p class="gc-byline"><strong>To make better decisions about your service or initiative, go straight to the source and interview your users. </strong></p>
+    <div class="row">
+      <div class="col-md-12">
+
+        <p><strong>Use this play to...</strong></p>
+        <ul>
+          <li>Understand your client needs and the context that they are using your product or service.</li>
+          <li>Help develop products and services that are more user-informed.</li>
+        </ul>
+        <section>
+          <h2>Running the play</h2>
+          <div class="row" style="background-color:#ececec;">
             <div class="col-md-12">
-
-                <p><strong>Use this play to...</strong></p>
-                <ul>
-                    <li>Understand your client needs and the context that they are using your product or service.</li>
-                    <li>Help develop products and services that are more user-informed.</li>
-                </ul>
-                <section>
-                    <h2>Running the play</h2>
-                    <div class="row" style="background-color:#ececec;">
-                        <div class="col-md-12">
-                            <div>
-                                <p>Most plays involve little (if any) preparation, but the user interview is different. Take time to prep work seriously. You’ll get far more out of the interview and, ultimately, so will your users. </p>
-                            </div>
-                </section>
-                <section>  
-					<h2>Preparation</h2>
-						<div class="row">
-							<div class="col-md-8">
-                              <p><strong>Decide on broad vs deep</strong></p>
-                              <p>Do you want to explore general usage patterns, and give&nbsp;users a chance to give broad feedback? If so, plan for an open-ended interview and just go with the flow. Or, are you looking for something specific? You can use the interview to validate assumptions you have about a feature (like the ones on your project poster). You might also talk to&nbsp;users that have reported problems and go deep in that area.</p>
-                              <p><strong>Form an interview team</strong></p>
-                              <p>Anyone can participate in a&nbsp;user&nbsp;interview, but typically a product owner, service lead, or someone on the front lines (e.g., developer, designer, service operator,&nbsp;etc) fills the role of interviewer. You&rsquo;ll also want another person from your team along to play the role of scribe and generally be your co-pilot. Don&rsquo;t try and be both the interviewer and scribe &ndash; you&rsquo;ll get distracted and won&rsquo;t be actively listening.</p>
-                              <p>Including a silent observer is a great way to make sure you don&rsquo;t overlook any gold coins. Their job is to absorb the conversation and listen for themes or connections the interviewer and scribe are too busy to catch.</p>
-                              <p><strong>Find the right&nbsp;</strong><strong>user</strong><strong>s to interview</strong>&nbsp;</p>
-                              <p>Consider your goals for the interview and make sure you&rsquo;re recruiting participants who&rsquo;ll contribute to them.</p>
-                              <p>For each prospective participant, get to know them as well as possible before reaching out, and write up a few details for reference: what product/s or service they use, team size, what feedback they&rsquo;ve already provided, and any information about their role that might be relevant.</p>
-                              <p>When you&rsquo;ve identified interview participants, recruit them with an engaging invite that explains your goals for the interview, how long it&rsquo;ll take, and when you&rsquo;re hoping to conduct it. If the participant is in your local area, offer to hold the interview at their office &ndash; it&rsquo;s easiest for them, and you&rsquo;ll benefit from the richer context of being in your participant&rsquo;s natural habitat. Or invite them to visit your office if you can&rsquo;t come to them for whatever reason. If an in-person session isn&rsquo;t possible, a video or phone call can work.</p>
-                              <p><strong>Identify relevant policies or guidelines</strong></p>
-                              <p>Interviews for behavioural research, user research, and consultations are generally not considered to&nbsp;be public opinion research, but you may want to determine if your interviews could be considered&nbsp;as such.&nbsp;See&nbsp;<a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/public-opinion-research-government.html">Defining Public Opinion Research</a>&nbsp;for more information.&nbsp;With&nbsp;public opinion research, there are&nbsp;<a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682#appC">specific requirements</a>&nbsp;that would need to be followed.</p>
-                              <p>In addition, you may wish to familiarize yourself with some of the following sources for interviews involving regulations, Indigenous groups, or public engagement:</p>
-                              <ul>
-                              <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/federal-regulatory-management/guidelines-tools/effective-regulatory-consultations.html">Guidelines for Effective Regulatory Consultations</a></li>
-                              <li><a href="https://www.aadnc-aandc.gc.ca/eng/1331832510888/1331832636303">Government of Canada and the duty to consult</a></li>
-                              <li><a href="https://open.canada.ca/en/content/principles-and-guidelines">Public Engagement Principles</a></li>
-                              </ul>
-                              <p><strong>Craft an interview script</strong></p>
-                              <p>Brainstorm at least 20 possible questions. Then trim it down to 10 or fewer (assuming you have an hour with the interview participant). Start by cutting any questions you can easily answer with a&nbsp;&ldquo;yes&rdquo;&nbsp;or&nbsp;&ldquo;no&rdquo;. Open ended questions tend to work best.</p>
-                              <p>Be wary of confirmation bias &ndash; i.e., are you leading the witness? Make sure your questions are designed to let the participant&rsquo;s views come through nice and strong. And include some soft-ball questions to kick off the interview and establish a rapport: how long they&rsquo;ve been in their role, etc.</p>
-                              <p><strong>Plan your analysis and reporting methods</strong></p>
-                              <p>You will want to determine your methods for analyzing the data that you collect from your&nbsp;user&nbsp;interviews as well as how you will report back on your findings. There are&nbsp;a number of&nbsp;courses and readings listed at the end of this Play that can assist you in learning about the various approaches to interview data collection and analysis.</p>
-                              <p>For sharing your findings, you may wish to share a summary report directly back with your&nbsp;users, publish your findings on the&nbsp;<a href="https://www.canada.ca/en/government/system/consultations/consultingcanadians.html">Consulting With Canadians</a>&nbsp;website,&nbsp;<a href="http://www.gazette.gc.ca/">Canada Gazette</a>, or another platform.</p>
-                              <p>In addition, make sure that you have considered privacy requirements and safeguards when collecting, analyzing and sharing the findings.&nbsp;You may want to include this information in your interview script for easy reference.</p>
-                              <p><strong>Get ready for game day</strong>&nbsp;</p>
-                              <p>You&rsquo;re finally going to conduct the interviews! You&rsquo;ve printed copies of the interview script and any other printed materials that might be required. Your recording device is charged. The interview room (if at your office) is tidy and has a relaxed vibe.</p>
-                              <p>Make sure your interview team understands their roles so you can operate like a well-oiled machine. Scribes should avoid leading the interview, and observers should ask questions only at the very end.</p>
-                     </div>
-                     <div class="col-md-4 ">
-                        <div class="tip ">
-                           <h4>Materials</h4>
-                              <ul>
-                              <li>Notebook and pen</li>
-                              <li>Printed interview script</li>
-                              <li>Audio recording device (optional)</li>
-                              </ul>
-                        </div>
-                     </div>
-                  </div>
-               </section> 
-              
-               <section>
-                  <h2>Conduct the interviews </h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div>
-                              <p>Now for the actual interviews! Think of these steps as suggestions, and feel free to tweak them to suit your needs and your style.</p>
-                              <p><strong>Housekeeping</strong></p>
-                              <p>Welcome the participant and thank them for coming (sounds obvious, but it&rsquo;s easy to forget!).&nbsp;Discuss the goals, reasons for the interview, and what you will do with the input that they provide.&nbsp;Identify whether their feedback will be kept confidential and explain any safeguards that you will be undertaking.</p>
-                              <p>(Optional) Ask if it&rsquo;s ok to record the interview so you&rsquo;ve got everything verbatim in case the scribe falls behind a bit.&nbsp;</p>
-                              <p><strong>Warm-up questions</strong></p>
-                              <p>Lead with the soft-ball questions from the interview script you prepared. Part of the foundation you&rsquo;re laying here is establishing rapport. Pay attention to cues like body language and tone. Does the interviewee feel at ease? Are they giving you the full story?&nbsp;</p>
-                              <p><strong>Meaty questions</strong></p>
-                              <p>Now dive into the questions from your interview script to get the specifics you&rsquo;re after. Feel free to ask follow-up questions if you uncover a pearl of wisdom that you wish to explore.</p>
-                              <p>Really, feel free to spend the bulk of your time here having a loose conversation with the participant about what you&rsquo;re trying to learn from them. The prepared questions will serve as an outline and are there for your reference if you get stuck.</p>
-                              <p>Make sure you&rsquo;re validating your notes as the interview goes along. Try occasionally repeating back or clarifying important points to ensure that you have captured them accurately.&nbsp;</p>
-                              <p><strong>Observer questions</strong></p>
-                              <p>If you have observers in the room, and they have additional questions, now is the time.</p>
-                              <p>The questions should prompt deeper thought and reflection. &ldquo;Is this an important feature?&rdquo; is a bad question. &ldquo;Why is this feature useful?&rdquo; is a good question. &ldquo;What would happen if this feature disappeared?&rdquo; is even better &ndash; it&rsquo;ll either sharply illustrate the feature&rsquo;s value, or make the&nbsp;user&nbsp;realize that their life wouldn&rsquo;t change much and maybe the feature isn&rsquo;t so critical after all.</p>
-                              <p><strong>Turn the tables</strong></p>
-                              <p>We get more out of interviews when we turn them into a two-way conversation. Before the session winds down, give your participant a chance to ask questions of you.</p>
-                              <p><strong>Wrap it up</strong></p>
-                              <p>Thank the participant for their time.&nbsp;&nbsp;</p>
-                           </div>
-                        </div>
-                    </div>
-                </section>
-              <section>  
-                 <h2>Analyze and prepare summary of findings </h2>
-                   <div class="row">
-                     <div class="col-md-8">
-                        <p>Once you have completed your interviews, analyze the qualitative data collected and prepare a summary of findings. There are various approaches to analyzing qualitative interviews, but generally, you will want to review your notes to identify common themes, connections, and differences of opinion.  </p>
-                        <p>Once your summary is complete, share your findings. </p>
-                     </div>
-                     <div class="col-md-4 ">
-                        <div class="tip ">
-                           <h4>Tip</h4>
-                           <p>Connect problems to opportunities: find patterns that emerge across multiple interviews. Also, compare the results to what users are saying in support tickets, user forums, in past user interviews, or even in social media. </p>
-                        </div>
-                     </div>
-                  </div>
-               </section> 
-              
-               <section>
-                  <h2>Other resources on this topic </h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div>
-                              <ul>
-                              <li>Engagement takes many forms&mdash;from ongoing collaboration to broad public consultation on complex issues:&nbsp;<a href="https://open.canada.ca/en/content/principles-and-guidelines">Principles and Guidelines for Engaging the Public</a>&nbsp;(Canada, 2019)&nbsp;</li>
-                              <li>Rules for managing and coordinating communications, including procedures for advertising, public opinion research, social media and web communications:&nbsp;<a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682">Directive on the Management of Communications</a>&nbsp;(Canada, 2019)&nbsp;</li>
-                              <li>How to go from information chaos to patterns and themes that represent the most interesting aspects of your data:&nbsp;<a href="https://www.interaction-design.org/literature/article/how-to-do-a-thematic-analysis-of-user-interviews">How to Do a Thematic Analysis of User Interviews</a>&nbsp;(Ditte&nbsp;Mortensen. Interaction Design Foundation, 2019)&nbsp;(English only)&nbsp;</li>
-                              <li>User interviews can be a great way to extract information from users for user experience understanding, usability understanding and ideation:&nbsp;<a href="https://www.interaction-design.org/literature/article/how-to-conduct-user-interviews">How to Conduct a User Interview</a>&nbsp;(Interaction Design Foundation, 2019)&nbsp;(English only)&nbsp;</li>
-                              <li>User interviews are a core user experience method. They are a great way to gain foundational knowledge about the problems your users are facing:&nbsp;<a href="https://uxdesign.cc/how-to-conduct-user-interviews-fe4b8c34b0b7">How to Conduct User Interviews</a>&nbsp;(THORNTON, Patrick. UX Collective, 2019)&nbsp;(English only)&nbsp;</li>
-                              <li>Quantitative analysis uses data to provide answers which can be expressed numerically; it is more concerned with meaning:&nbsp;<a href="https://www.researchgate.net/publication/292432218_A_Step-By-Step_Guide_To_Qualitative_Data_Analysis">A Step by Step Guide to Qualitative Data Analysis</a>&nbsp;(GIBSON, Nancy.&nbsp;Pimatisiwin: A Journal of Aboriginal and Indigenous Community Health, 2003)&nbsp;(English only)&nbsp;</li>
-                              <li>Move from an everyday understanding of the interview to the use of the qualitative interview as a methodological and research tool in social science:&nbsp;<a href="http://eprints.ncrm.ac.uk/3276/1/complete_proofs.pdf">What is Qualitative Interviewing?</a>&nbsp;(EDWARDS, J. and HOLLAND, J. 2013)&nbsp;(English only)</li>
-                              </ul>
-                              <p><strong>Online courses:</strong>&nbsp;</p>
-                              <ul>
-                              <li>A short course that will teach you how to prepare for and conduct conversational interviews that will produce rich qualitative data:&nbsp;<a href="https://www.edx.org/course/qualitative-research-methods-conversational-interv">Qualitative Research Methods: Conversational Interviewing</a>&nbsp;(EdX)&nbsp;(English only)&nbsp;</li>
-                              <li>An introduction to the basic ideas behind the qualitative research in social science:&nbsp;<a href="https://www.coursera.org/learn/qualitative-methods">Qualitative Research Methods</a>&nbsp;(Coursera)&nbsp;(English only)&nbsp;</li>
-                              </ul>
-                           </div>
-                        </div>
-                    </div>
-                </section>				
-                <section>
-                    <h2>Terms of use</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a>.</p>
-							<p>This work is a derivative of&nbsp;&ldquo;<a href="https://www.atlassian.com/team-playbook/plays/customer-interview">Customer Interview</a>&ldquo;&nbsp;by&nbsp;Atlassian and used under a Creative Commons Attribution 4.0 International Public License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).&nbsp;</p>
-                        </div>
-                    </div>
-                </section>
+              <div>
+                <p>Most plays involve little (if any) preparation, but the user interview is different. Take time to prep work seriously. You’ll get far more out of the interview and, ultimately, so will your users. </p>
+              </div>
+        </section>
+        <section>
+          <h2>Preparation</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p><strong>Decide on broad vs deep</strong></p>
+              <p>Do you want to explore general usage patterns, and give&nbsp;users a chance to give broad feedback? If so, plan for an open-ended interview and just go with the flow. Or, are you looking for something specific? You can use the interview
+                to validate assumptions you have about a feature (like the ones on your project poster). You might also talk to&nbsp;users that have reported problems and go deep in that area.</p>
+              <p><strong>Form an interview team</strong></p>
+              <p>Anyone can participate in a&nbsp;user&nbsp;interview, but typically a product owner, service lead, or someone on the front lines (e.g., developer, designer, service operator,&nbsp;etc) fills the role of interviewer. You&rsquo;ll also want
+                another person from your team along to play the role of scribe and generally be your co-pilot. Don&rsquo;t try and be both the interviewer and scribe &ndash; you&rsquo;ll get distracted and won&rsquo;t be actively listening.</p>
+              <p>Including a silent observer is a great way to make sure you don&rsquo;t overlook any gold coins. Their job is to absorb the conversation and listen for themes or connections the interviewer and scribe are too busy to catch.</p>
+              <p><strong>Find the right&nbsp;</strong><strong>user</strong><strong>s to interview</strong>&nbsp;</p>
+              <p>Consider your goals for the interview and make sure you&rsquo;re recruiting participants who&rsquo;ll contribute to them.</p>
+              <p>For each prospective participant, get to know them as well as possible before reaching out, and write up a few details for reference: what product/s or service they use, team size, what feedback they&rsquo;ve already provided, and any information
+                about their role that might be relevant.</p>
+              <p>When you&rsquo;ve identified interview participants, recruit them with an engaging invite that explains your goals for the interview, how long it&rsquo;ll take, and when you&rsquo;re hoping to conduct it. If the participant is in your local
+                area, offer to hold the interview at their office &ndash; it&rsquo;s easiest for them, and you&rsquo;ll benefit from the richer context of being in your participant&rsquo;s natural habitat. Or invite them to visit your office if you can&rsquo;t
+                come to them for whatever reason. If an in-person session isn&rsquo;t possible, a video or phone call can work.</p>
+              <p><strong>Identify relevant policies or guidelines</strong></p>
+              <p>Interviews for behavioural research, user research, and consultations are generally not considered to&nbsp;be public opinion research, but you may want to determine if your interviews could be considered&nbsp;as such.&nbsp;See&nbsp;<a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/public-opinion-research-government.html">Defining Public Opinion Research</a>&nbsp;for
+                more information.&nbsp;With&nbsp;public opinion research, there are&nbsp;<a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682#appC">specific requirements</a>&nbsp;that would need to be followed.</p>
+              <p>In addition, you may wish to familiarize yourself with some of the following sources for interviews involving regulations, Indigenous groups, or public engagement:</p>
+              <ul>
+                <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/federal-regulatory-management/guidelines-tools/effective-regulatory-consultations.html">Guidelines for Effective Regulatory Consultations</a></li>
+                <li><a href="https://www.aadnc-aandc.gc.ca/eng/1331832510888/1331832636303">Government of Canada and the duty to consult</a></li>
+                <li><a href="https://open.canada.ca/en/content/principles-and-guidelines">Public Engagement Principles</a></li>
+              </ul>
+              <p><strong>Craft an interview script</strong></p>
+              <p>Brainstorm at least 20 possible questions. Then trim it down to 10 or fewer (assuming you have an hour with the interview participant). Start by cutting any questions you can easily answer with a&nbsp;&ldquo;yes&rdquo;&nbsp;or&nbsp;&ldquo;no&rdquo;.
+                Open ended questions tend to work best.</p>
+              <p>Be wary of confirmation bias &ndash; i.e., are you leading the witness? Make sure your questions are designed to let the participant&rsquo;s views come through nice and strong. And include some soft-ball questions to kick off the interview
+                and establish a rapport: how long they&rsquo;ve been in their role, etc.</p>
+              <p><strong>Plan your analysis and reporting methods</strong></p>
+              <p>You will want to determine your methods for analyzing the data that you collect from your&nbsp;user&nbsp;interviews as well as how you will report back on your findings. There are&nbsp;a number of&nbsp;courses and readings listed at the
+                end of this Play that can assist you in learning about the various approaches to interview data collection and analysis.</p>
+              <p>For sharing your findings, you may wish to share a summary report directly back with your&nbsp;users, publish your findings on the&nbsp;<a href="https://www.canada.ca/en/government/system/consultations/consultingcanadians.html">Consulting With Canadians</a>&nbsp;website,&nbsp;
+                <a
+                  href="http://www.gazette.gc.ca/">Canada Gazette</a>, or another platform.</p>
+              <p>In addition, make sure that you have considered privacy requirements and safeguards when collecting, analyzing and sharing the findings.&nbsp;You may want to include this information in your interview script for easy reference.</p>
+              <p><strong>Get ready for game day</strong>&nbsp;</p>
+              <p>You&rsquo;re finally going to conduct the interviews! You&rsquo;ve printed copies of the interview script and any other printed materials that might be required. Your recording device is charged. The interview room (if at your office) is
+                tidy and has a relaxed vibe.</p>
+              <p>Make sure your interview team understands their roles so you can operate like a well-oiled machine. Scribes should avoid leading the interview, and observers should ask questions only at the very end.</p>
             </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Materials</h4>
+                <ul>
+                  <li>Notebook and pen</li>
+                  <li>Printed interview script</li>
+                  <li>Audio recording device (optional)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Conduct the interviews </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <p>Now for the actual interviews! Think of these steps as suggestions, and feel free to tweak them to suit your needs and your style.</p>
+                <p><strong>Housekeeping</strong></p>
+                <p>Welcome the participant and thank them for coming (sounds obvious, but it&rsquo;s easy to forget!).&nbsp;Discuss the goals, reasons for the interview, and what you will do with the input that they provide.&nbsp;Identify whether their feedback
+                  will be kept confidential and explain any safeguards that you will be undertaking.</p>
+                <p>(Optional) Ask if it&rsquo;s ok to record the interview so you&rsquo;ve got everything verbatim in case the scribe falls behind a bit.&nbsp;</p>
+                <p><strong>Warm-up questions</strong></p>
+                <p>Lead with the soft-ball questions from the interview script you prepared. Part of the foundation you&rsquo;re laying here is establishing rapport. Pay attention to cues like body language and tone. Does the interviewee feel at ease? Are
+                  they giving you the full story?&nbsp;</p>
+                <p><strong>Meaty questions</strong></p>
+                <p>Now dive into the questions from your interview script to get the specifics you&rsquo;re after. Feel free to ask follow-up questions if you uncover a pearl of wisdom that you wish to explore.</p>
+                <p>Really, feel free to spend the bulk of your time here having a loose conversation with the participant about what you&rsquo;re trying to learn from them. The prepared questions will serve as an outline and are there for your reference
+                  if you get stuck.</p>
+                <p>Make sure you&rsquo;re validating your notes as the interview goes along. Try occasionally repeating back or clarifying important points to ensure that you have captured them accurately.&nbsp;</p>
+                <p><strong>Observer questions</strong></p>
+                <p>If you have observers in the room, and they have additional questions, now is the time.</p>
+                <p>The questions should prompt deeper thought and reflection. &ldquo;Is this an important feature?&rdquo; is a bad question. &ldquo;Why is this feature useful?&rdquo; is a good question. &ldquo;What would happen if this feature disappeared?&rdquo;
+                  is even better &ndash; it&rsquo;ll either sharply illustrate the feature&rsquo;s value, or make the&nbsp;user&nbsp;realize that their life wouldn&rsquo;t change much and maybe the feature isn&rsquo;t so critical after all.</p>
+                <p><strong>Turn the tables</strong></p>
+                <p>We get more out of interviews when we turn them into a two-way conversation. Before the session winds down, give your participant a chance to ask questions of you.</p>
+                <p><strong>Wrap it up</strong></p>
+                <p>Thank the participant for their time.&nbsp;&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Analyze and prepare summary of findings </h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Once you have completed your interviews, analyze the qualitative data collected and prepare a summary of findings. There are various approaches to analyzing qualitative interviews, but generally, you will want to review your notes to identify
+                common themes, connections, and differences of opinion. </p>
+              <p>Once your summary is complete, share your findings. </p>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Tip</h4>
+                <p>Connect problems to opportunities: find patterns that emerge across multiple interviews. Also, compare the results to what users are saying in support tickets, user forums, in past user interviews, or even in social media. </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Other resources on this topic </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <div>
+                <ul>
+                  <li>Engagement takes many forms&mdash;from ongoing collaboration to broad public consultation on complex issues:&nbsp;<a href="https://open.canada.ca/en/content/principles-and-guidelines">Principles and Guidelines for Engaging the Public</a>&nbsp;(Canada,
+                    2019)&nbsp;</li>
+                  <li>Rules for managing and coordinating communications, including procedures for advertising, public opinion research, social media and web communications:&nbsp;<a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=30682">Directive on the Management of Communications</a>&nbsp;(Canada,
+                    2019)&nbsp;</li>
+                  <li>How to go from information chaos to patterns and themes that represent the most interesting aspects of your data:&nbsp;<a href="https://www.interaction-design.org/literature/article/how-to-do-a-thematic-analysis-of-user-interviews">How to Do a Thematic Analysis of User Interviews</a>&nbsp;(Ditte&nbsp;Mortensen.
+                    Interaction Design Foundation, 2019)&nbsp;(English only)&nbsp;</li>
+                  <li>User interviews can be a great way to extract information from users for user experience understanding, usability understanding and ideation:&nbsp;<a href="https://www.interaction-design.org/literature/article/how-to-conduct-user-interviews">How to Conduct a User Interview</a>&nbsp;(Interaction
+                    Design Foundation, 2019)&nbsp;(English only)&nbsp;</li>
+                  <li>User interviews are a core user experience method. They are a great way to gain foundational knowledge about the problems your users are facing:&nbsp;<a href="https://uxdesign.cc/how-to-conduct-user-interviews-fe4b8c34b0b7">How to Conduct User Interviews</a>&nbsp;(THORNTON,
+                    Patrick. UX Collective, 2019)&nbsp;(English only)&nbsp;</li>
+                  <li>Quantitative analysis uses data to provide answers which can be expressed numerically; it is more concerned with meaning:&nbsp;<a href="https://www.researchgate.net/publication/292432218_A_Step-By-Step_Guide_To_Qualitative_Data_Analysis">A Step by Step Guide to Qualitative Data Analysis</a>&nbsp;(GIBSON,
+                    Nancy.&nbsp;Pimatisiwin: A Journal of Aboriginal and Indigenous Community Health, 2003)&nbsp;(English only)&nbsp;</li>
+                  <li>Move from an everyday understanding of the interview to the use of the qualitative interview as a methodological and research tool in social science:&nbsp;<a href="http://eprints.ncrm.ac.uk/3276/1/complete_proofs.pdf">What is Qualitative Interviewing?</a>&nbsp;(EDWARDS,
+                    J. and HOLLAND, J. 2013)&nbsp;(English only)</li>
+                </ul>
+                <p><strong>Online courses:</strong>&nbsp;</p>
+                <ul>
+                  <li>A short course that will teach you how to prepare for and conduct conversational interviews that will produce rich qualitative data:&nbsp;<a href="https://www.edx.org/course/qualitative-research-methods-conversational-interv">Qualitative Research Methods: Conversational Interviewing</a>&nbsp;(EdX)&nbsp;(English
+                    only)&nbsp;</li>
+                  <li>An introduction to the basic ideas behind the qualitative research in social science:&nbsp;<a href="https://www.coursera.org/learn/qualitative-methods">Qualitative Research Methods</a>&nbsp;(Coursera)&nbsp;(English only)&nbsp;</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Terms of use</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+                  target="_blank">Terms and conditions</a>.</p>
+              <p>This work is a derivative of&nbsp;&ldquo;<a href="https://www.atlassian.com/team-playbook/plays/customer-interview">Customer Interview</a>&ldquo;&nbsp;by&nbsp;Atlassian and used under a Creative Commons Attribution 4.0 International Public
+                License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        </div>
         </div>
         <div class="pagedetails">
-            <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-            <dl id="wb-dtmd">
-                <dt>Date modified:&#32;</dt>
-                <dd>
-                    <time property="dateModified">2019-12-12</time>
-                </dd>
-            </dl>
+          <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+          <dl id="wb-dtmd">
+            <dt>Date modified:&#32;</dt>
+            <dd>
+              <time property="dateModified">2019-12-12</time>
+            </dd>
+          </dl>
         </div>
         <script>
-            includeHTML();
+          includeHTML();
         </script>
-       <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-         </script>
-    </main>
-    <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-    <!--[if gte IE 9 | !IE ]><!-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+        <script>
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = document.getElementById("myImg");
+          var modalImg = document.getElementById("img01");
+          var captionText = document.getElementById("caption");
+          img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+          }
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+        </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </body>
 
 </html>
