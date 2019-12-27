@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+   <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comment nous travaillons - Jeu - Prendre des décisions en utilisant le cadre décisionnel RACI </title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="title" content="Comment nous travaillons - Jeu - Prendre des décisions en utilisant le cadre décisionnel RACI ">
+  <meta name="description" content="Définissez le rôle de chaque personne dans la prise de décisions de groupe importantes. ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/jeux/cadreRACI.html">
+  <meta property="og:title" content="Comment nous travaillons - Jeu - Prendre des décisions en utilisant le cadre décisionnel RACI ">
+  <meta property="og:description" content="Définissez le rôle de chaque personne dans la prise de décisions de groupe importantes. ">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/jeux/cadreRACI.html">
+  <meta property="twitter:title" content="Comment nous travaillons - Jeu - Prendre des décisions en utilisant le cadre décisionnel RACI ">
+  <meta property="twitter:description" content="Définissez le rôle de chaque personne dans la prise de décisions de groupe importantes. ">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+         <![endif]-->
+  <!--[if lte IE 9]>
+         <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/RACIframework.html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-fr.svg" alt=""
+                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>Vous êtes ici :</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Prendre des décisions en utilisant le cadre décisionnel RACI </h1>
+    <p class="gc-byline"><strong>Suivez le cadre décisionnel du diagramme RACI pour assigner les rôles et les responsabilités en rapport avec votre projet et prendre les bonnes décisions.</strong></p>
+    <div class="row">
+      <div class="col-md-12">
+
+        <p><strong>Utilisez ce jeu pour…</strong></p>
+        <ul>
+          <li>Définir les rôles dans la prise de décisions de groupe aux répercussions importantes ou à risque élevé </li>
+          <li>Améliorer la prise de décision, la cohésion de l’équipe et la compréhension commune</li>
+        </ul>
+        <section>
+          <h2>Mise en pratique</h2>
+          <div class="row" style="background-color:#ececec;">
+            <div class="col-md-12">
+              <p>Le cadre d&eacute;cisionnel du diagramme RACI, utilis&eacute; efficacement, aidera &agrave; prendre des d&eacute;cisions de groupe concernant un projet ou une initiative en permettant d&rsquo;attribuer des r&ocirc;les et des responsabilit&eacute;s
+                aux t&acirc;ches, en apportant clart&eacute; et structure au projet et en aidant &agrave; la prise de d&eacute;cision en groupe. Ce jeu vous guidera &agrave; travers le cadre du diagramme RACI, vous aidera &agrave; mettre en place votre
+                document de suivi, &agrave; assigner les r&ocirc;les et &agrave; prendre et communiquer les d&eacute;cisions.&nbsp;&nbsp;</p>
+              <p>Que signifie RACI?&nbsp;</p>
+              <p><strong>Responsable :</strong>&nbsp;la personne qui fait le travail, qui accomplit la t&acirc;che ou qui prend la d&eacute;cision.&nbsp;</p>
+              <p><strong>Approbateur :</strong>&nbsp;id&eacute;alement, il s&rsquo;agit d&rsquo;une seule personne qui est responsable du produit livrable et qui est charg&eacute;e de l&rsquo;approbation.&nbsp;</p>
+              <p><strong>Consult&eacute;s :</strong>&nbsp;ceux dont la contribution est n&eacute;cessaire pour prendre une d&eacute;cision.&nbsp;</p>
+              <p><strong>Inform&eacute;s :</strong>&nbsp;ceux qui devraient &ecirc;tre inform&eacute;s ou mis &agrave; jour sur l&rsquo;&eacute;tat d&rsquo;avancement de la d&eacute;cision, mais qui n&rsquo;ont pas &eacute;t&eacute; officiellement consult&eacute;s
+                ou qui n&rsquo;y ont pas contribu&eacute;.&nbsp;</p>
+              <p>Lorsque vous d&eacute;terminez si une d&eacute;cision de groupe doit suivre le cadre du diagramme RACI, prenez en compte l&rsquo;opportunit&eacute;, les r&eacute;percussions et la port&eacute;e de celle-ci. Les d&eacute;cisions qui touchent
+                le travail de plusieurs personnes sur le projet &ndash; interfonctionnelles, interminist&eacute;rielles &ndash; exigent probablement l&rsquo;utilisation d&rsquo;un diagramme RACI, qui peut ne pas &ecirc;tre n&eacute;cessaire pour des d&eacute;cisions
+                moins importantes et isol&eacute;es.&nbsp;</p>
+        </section>
+        <section>
+          <h2>Créer votre document de suivi </h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Organisez-vous de manière à prendre des décisions efficaces concernant votre projet ou votre initiative en élaborant un modèle.</p>
+              <p>Utilisez le <a href="/hww-cnt/incl/gabarit-RACI.docx">modèle de diagramme RACI</a> comme point de départ et modifiez-le au besoin. Vous ajouterez des renseignements à ce document au cours des prochains jours ou des prochaines semaines, au
+                fur et à mesure que vous passerez en revue les consultations et le contexte nécessaires pour prendre une décision en particulier.</p>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Matériel</h4>
+                <ul>
+                  <li><a href="/hww-cnt/incl/gabarit-RACI.docx">Modèle de diagramme RACI</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Déterminer les rôles </h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Lorsque vous &ecirc;tes confront&eacute; &agrave; une situation pour laquelle une d&eacute;cision est requise, commencez par d&eacute;finir les divers intervenants touch&eacute;s par votre d&eacute;cision.&nbsp;&nbsp;</p>
+              <p>Qui est le&nbsp;<strong>responsable</strong>?&nbsp;</p>
+              <p>D&eacute;terminez qui travaille sur les t&acirc;ches li&eacute;es &agrave; la d&eacute;cision. Le responsable ne dirige pas n&eacute;cessairement l&rsquo;ensemble du projet, mais seulement le travail associ&eacute; &agrave; cette d&eacute;cision
+                en particulier.&nbsp;</p>
+              <p>Qui est l&rsquo;<strong>a</strong><strong>pprobateur</strong>?&nbsp;</p>
+              <p>Indiquez qui est responsable de la prise de d&eacute;cision. Id&eacute;alement, il ne devrait s&rsquo;agir que d&rsquo;une seule personne.&nbsp;</p>
+              <p>Qui doit &ecirc;tre&nbsp;<strong>consult&eacute;</strong>?&nbsp;</p>
+              <p>Plusieurs &eacute;quipes ou personnes pourraient devoir &ecirc;tre consult&eacute;es lors de la prise de d&eacute;cision. Il peut s&rsquo;agir de personnes ext&eacute;rieures &agrave; l&rsquo;&eacute;quipe de base, c&rsquo;est-&agrave;-dire
+                toute personne poss&eacute;dant les connaissances ou l&rsquo;exp&eacute;rience pertinentes.&nbsp;</p>
+              <p>Qui doit &ecirc;tre&nbsp;<strong>inform&eacute;</strong>?&nbsp;</p>
+              <p>Il s&rsquo;agit de toute personne directement touch&eacute;e par la d&eacute;cision, ce qui comprendra probablement des personnes qui ne font pas partie de l&rsquo;&eacute;quipe de base.&nbsp;</p>
+              <p>Afin d&rsquo;aider &agrave; d&eacute;terminer les intervenants touch&eacute;s et &agrave; att&eacute;nuer les risques, examinez votre mod&egrave;le et r&eacute;fl&eacute;chissez de fa&ccedil;on critique au travail. Certaines des questions
+                que vous pourriez envisager sont :&nbsp;</p>
+              <ul>
+                <li>Si la personne responsable est absente, &agrave; qui d&eacute;l&eacute;guera-t-elle ses responsabilit&eacute;s?&nbsp;&nbsp;</li>
+                <li>Y a-t-il trop de personnes responsables dans la liste?&nbsp;&nbsp;</li>
+                <li>Y a-t-il un&nbsp;approbateur&nbsp;pour chaque t&acirc;che?&nbsp;&nbsp;</li>
+                <li>Y a-t-il trop de personnes qui doivent &ecirc;tre consult&eacute;es? Certaines pourraient-elles simplement &ecirc;tre inform&eacute;es?&nbsp;</li>
+              </ul>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Astuce</h4>
+                <p>Le diagramme RACI est un excellent cadre et outil pour les gestionnaires de projets. N&rsquo;oubliez pas de consulter le jeu&nbsp;<a href="http://hww-cnt/jeux/plandeprojet.html">B&acirc;tissez un plan de gestion de projet</a>&nbsp;pour
+                  plus de renseignements sur la fa&ccedil;on de cerner avec succ&egrave;s les objectifs de votre projet et de les atteindre.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Créer votre plan </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>En plus d&rsquo;attribuer les r&ocirc;les et les responsabilit&eacute;s, vous devrez tenir compte de tous les renseignements n&eacute;cessaires pour prendre votre d&eacute;cision finale. Que vous utilisiez le <a href="/hww-cnt/incl/gabarit-RACI.docx">mod&egrave;le de diagramme</a>
+                <a
+                  href="/hww-cnt/incl/gabarit-RACI.docx"> RACI</a> ou que vous ayez &eacute;labor&eacute; votre propre mod&egrave;le, incluez une section qui traite des renseignements suivants en rapport avec votre projet dans son ensemble.&nbsp;</p>
+              <p>&nbsp;<strong>Date d</strong><strong>&rsquo;</strong><strong>&eacute;ch&eacute;ance</strong> &ndash; la date limite pour prendre la d&eacute;cision.&nbsp;</p>
+              <ul>
+                <li><strong>Contexte</strong> &ndash; les raisons pour lesquelles cette d&eacute;cision doit &ecirc;tre prise.&nbsp;</li>
+                <li><strong>&Eacute;tat actuel</strong> &ndash; o&ugrave; vous en &ecirc;tes en ce moment.&nbsp;</li>
+                <li><strong>Donn&eacute;es &agrave; l</strong><strong>&rsquo;</strong><strong>appui</strong> &ndash; la recherche que vous avez effectu&eacute;e pour &eacute;clairer votre d&eacute;cision.&nbsp;</li>
+                <li><strong>Options envisag&eacute;es</strong> &ndash; un tableau avec une colonne pour chaque option o&ugrave; vous pouvez r&eacute;sumer les avantages et les inconv&eacute;nients, les risques, les compromis, le co&ucirc;t ou l&rsquo;effort
+                  estim&eacute;, etc.&nbsp;</li>
+                <li><strong>Recommandations</strong> &ndash; les opinions de ceux que vous avez consult&eacute;s.&nbsp;</li>
+                <li><strong>FAQ</strong> &ndash; l&rsquo;endroit o&ugrave; r&eacute;pondre aux questions fr&eacute;quemment pos&eacute;es (ou anticip&eacute;es).&nbsp;</li>
+                <li><strong>R&eacute;f&eacute;rences</strong> &ndash; une liste de liens vers des documents de r&eacute;f&eacute;rence, ainsi qu&rsquo;une br&egrave;ve description des raisons pour lesquelles ces documents sont pertinents.&nbsp;</li>
+                <li><strong>Mesures &agrave; prendre</strong> &ndash; une liste des t&acirc;ches ou des mesures de suivis li&eacute;es &agrave; la d&eacute;cision.&nbsp;</li>
+                <li><strong>R&eacute;sultat</strong> &ndash; l&rsquo;endroit o&ugrave; indiquer l&rsquo;option que vous choisirez.&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Impliquer votre équipe </h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Maintenant que vous avez assigné les rôles et les responsabilités et que vous avez inscrit les renseignements pertinents aux tâches et aux décisions relatives à votre projet, il est utile d’obtenir les commentaires de votre équipe. À ce
+                stade, il se peut que vous ayez besoin de personnes précises pour remplir des sections précises de la feuille, ou que vous souhaitiez simplement obtenir des commentaires généraux. Faites circuler la feuille dans votre équipe et intégrez
+                les commentaires.</p>
+              <p>Le jeu du diagramme RACI peut être stressant, surtout si les décisions sont de nature délicate ou sont politisées. Vous venez de rendre un grand service à votre équipe en prenant le temps d’établir un cadre de prise de décisions de groupe
+                clair sur lequel s’appuyer. L’utilisation du cadre du diagramme RACI peut aider à s’assurer que tous les membres de votre équipe ont une idée claire et sont informés, conscients de leurs responsabilités et de celles de l’équipe, ce qui
+                mène à une prise de décision efficace et à un résultat positif.</p>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Astuce</h4>
+                <p>Si vous avez l’impression que les choses sont au point mort ou que vous tournez en rond, réunissez la personne responsable et les personnes consultées – si vous êtes sur le point de prendre une décision, il pourrait être utile d’inclure
+                  aussi l’approbateur. Laissez les gens exprimer leurs préoccupations, leurs recommandations, leurs idées à propos d’autres options, etc. Passer une heure en personne avec eux peut vous faire gagner un temps précieux et remettre votre
+                  décision sur la bonne voie.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Autres ressources sur le même sujet </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li>Sc&eacute;narios pour aider &agrave; guider le choix concernant les mod&egrave;les de prise de d&eacute;cision.&nbsp;<a href="https://www.softwareadvice.com/resources/project-management-raci-vs-rapid/">RAPID vs RACI for Decision-Making: What&rsquo;s Best For Your Project</a>&nbsp;(Olivia Montgomery,
+                  2019). (en&nbsp;anglais seulement)&nbsp;</li>
+                <li>Appliquer le cadre du diagramme RACI &agrave; la gestion de projet.&nbsp;<a href="https://www.thedigitalprojectmanager.com/raci-chart-made-simple/">Create a Responsibility Assignment Matrix, Digital Project Manager</a>&nbsp;(Suzanna Harworth,
+                  2018). (en&nbsp;anglais seulement)&nbsp;</li>
+                <li>Lectures compl&eacute;mentaires sur la gestion de projet RACI.&nbsp;<a href="https://www.cio.com/article/2395825/project-management-how-to-design-a-successful-raci-project-plan.html">The RACI Matrix, CIO</a>&nbsp;(Bob Kantor, 2018). (en&nbsp;anglais
+                  seulement)&nbsp;&nbsp;</li>
+                <li>Exemple de matrice pour la planification d&rsquo;un projet RACI.&nbsp;<a href="https://www.ucalgary.ca/research/researchers/forms-and-resources/project-management-resources/raci-matrix">RACI Matrix</a>&nbsp;(University&nbsp;of Calgary,
+                  2019). (en&nbsp;anglais seulement)&nbsp;&nbsp;</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Conditions d'utilisation</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les documents que l&rsquo;on trouve sur ce site Web ont &eacute;t&eacute; produits ou rassembl&eacute;s pour offrir aux Canadiens et Canadiennes de l&rsquo;information sur les programmes et services offerts par le gouvernement du Canada.
+                Ils sont assujettis aux&nbsp;<a href="https://www.canada.ca/fr/transparence/avis.html">conditions</a>&nbsp;suivantes.&nbsp;</p>
+              <p>Cet ouvrage est un produit d&eacute;riv&eacute; de &laquo; <a href="https://www.atlassian.com/fr/team-playbook/plays/daci">DACI</a> &raquo; d&rsquo;<a href="https://www.atlassian.com/">Atlassian</a>&nbsp;et&nbsp;est utilis&eacute; en vertu
+                d&rsquo;une licence publique internationale Creative Commons Attribution 4.0 (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        </div>
+        </div>
+        <div class="pagedetails">
+          <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+          <dl id="wb-dtmd">
+            <dt>Date de modification :&#32;</dt>
+            <dd><time property="dateModified">2019-12-16</time></dd>
+          </dl>
+        </div>
+        <script>
+          includeHTML();
+        </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+         <![endif]-->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
