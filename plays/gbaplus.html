@@ -7,302 +7,313 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-    <!-- Primary Meta Tags -->
-    <title>How We Work - Play - Conduct a GBA+ analysis</title>
-    <meta name="title" content="How We Work - Play - Conduct a GBA+ analysis">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
+  <!-- Primary Meta Tags -->
+  <title>How We Work - Play - Conduct a GBA+ analysis</title>
+  <meta name="title" content="How We Work - Play - Conduct a GBA+ analysis">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/gbaplus.html">
-    <meta property="og:title" content="How We Work - Play - Conduct a GBA+ analysis">
-    <meta property="og:description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
-    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/gbaplus.html">
+  <meta property="og:title" content="How We Work - Play - Conduct a GBA+ analysis">
+  <meta property="og:description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/gbaplus.html">
-    <meta property="twitter:title" content="How We Work - Play - Conduct a GBA+ analysis">
-    <meta property="twitter:description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
-    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/gbaplus.html">
+  <meta property="twitter:title" content="How We Work - Play - Conduct a GBA+ analysis">
+  <meta property="twitter:description" content="Ensure your program or project considers and meets the needs of a diverse set of users by conducting a GBA+ assessment.">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
 
-    <!--[if gte IE 9 | !IE ]><!-->
-    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
-    <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
-    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
-        };
-    </script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-    <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
          <![endif]-->
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
 </head>
 
 <body>
-    <nav>
-        <ul id="wb-tphp">
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-            </li>
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-            </li>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="fr" hreflang="fr" href="/hww-cnt/heux/acsplus.html">Français</a></li>
         </ul>
-    </nav>
-    <header>
-        <div id="wb-bnr" class="container">
-            <section id="wb-lng" class="text-right">
-                <h2 class="wb-inv">Language selection</h2>
-                <ul class="list-inline margin-bottom-none">
-                    <li><a lang="fr" hreflang="fr" href="/hww-cnt/heux/acsplus.html">Français</a></li>
-                </ul>
-            </section>
-            <div class="row">
-                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
                         lang="fr">Gouvernement du Canada</span></span></a>
-                    <meta property="areaServed" typeof="Country" content="Canada">
-                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                </div>
-            </div>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
         </div>
-        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-        <nav id="wb-bc" property="breadcrumb">
-            <h2>You are here:</h2>
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="#">Transport Canada</a></li>
-                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                    <li><a href="/hww-cnt/plays.html">Plays</a></li>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transport Canada</a></li>
+          <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+          <li><a href="/hww-cnt/plays.html">Plays</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
 
-                </ol>
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Conduct a GBA+ analysis</h1>
+    <p class="gc-byline"><strong>Learn how to conduct a GBA+ assessment for your project or program by running this play. </strong></p>
+    <section>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Gender-based Analysis Plus (GBA+) is an analytical process used to assess how diverse groups of women, men and non-binary people may experience policies, programs and initiatives. The “plus” in GBA+ acknowledges that GBA goes beyond biological
+            and socio-cultural differences. We all have multiple identity factors that intersect to make us who we are; GBA+ also considers many other identity factors, like race, ethnicity, religion, age, and mental or physical disability. </p>
+          <p><strong>Use this play to...</strong></p>
+          <ul>
+            <li>Conduct a GBA+ assessment </li>
+            <li>Understand the diverse needs of users</li>
+          </ul>
+          <h2>Running the play</h2>
+          <div class="row" style="background-color:#ececec;">
+            <div class="col-md-12">
+              <p>GBA+ is an analytical process used to assess how diverse groups of women, men and non-binary people may experience policies, programs and initiatives. The “plus” in GBA+ acknowledges that GBA goes beyond biological (sex) and socio-cultural
+                (gender) differences. We all have multiple identity factors that intersect to make us who we are; GBA+ also considers many other identity factors, like race, ethnicity, religion, age, and mental or physical disability. </p>
+              <p>Without GBA+, we risk missing or misreading the experiences of a significant portion of the Canadian population and – as a consequence – risk developing policies and initiatives that can inadvertently increase inequalities. It is therefore
+                critical that we apply GBA+ to optimize the impact and effectiveness of all federal initiatives. </p>
+              <p>Learn how to conduct a GBA+ assessment, following the Government of Canada GBA+ process, for your project or program by running this play. Remember that <strong>now</strong> is always the right time to start your GBA+. It works best if you
+                start early, but you can start at any time and at any stage of a work cycle. </p>
             </div>
-        </nav>
-    </header>
-
-    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-        <h1 property="name" id="wb-cont">Conduct a GBA+ analysis</h1>
-        <p class="gc-byline"><strong>Learn how to conduct a GBA+ assessment for your project or program by running this play. </strong></p>
-				<section>
-				<div class="row">
-					<div class="col-md-12">
-						<p>Gender-based Analysis Plus (GBA+) is an analytical process used to assess how diverse groups of women, men and non-binary people may experience policies, programs and initiatives. The “plus” in GBA+ acknowledges that GBA goes beyond biological and socio-cultural differences. We all have multiple identity factors that intersect to make us who we are; GBA+ also considers many other identity factors, like race, ethnicity, religion, age, and mental or physical disability. </p>
-						<p><strong>Use this play to...</strong></p>
-						<ul>
-							<li>Conduct a GBA+ assessment </li>
-							<li>Understand the diverse needs of users</li>
-						</ul>
-						<h2>Running the play</h2>
-							<div class="row" style="background-color:#ececec;">
-								<div class="col-md-12">
-										<p>GBA+ is an analytical process used to assess how diverse groups of women, men and non-binary people may experience policies, programs and initiatives. The “plus” in GBA+ acknowledges that GBA goes beyond biological (sex) and socio-cultural (gender) differences. We all have multiple identity factors that intersect to make us who we are; GBA+ also considers many other identity factors, like race, ethnicity, religion, age, and mental or physical disability. </p>
-										<p>Without GBA+, we risk missing or misreading the experiences of a significant portion of the Canadian population and – as a consequence – risk developing policies and initiatives that can inadvertently increase inequalities. It is therefore critical that we apply GBA+ to optimize the impact and effectiveness of all federal initiatives. </p>
-										<p>Learn how to conduct a GBA+ assessment, following the Government of Canada GBA+ process, for your project or program by running this play. Remember that <strong>now</strong> is always the right time to start your GBA+. It works best if you start early, but you can start at any time and at any stage of a work cycle. </p>
-								</div>
-							</div>
-					</div>
-				</section>
-				<section>  
-                 <h2>Before you start</h2>
-					<div class="row">
-						<div class="col-md-12">
-                        <p>The course <a href="https://cfc-swc.gc.ca/gba-acs/course-cours/eng/mod00/mod00_01_01.html">Introduction to GBA+</a>, offered by Status of Women Canada, is mandatory to all Transport Canada employees. </p>
-						<img id="myImg" style="width: 100%;" src="https://cfc-swc.gc.ca/images/gba-acs/steps-etapes-en.jpg " alt="GBA+ Assessment Steps">
-						</div>
-					</div>
-                </section> 
-				<section>  
-                <h2>Identify issues </h2>
-					<div class="row">
-						<div class="col-md-8">
-                        <p>The first step is to identify the context and the gender and diversity issues. </p>
-                        <p>Nothing happens in a vacuum. Your initiative may have a narrow objective, but it will always be linked to broader government priorities. The social, cultural and economic environment are also important. Start by making these connections. </p>
-						</div>
-                    <div class="col-md-4 ">
-                        <div class="tip ">
-                           <h4>Tip</h4>
-                           <p>Remember: throughout your application of GBA+, document your process, findings, and results. This will help your team as well as other teams with other applications of GBA+ to their projects. You may also be asked to provide evidence that a GBA+ was conducted and to explain the process that guided your recommendations. </p>
-                        </div>
-                    </div>
-					</div>
-                </section>
-				<section>  
-                 <h2>Challenge assumptions</h2>
-					<div class="row">
-						<div class="col-md-8">
-                        <p>We all have assumptions. In addition to our individual assumptions, the institution you work for may have formal or informal policies in place that can affect the development or outcome of an initiative. You need to be aware of these. Remember that workplace culture, behaviours, activities or processes all shape your assumptions. </p>
-                        <p>Although the project you are working on may appear to affect everyone equally, always challenge your assumptions about whether it has gender and other diversity implications. </p>
-						</div>
-                    <div class="col-md-4 ">
-                        <div class="tip ">
-                           <h4>Tip</h4>
-                           <p><p>Use a modified version of the <a href="http://site//plays/do-a-disruptive-brainstorming-session.html">Do a disruptive brainstorming session</a> play to challenge your team to remove pre-conceived ideas about gender and diversity!&nbsp;</p></p>
-                        </div>
-                    </div>
-					</div>
-                </section> 			   
-                <section>
-                  <h2>Gather the facts: research and consult </h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                                <p>The data you use should be gender-disaggregated and should include other intersecting identity factors, such as ethnicity, age or disability. </p>
-                                <p>If information is not available, don’t abandon your analysis. Identify gaps in existing data and consider making data collection part of your initiative’s objectives and evaluation measures. </p>
-								<p>Make sure to use GBA+ when you design your consultation process. It is not enough to consult the general public and then apply your findings to all groups. Seek out multiple viewpoints. Engage Canadians of various identities, and consult broad and inclusive sources to deepen your analysis. Don’t forget: accessibility issues, social conditions and economic considerations can all affect someone’s ability to participate in your consultation process. </p>
-                                <p>The results of your consultation and research should inform your options and recommendations at all stages of initiative development and implementation. </p>
-                         </div>
-                    </div>
-                </section>
-                <section>
-                  <h2>Develop options and make recommendations </h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                                <p>Using the data you have gathered, indicate how the options you propose respond to the specific issues you identified. Present your GBA+ findings to decision-makers clearly. If you have found that your initiative could have differential impacts or unintended barriers, suggest strategies to strengthen the proposal. And be sure to highlight your plan to fill any data gaps that your GBA+ identified.  </p>
-                         </div>
-                    </div>
-                </section>
-				<section>
-                  <h2>Monitor and evaluate </h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                                <p>GBA+ also applies to the evaluation and monitoring of your initiative. The design of your evaluation framework and approach to monitoring can help address inequality and build capacity.  </p>
-                                <p>Make sure your evaluation identifies groups who are positively or negatively affected by the initiative. Highlight data gaps and address unintended outcomes for diverse groups. Incorporate them into strategy renewals or management responses.  </p>
-                         </div>
-                    </div>
-                </section>
-				<section>  
-                 <h2>Communication</h2>
-					<div class="row">
-						<div class="col-md-8">
-                        <p>Identify your target audiences, and tailor your messaging appropriately. Show how your initiative supports diversity, and use inclusive examples, languages and symbols. Review your messaging to ensure you are not perpetuating stereotypes. Whenever possible, choose images and language that challenge harmful stereotypes.  </p>
-                        <p>Finally, remember to share your GBA+ results. This will demonstrate due diligence, foster buy-in with stakeholders, and identify areas for further action.  </p>
-						</div>
-                    <div class="col-md-4 ">
-                        <div class="tip ">
-                           <h4>Tip</h4>
-                           <p>The <a href="/hww-cnt/plays/cmkickoff.html">Conduct a change management kick-off meeting</a> play can help your team come up with an effective communications plan &ndash; not only is it for big changes, but also to communicate exciting results!&nbsp;</p>
-                        </div>
-                    </div>
-					</div>
-                </section>
-				<section>
-                  <h2>Other resources on this topic</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-							<ul>
-							<li>GCPedia:&nbsp;<a href="https://www.gcpedia.gc.ca/wiki/GBA%2B_(Gender-based_Analysis%2B)">GBA+ Home Page</a>&</li>
-							<li>Status of Women Canada:&nbsp;<a href="https://cfc-swc.gc.ca/gba-acs/index-en.html">GBA+</a></li>
-							<li>Status of Women Canada:&nbsp;<a href="https://cfc-swc.gc.ca/gba-acs/toolkit-trousse-en.html">GBA+ Training Toolkit</a></li>
-							<li>Canada School of Public Service:&nbsp;<a href="https://www.csps-efpc.gc.ca/gbap-acsp-eng.aspx">GBA+</a></li>
-							</ul>
-                         </div>
-                    </div>
-                </section> 				
-                <section>
-                    <h2>Terms of use</h2>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a>.</p>
-							<p>This work is a derivative from &ldquo;<a href="https://cfc-swc.gc.ca/gba-acs/index-en.html">Gender-based Analysis Plus (GBA+)</a>&rdquo; by Status of Women Canada and used&nbsp;under the&nbsp;<a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence &ndash; Canada</a>.&nbsp;</p>
-						</div>
-                    </div>
-                </section>
-        <div class="pagedetails">
-            <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-            <dl id="wb-dtmd">
-                <dt>Date modified:&#32;</dt>
-                <dd>
-                    <time property="dateModified">2019-12-12</time>
-                </dd>
-            </dl>
+          </div>
         </div>
-        <script>
-            includeHTML();
-        </script>
-       <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-         </script>
-    </main>
-    <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-    <!--[if gte IE 9 | !IE ]><!-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+    </section>
+    <section>
+      <h2>Before you start</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>The course <a href="https://cfc-swc.gc.ca/gba-acs/course-cours/eng/mod00/mod00_01_01.html">Introduction to GBA+</a>, offered by Status of Women Canada, is mandatory to all Transport Canada employees. </p>
+          <p><strong>Chart illustrating the steps of a GBA+ assessment</strong></p>
+          <img id="myImg" style="width: 100%;" src="https://cfc-swc.gc.ca/images/gba-acs/steps-etapes-en.jpg " alt="GBA+ Assessment Steps">
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Identify issues </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>The first step is to identify the context and the gender and diversity issues. </p>
+          <p>Nothing happens in a vacuum. Your initiative may have a narrow objective, but it will always be linked to broader government priorities. The social, cultural and economic environment are also important. Start by making these connections. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Tip</h4>
+            <p>Remember: throughout your application of GBA+, document your process, findings, and results. This will help your team as well as other teams with other applications of GBA+ to their projects. You may also be asked to provide evidence that
+              a GBA+ was conducted and to explain the process that guided your recommendations. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Challenge assumptions</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>We all have assumptions. In addition to our individual assumptions, the institution you work for may have formal or informal policies in place that can affect the development or outcome of an initiative. You need to be aware of these. Remember
+            that workplace culture, behaviours, activities or processes all shape your assumptions. </p>
+          <p>Although the project you are working on may appear to affect everyone equally, always challenge your assumptions about whether it has gender and other diversity implications. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Tip</h4>
+            <p>Use a modified version of the <a href="/hww-cnt/jeux/brainstorming.html">Do a disruptive brainstorming session</a> play to challenge your team to remove pre-conceived ideas about gender and diversity!&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Gather the facts: research and consult </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>The data you use should be gender-disaggregated and should include other intersecting identity factors, such as ethnicity, age or disability. </p>
+          <p>If information is not available, don’t abandon your analysis. Identify gaps in existing data and consider making data collection part of your initiative’s objectives and evaluation measures. </p>
+          <p>Make sure to use GBA+ when you design your consultation process. It is not enough to consult the general public and then apply your findings to all groups. Seek out multiple viewpoints. Engage Canadians of various identities, and consult broad
+            and inclusive sources to deepen your analysis. Don’t forget: accessibility issues, social conditions and economic considerations can all affect someone’s ability to participate in your consultation process. </p>
+          <p>The results of your consultation and research should inform your options and recommendations at all stages of initiative development and implementation. </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Develop options and make recommendations </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Using the data you have gathered, indicate how the options you propose respond to the specific issues you identified. Present your GBA+ findings to decision-makers clearly. If you have found that your initiative could have differential impacts
+            or unintended barriers, suggest strategies to strengthen the proposal. And be sure to highlight your plan to fill any data gaps that your GBA+ identified. </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Monitor and evaluate </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>GBA+ also applies to the evaluation and monitoring of your initiative. The design of your evaluation framework and approach to monitoring can help address inequality and build capacity. </p>
+          <p>Make sure your evaluation identifies groups who are positively or negatively affected by the initiative. Highlight data gaps and address unintended outcomes for diverse groups. Incorporate them into strategy renewals or management responses.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Communication</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Identify your target audiences, and tailor your messaging appropriately. Show how your initiative supports diversity, and use inclusive examples, languages and symbols. Review your messaging to ensure you are not perpetuating stereotypes. Whenever
+            possible, choose images and language that challenge harmful stereotypes. </p>
+          <p>Finally, remember to share your GBA+ results. This will demonstrate due diligence, foster buy-in with stakeholders, and identify areas for further action. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Tip</h4>
+            <p>The <a href="/hww-cnt/plays/cmkickoff.html">Conduct a change management kick-off meeting</a> play can help your team come up with an effective communications plan &ndash; not only is it for big changes, but also to communicate exciting results!&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Other resources on this topic</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li>GCPedia:&nbsp;<a href="https://www.gcpedia.gc.ca/wiki/GBA%2B_(Gender-based_Analysis%2B)">GBA+ Home Page</a>&</li>
+            <li>Status of Women Canada:&nbsp;<a href="https://cfc-swc.gc.ca/gba-acs/index-en.html">GBA+</a></li>
+            <li>Status of Women Canada:&nbsp;<a href="https://cfc-swc.gc.ca/gba-acs/toolkit-trousse-en.html">GBA+ Training Toolkit</a></li>
+            <li>Canada School of Public Service:&nbsp;<a href="https://www.csps-efpc.gc.ca/gbap-acsp-eng.aspx">GBA+</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Terms of use</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+              target="_blank">Terms and conditions</a>.</p>
+          <p>This work is a derivative from &ldquo;<a href="https://cfc-swc.gc.ca/gba-acs/index-en.html">Gender-based Analysis Plus (GBA+)</a>&rdquo; by Status of Women Canada and used&nbsp;under the&nbsp;<a href="https://open.canada.ca/en/open-government-licence-canada">Open Government Licence &ndash; Canada</a>.&nbsp;</p>
+        </div>
+      </div>
+    </section>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd>
+          <time property="dateModified">2019-12-12</time>
+        </dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </body>
+
 </html>
