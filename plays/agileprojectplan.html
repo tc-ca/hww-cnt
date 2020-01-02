@@ -1,434 +1,404 @@
-
-
 <!DOCTYPE html>
 <!--[if lt IE 9]>
 <html class="no-js lt-ie9" lang="en" dir="ltr">
    <![endif]-->
-   <!--[if gt IE 8]><!-->
-   <html class="no-js" lang="en" dir="ltr">
-      <!--<![endif]-->
-      <head>
-         <meta charset="utf-8">
-         <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-         <!-- Primary Meta Tags -->
-         <title>How We Work - Play - Build an Agile project management plan </title>
-         <meta name="title" content="How We Work - Play - Build an Agile project management plan ">
-         <meta content="width=device-width,initial-scale=1" name="viewport">
-         <meta name="description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
-         <!-- Open Graph / Facebook -->
-         <meta property="og:type" content="website">
-         <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/capacity.html">
-         <meta property="og:title" content="How We Work - Play - Build an Agile project management plan ">
-         <meta property="og:description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
-         <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
-         <!-- Twitter -->
-         <meta property="twitter:card" content="summary_large_image">
-         <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/capacity.html">
-         <meta property="twitter:title" content="How We Work - Play - Build an Agile project management plan ">
-         <meta property="twitter:description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
-         <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
-         <!--[if gte IE 9 | !IE ]><!-->
-         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-         <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-         <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
-         <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
-         <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-         <script>
-            function includeHTML() {
-                var z, i, elmnt, file, xhttp;
-                /*loop through a collection of all HTML elements:*/
-                z = document.getElementsByTagName("*");
-                for (i = 0; i < z.length; i++) {
-                    elmnt = z[i];
-                    /*search for elements with a certain atrribute:*/
-                    file = elmnt.getAttribute("w3-include-html");
-                    if (file) {
-                        /*make an HTTP request using the attribute value as the file name:*/
-                        xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function() {
-                            if (this.readyState == 4) {
-                                if (this.status == 200) {
-                                    elmnt.innerHTML = this.responseText;
-                                }
-                                if (this.status == 404) {
-                                    elmnt.innerHTML = "Page not found.";
-                                }
-                                /*remove the attribute, and call this function once more:*/
-                                elmnt.removeAttribute("w3-include-html");
-                                includeHTML();
-                            }
-                        }
-                        xhttp.open("GET", file, true);
-                        xhttp.send();
-                        /*exit the function:*/
-                        return;
-                    }
-                }
-            };
-         </script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+  <!-- Primary Meta Tags -->
+  <title>How We Work - Play - Build an Agile project management plan </title>
+  <meta name="title" content="How We Work - Play - Build an Agile project management plan ">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/capacity.html">
+  <meta property="og:title" content="How We Work - Play - Build an Agile project management plan ">
+  <meta property="og:description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/capacity.html">
+  <meta property="twitter:title" content="How We Work - Play - Build an Agile project management plan ">
+  <meta property="twitter:description" content="Explore how you might use the Agile approach and Scrum method for project management. ">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-         <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
          <![endif]-->
-         <script>
-            window.console = window.console || function(t) {};
-         </script>
-         <script>
-            if (document.location.search.match(/type=embed/gi)) {
-                window.parent.postMessage("resize", "*");
-            }
-         </script>
-      </head>
-      <body>
-         <nav>
-            <ul id="wb-tphp">
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-               </li>
-               <li class="wb-slc">
-                  <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-               </li>
-            </ul>
-         </nav>
-         <header>
-            <div id="wb-bnr" class="container">
-               <section id="wb-lng" class="text-right">
-                  <h2 class="wb-inv">Language selection</h2>
-                  <ul class="list-inline margin-bottom-none">
-                     <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/plandeprojetagile.html">Français</a></li>
-                  </ul>
-               </section>
-               <div class="row">
-                  <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                     <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/plandeprojetagile.html">Français</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
                         lang="fr">Gouvernement du Canada</span></span>
                      </a>
-                     <meta property="areaServed" typeof="Country" content="Canada">
-                     <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                  </div>
-               </div>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transport Canada</a></li>
+          <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+          <li><a href="/hww-cnt/plays.html">Plays</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Build an Agile project management plan </h1>
+    <p class="gc-byline"><strong>Agile is a way of working that seeks to build a product or service quickly, test what has been built, and iterate or work the process based on regular feedback from users or stakeholders. </strong></p>
+    <div class="row">
+      <div class="col-md-12">
+        <p><strong>Use this play to...</strong></p>
+        <ul>
+          <li>Explore how you might use Agile or Scrum in managing your project or initiative. </li>
+          <li>Plan and manage your project or initiative according to iterations and “sprints” </li>
+          <li>Determine the roles, responsibilities and processes for managing an Agile team. </li>
+        </ul>
+        <section>
+          <h2>Running the play</h2>
+          <div class="row" style="background-color:#ececec;">
+            <div class="col-md-12">
+              <p>The purpose of this play is to provide you with a basis of knowledge in Agile and Scrum in order to determine if these methods are beneficial to the management of your project or initiative. </p>
+              <p>The Agile approach seeks to break projects down into components and work in iterations (repetitions that work towards the desired result) in order to speed up development, maximize user input, and constantly improve. </p>
             </div>
-            <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-            <nav id="wb-bc" property="breadcrumb">
-               <h2>You are here:</h2>
-               <div class="container">
-                  <ol class="breadcrumb">
-                     <li><a href="#">Transport Canada</a></li>
-                     <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                     <li><a href="/hww-cnt/plays.html">Plays</a></li>
-                  </ol>
-               </div>
-            </nav>
-         </header>
-         <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-            <h1 property="name" id="wb-cont">Build an Agile project management plan </h1>
-            <p class="gc-byline"><strong>Agile is a way of working that seeks to build a product or service quickly, test what has been built, and iterate or work the process based on regular feedback from users or stakeholders. </strong></p>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>What is Agile? </h2>
+          <div class="row">
             <div class="col-md-12">
-            <p><strong>Use this play to...</strong></p>
-            <ul>
-               <li>Explore how you might use Agile or Scrum in managing your project or initiative. </li>
-               <li>Plan and manage your project or initiative according to iterations and “sprints” </li>
-               <li>Determine the roles, responsibilities and processes for managing an Agile team. </li>
-            </ul>
-            <section>
-               <h2>Running the play</h2>
-               <div class="row" style="background-color:#ececec;">
-               <div class="col-md-12">
-                  <div>
-                     <p>The purpose of this play is to provide you with a basis of knowledge in Agile and Scrum in order to determine if these methods are beneficial to the management of your project or initiative.   </p>
-                     <p>The Agile approach seeks to break projects down into components and work in iterations (repetitions that work towards the desired result) in order to speed up development, maximize user input, and constantly improve. </p>
-                  </div>
-            </section>
-            <section>
-            <h2>What is Agile? </h2>
-            <div class="row">
-            <div class="col-md-12">
-            <p>Agile is an approach to working that seeks to:</p>
-            <ul>
-            <li>Empower small teams of experts to solve problems and build things</li>
-            <li>Focus on users and prioritize delivering value to users quickly and repeatedly</li>
-            <li>Mitigate risk on an ongoing basis</li>
-            <li>Use feedback loops - both qualitative and quantitative - to improve products and processes</li>
-            <li>Coordinate work with your team</li>
-            </ul>
-            <p>Traditional approaches of working focus on distinct, separate and consecutive phases of a project that culminate in the development of a single product. Any updates or changes on the final product are often at a large scale and done infrequently.&nbsp;</p>
-            <table class="table table-hover">
-               <tbody>
-               <tr>
-               <td>
-               <p><strong>Agile approach</strong>&nbsp;</p>
-               </td>
-               <td>
-               <p><strong>Traditional approach</strong>&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>Work in iterations&nbsp;</p>
-               </td>
-               <td>
-               <p>Work in phases&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>Produce incremental value&nbsp;</p>
-               </td>
-               <td>
-               <p>Build it all in one shot&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>Mitigate risks throughout&nbsp;</p>
-               </td>
-               <td>
-               <p>Mitigate risks upfront&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>User and product-focused&nbsp;</p>
-               </td>
-               <td>
-               <p>Organization and project-focused&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>Empower teams of experts&nbsp;</p>
-               </td>
-               <td>
-               <p>Direct teams to follow a (dictated) plan&nbsp;</p>
-               </td>
-               </tr>
-               <tr>
-               <td>
-               <p>Measures constantly, adapts in response to data&nbsp;</p>
-               </td>
-               <td>
-               <p>Uses data to plan, measures after launch&nbsp;</p>
-               </td>
-               </tr>
-               </tbody>
-               </table>
-               <p>There are several methods to implementing Agile, including&nbsp;eXtreme&nbsp;programming, Kanban, Lean, and Scrum.&nbsp; Scrum is the most frequently used method by teams that are new to the Agile approach and therefore, this play is primarily informed by Scrum.</p>
-               <p>It is worth noting that you should choose to incorporate components that work for your project or initiative or mix pieces from multiple approaches like Kanban and Scrum. Resources at the end of the play provide more information on Agile and some of the methods available.</p>
-             
-               
-               </div>
-               </div>
-               </section>
-            <section>  
-            <h2>How this play will proceed: </h2>
-            <div class="row">
+              <p>Agile is an approach to working that seeks to:</p>
+              <ul>
+                <li>Empower small teams of experts to solve problems and build things</li>
+                <li>Focus on users and prioritize delivering value to users quickly and repeatedly</li>
+                <li>Mitigate risk on an ongoing basis</li>
+                <li>Use feedback loops - both qualitative and quantitative - to improve products and processes</li>
+                <li>Coordinate work with your team</li>
+              </ul>
+              <p>Traditional approaches of working focus on distinct, separate and consecutive phases of a project that culminate in the development of a single product. Any updates or changes on the final product are often at a large scale and done infrequently.&nbsp;</p>
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td><strong>Agile approach</strong></td>
+                    <td><strong>Traditional approach</strong></td>
+                  </tr>
+                  <tr>
+                    <td>Work in iterations</td>
+                    <td>Work in phases</td>
+                  </tr>
+                  <tr>
+                    <td>Produce incremental value</td>
+                    <td>Build it all in one shot</td>
+                  </tr>
+                  <tr>
+                    <td>Mitigate risks throughout</td>
+                    <td>Mitigate risks upfront</td>
+                  </tr>
+                  <tr>
+                    <td>User and product-focused</td>
+                    <td>Organization and project-focused</td>
+                  </tr>
+                  <tr>
+                    <td>Empower teams of experts</td>
+                    <td>Direct teams to follow a (dictated) plan</td>
+                  </tr>
+                  <tr>
+                    <td>Measures constantly, adapts in response to data</td>
+                    <td>Uses data to plan, measures after launch</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>There are several methods to implementing Agile, including&nbsp;eXtreme&nbsp;programming, Kanban, Lean, and Scrum.&nbsp; Scrum is the most frequently used method by teams that are new to the Agile approach and therefore, this play is primarily
+                informed by Scrum.</p>
+              <p>It is worth noting that you should choose to incorporate components that work for your project or initiative or mix pieces from multiple approaches like Kanban and Scrum. Resources at the end of the play provide more information on Agile
+                and some of the methods available.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>How this play will proceed: </h2>
+          <div class="row">
             <div class="col-md-8">
-            <p>During this play, you will proceed through several steps, including:</p>
-            <ul>
-            <li>Determining roles in your scrum team</li>
-            <li>Determining your product increments and backlog</li>
-            <li>Planning your sprints</li>
-            <li>Organizing your scrums</li>
-            <li>Holding your sprint review&nbsp;</li>
-            <li>Holding your sprint retrospective</li>
-            <li>Moving forward</li>
-            </ul>
-            <p>Are you unclear on what sprints, scrums, backlogs and increments mean? Don&rsquo;t worry, as you proceed through the play, these terms should become clearer.</p>
+              <p>During this play, you will proceed through several steps, including:</p>
+              <ul>
+                <li>Determining roles in your scrum team</li>
+                <li>Determining your product increments and backlog</li>
+                <li>Planning your sprints</li>
+                <li>Organizing your scrums</li>
+                <li>Holding your sprint review&nbsp;</li>
+                <li>Holding your sprint retrospective</li>
+                <li>Moving forward</li>
+              </ul>
+              <p>Are you unclear on what sprints, scrums, backlogs and increments mean? Don&rsquo;t worry, as you proceed through the play, these terms should become clearer.</p>
             </div>
             <div class="col-md-4 ">
-            <div class="tip ">
-            <h4>Materials</h4>
-            <ul><li>A concept case or other write-up on the goals of a project or initiative </li></ul>
+              <div class="tip ">
+                <h4>Materials</h4>
+                <ul>
+                  <li>A concept case or other write-up on the goals of a project or initiative </li>
+                </ul>
+              </div>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Determine roles in your scrum team</h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Determine roles in your scrum team</h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>The first step is determining the roles and responsibilities of your &ldquo;scrum&rdquo; team.&nbsp; The scrum team and roles can differ, but generally, the following roles and responsibilities are found:</p>
-            <p><strong>Product owner</strong></p>
-            <ul>
-            <li>Represents and speaks for the objectives of the project.&nbsp; The product owner will identify the &ldquo;backlog&rdquo; items, determine priority of &ldquo;backlog&rdquo; items, ensure that the project is visible and transparent, and is accountable for the project.</li>
-            </ul>
-            <p><strong>Scrum Master</strong></p>
-            <ul>
-            <li>Responsible for maintaining momentum, helping to address hurdles, and managing the project.&nbsp; The scrum master works with the product owner on determining the &ldquo;backlog&rdquo; for each sprint, prioritization, and organizes meetings and discussions as needed.</li>
-            </ul>
-            <p><strong>Development Team</strong></p>
-            <ul>
-            <li>Performs the daily work.&nbsp; Generally, these individuals are cross-functional and can perform multiple roles when needed.</li>
-            </ul>
-            <p>In addition, you may also have stakeholders (anyone who may be affected by the project or who may have input in the project), but they are generally not considered part of the scrum team.</p>
+              <p>The first step is determining the roles and responsibilities of your &ldquo;scrum&rdquo; team.&nbsp; The scrum team and roles can differ, but generally, the following roles and responsibilities are found:</p>
+              <p><strong>Product owner</strong></p>
+              <ul>
+                <li>Represents and speaks for the objectives of the project.&nbsp; The product owner will identify the &ldquo;backlog&rdquo; items, determine priority of &ldquo;backlog&rdquo; items, ensure that the project is visible and transparent, and
+                  is accountable for the project.</li>
+              </ul>
+              <p><strong>Scrum Master</strong></p>
+              <ul>
+                <li>Responsible for maintaining momentum, helping to address hurdles, and managing the project.&nbsp; The scrum master works with the product owner on determining the &ldquo;backlog&rdquo; for each sprint, prioritization, and organizes meetings
+                  and discussions as needed.</li>
+              </ul>
+              <p><strong>Development Team</strong></p>
+              <ul>
+                <li>Performs the daily work.&nbsp; Generally, these individuals are cross-functional and can perform multiple roles when needed.</li>
+              </ul>
+              <p>In addition, you may also have stakeholders (anyone who may be affected by the project or who may have input in the project), but they are generally not considered part of the scrum team.</p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Determine your product increments and backlog </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Determine your product increments and backlog </h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>Overall, your project will proceed through several iterations - each iteration is referred to as a “product increment”. The increment can be a website, service, report, or other product that is usable.  There can be several increments as a product is developed and refined.  The product owner and scrum master should meet to determine foreseeable product increments and what components might make up the increments. </p>
-            <p>The components of all the increments are referred to as the “product backlog”; this is all components that would need to be completed for the product to be considered finished and is essentially your master “to do” list.  </p>
-            <p>The product backlog lists all content, features, functions, enhancements and fixes that will be made for a project.  Each item will have several activities associated with its development. For example, developing a title page for a report may have activities such as: developing content, working with communications on graphics, developing a mock-up, seeking feedback from stakeholders on visuals, developing a final title page. </p>								
+              <p>Overall, your project will proceed through several iterations - each iteration is referred to as a “product increment”. The increment can be a website, service, report, or other product that is usable. There can be several increments as
+                a product is developed and refined. The product owner and scrum master should meet to determine foreseeable product increments and what components might make up the increments. </p>
+              <p>The components of all the increments are referred to as the “product backlog”; this is all components that would need to be completed for the product to be considered finished and is essentially your master “to do” list. </p>
+              <p>The product backlog lists all content, features, functions, enhancements and fixes that will be made for a project. Each item will have several activities associated with its development. For example, developing a title page for a report
+                may have activities such as: developing content, working with communications on graphics, developing a mock-up, seeking feedback from stakeholders on visuals, developing a final title page. </p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Plan your sprint</h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Plan your sprint</h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>To help create momentum for project development, &ldquo;sprints&rdquo; are used to organize activities that will help produce a product increment.</p>
-            <p><img id="myImg" style="width: 100%;" src="/hww-cnt/images/agileincrement-en.png" alt="Visual - Agile product increment">
-            </p>
-            <p>A sprint is a regular work cycle (typically one month) during which work is completed and made available for review.&nbsp; Sprint planning is conducted in collaboration with the entire scrum team and should seek to cover the following questions:</p>
-            <ul>
-            <li>What product backlog items can be delivered in the upcoming sprint?</li>
-            <li>How will the work be achieved?</li>
-            </ul>
-            <p>A single or several team member(s) may be contributing to various pieces of the backlog during a sprint. Note: the product backlog intended to be completed during a sprint is referred to as a &ldquo;sprint backlog&rdquo; &ndash; this is your &ldquo;to do&rdquo; list for your sprint.</p>
-            <img id="myImg" style="width: 100%;" src="/hww-cnt/images/agilesprint-en.png" alt="Visual - Agile sprint">
+              <p>To help create momentum for project development, &ldquo;sprints&rdquo; are used to organize activities that will help produce a product increment.</p>
+              <p><img id="myImg" style="width: 100%;" src="/hww-cnt/images/agileincrement-en.png" alt="Visual - Agile product increment">
+              </p>
+              <p>A sprint is a regular work cycle (typically one month) during which work is completed and made available for review.&nbsp; Sprint planning is conducted in collaboration with the entire scrum team and should seek to cover the following questions:
+              </p>
+              <ul>
+                <li>What product backlog items can be delivered in the upcoming sprint?</li>
+                <li>How will the work be achieved?</li>
+              </ul>
+              <p>A single or several team member(s) may be contributing to various pieces of the backlog during a sprint. Note: the product backlog intended to be completed during a sprint is referred to as a &ldquo;sprint backlog&rdquo; &ndash; this is
+                your &ldquo;to do&rdquo; list for your sprint.</p>
+              <img id="myImg" style="width: 100%;" src="/hww-cnt/images/agilesprint-en.png" alt="Visual - Agile sprint">
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Organize your scrums </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Organize your scrums </h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>Scrums are frequent (usually daily) short meetings held between the scrum master and development team that plan activities and seek to optimize collaboration and performance.</p>
-            <p>Typically, scrums cover the following:</p>
-            <ul>
-            <li>What has been done since the last scrum meeting?</li>
-            <li>What will be done today by the development team to help progress toward the sprint goal?</li>
-            <li>Are there any impediments that might prevent the development team from meeting the sprint goal?</li>
-            </ul>
-            <p>In addition, you may also want to find ways to enhance communication and collaboration in your scrum team outside of your scrums. Consider finding ways to encourage collaboration physically (by sitting together) or digitally (by using <a href="https://teams.microsoft.com/start">Microsoft Teams</a>, <a href="https://slack.com/">Slack</a> and instant messenger features over emails).</p>
+              <p>Scrums are frequent (usually daily) short meetings held between the scrum master and development team that plan activities and seek to optimize collaboration and performance.</p>
+              <p>Typically, scrums cover the following:</p>
+              <ul>
+                <li>What has been done since the last scrum meeting?</li>
+                <li>What will be done today by the development team to help progress toward the sprint goal?</li>
+                <li>Are there any impediments that might prevent the development team from meeting the sprint goal?</li>
+              </ul>
+              <p>In addition, you may also want to find ways to enhance communication and collaboration in your scrum team outside of your scrums. Consider finding ways to encourage collaboration physically (by sitting together) or digitally (by using
+                <a href="https://teams.microsoft.com/start">Microsoft Teams</a>, <a href="https://slack.com/">Slack</a> and instant messenger features over emails).</p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Hold sprint review </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Hold sprint review </h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>At the end of your sprint, hold a sprint review in order to be able to show the components that were completed to management and stakeholders. </p>
+              <p>At the end of your sprint, hold a sprint review in order to be able to show the components that were completed to management and stakeholders. </p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Hold sprint retrospective </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Hold sprint retrospective </h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>In addition, at the end of each sprint, organize a sprint retrospective with the scrum team in order to discuss lessons learned and find improvements for the next sprint.  </p>
+              <p>In addition, at the end of each sprint, organize a sprint retrospective with the scrum team in order to discuss lessons learned and find improvements for the next sprint. </p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Moving forward </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Moving forward </h2>
+          <div class="row">
             <div class="col-md-12">
-            <div>
-            <p>After your sprint is completed, move onto planning your next sprint. </p>
-            <p>Once you have proceeded through all the sprints required to produce your product increment, you will want to continue the planning and development process for your next product increment and sprints.  This process will continue as the product is launched. </p>
+              <p>After your sprint is completed, move onto planning your next sprint. </p>
+              <p>Once you have proceeded through all the sprints required to produce your product increment, you will want to continue the planning and development process for your next product increment and sprints. This process will continue as the product
+                is launched. </p>
             </div>
-            </div>
-            </div>
-            </section>
-            <section>
-            <h2>Other resources on this topic </h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Other resources on this topic </h2>
+          <div class="row">
             <div class="col-md-12">
-            <ul>
-            <li>Overview of the Agile approach:&nbsp;<a href="https://www.ontario.ca/page/being-agile-ontario-public-service">Being agile in the Ontario Public Service</a>&nbsp;(Government of Ontario, 2019)</li>
-            <li>Description of the Agile approach:&nbsp;<a href="https://www.gov.uk/service-manual/agile-delivery">Agile Delivery</a>&nbsp;(Government of the United Kingdom, 2019)</li>
-            <li>About the Scrum approach:&nbsp;<a href="https://www.scrumguides.org/scrum-guide.html">The Scrum GuideTM.</a>&nbsp;(Ken&nbsp;Schwaber&nbsp;and Jeff Sutherland, 2017)</li>
-            <li>An introduction to Kanban:&nbsp;<a href="https://www.atlassian.com/agile/kanban">What is Kanban?</a>&nbsp;(Atlassian, 2019) (English only)</li>
-            <li>Interview with Todd Scanlan, agile coach and scrum master:&nbsp;<a href="https://www.canada.ca/en/government/system/digital-government/living-digital/agile-is-not-the-end-goal-its-the-journey.html">&ldquo;Agile&rdquo; is not the end goal, it&rsquo;s the journey</a>&rdquo; (Canada, 2019)</li>
-            </ul>
+              <ul>
+                <li>Overview of the Agile approach:&nbsp;<a href="https://www.ontario.ca/page/being-agile-ontario-public-service">Being agile in the Ontario Public Service</a>&nbsp;(Government of Ontario, 2019)</li>
+                <li>Description of the Agile approach:&nbsp;<a href="https://www.gov.uk/service-manual/agile-delivery">Agile Delivery</a>&nbsp;(Government of the United Kingdom, 2019)</li>
+                <li>About the Scrum approach:&nbsp;<a href="https://www.scrumguides.org/scrum-guide.html">The Scrum GuideTM.</a>&nbsp;(Ken&nbsp;Schwaber&nbsp;and Jeff Sutherland, 2017)</li>
+                <li>An introduction to Kanban:&nbsp;<a href="https://www.atlassian.com/agile/kanban">What is Kanban?</a>&nbsp;(Atlassian, 2019) (English only)</li>
+                <li>Interview with Todd Scanlan, agile coach and scrum master:&nbsp;<a href="https://www.canada.ca/en/government/system/digital-government/living-digital/agile-is-not-the-end-goal-its-the-journey.html">&ldquo;Agile&rdquo; is not the end goal, it&rsquo;s the journey</a>&rdquo;
+                  (Canada, 2019)</li>
+              </ul>
             </div>
-            </div>
-            </section>
-            <section>
-            <h2>Terms of use</h2>
-            <div class="row">
+          </div>
+        </section>
+        <section>
+          <h2>Terms of use</h2>
+          <div class="row">
             <div class="col-md-12">
-            <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a>.</p>
-            <p>Various aspects of this work are derivatives of the following sources:</p>
-            <ul>
-            <li>The &ldquo;<a href="https://www.gov.uk/service-manual">Service Manual</a>&rdquo; by the Government of the United Kingdom, used under the&nbsp;<a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License 3.0</a>.</li>
-            <li>&ldquo;<a href="https://www.ontario.ca/page/being-agile-ontario-public-service">Being Agile in the Ontario Public Service</a>&rdquo;, used under the&nbsp;<a href="https://www.ontario.ca/page/open-government-licence-ontario">Open Government Licence &ndash; Ontario</a>.</li>
-            <li>&ldquo;<a href="https://www.scrumguides.org/scrum-guide.html">The Scrum GuideTM</a>&rdquo; produced by Ken&nbsp;Schwaber&nbsp;and Jeff Sutherland, used under a Creative Commons Attribution 4.0 International Public License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).</li>
-            </ul>
+              <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+                  target="_blank">Terms and conditions</a>.</p>
+              <p>Various aspects of this work are derivatives of the following sources:</p>
+              <ul>
+                <li>The &ldquo;<a href="https://www.gov.uk/service-manual">Service Manual</a>&rdquo; by the Government of the United Kingdom, used under the&nbsp;<a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government License 3.0</a>.</li>
+                <li>&ldquo;<a href="https://www.ontario.ca/page/being-agile-ontario-public-service">Being Agile in the Ontario Public Service</a>&rdquo;, used under the&nbsp;<a href="https://www.ontario.ca/page/open-government-licence-ontario">Open Government Licence &ndash; Ontario</a>.</li>
+                <li>&ldquo;<a href="https://www.scrumguides.org/scrum-guide.html">The Scrum GuideTM</a>&rdquo; produced by Ken&nbsp;Schwaber&nbsp;and Jeff Sutherland, used under a Creative Commons Attribution 4.0 International Public License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).</li>
+              </ul>
             </div>
-            </div>
-            </section>
-            </div>
-            </div>
-            <div class="pagedetails">
-               <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-               <dl id="wb-dtmd">
-                  <dt>Date modified:&#32;</dt>
-                  <dd>
-                     <time property="dateModified">2019-12-12</time>
-                  </dd>
-               </dl>
-            </div>
-            <script>
-               includeHTML();
-            </script>
-            <script>
-               // Get the modal
-               var modal = document.getElementById("myModal");
-               
-               // Get the image and insert it inside the modal - use its "alt" text as a caption
-               var img = document.getElementById("myImg");
-               var modalImg = document.getElementById("img01");
-               var captionText = document.getElementById("caption");
-               img.onclick = function(){
-                 modal.style.display = "block";
-                 modalImg.src = this.src;
-                 captionText.innerHTML = this.alt;
-               }
-               
-               // Get the <span> element that closes the modal
-               var span = document.getElementsByClassName("close")[0];
-               
-               // When the user clicks on <span> (x), close the modal
-               span.onclick = function() { 
-                 modal.style.display = "none";
-               }
-            </script>
-         </main>
-         <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-         <!--[if gte IE 9 | !IE ]><!-->
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-         <!--<![endif]-->
-         <!--[if lt IE 9]>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd>
+          <time property="dateModified">2019-12-12</time>
+        </dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-         <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-      </body>
-   </html>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
 
+</html>
