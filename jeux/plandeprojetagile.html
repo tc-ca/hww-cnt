@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+   <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comment nous travaillons - Jeu - Élaborer un plan de gestion de projet agile </title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="title" content="Comment nous travaillons - Jeu - Élaborer un plan de gestion de projet agile ">
+  <meta name="description" content="Découvrez comment vous pouvez utiliser l’approche Agile et la méthode Scrum pour la gestion de projet.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/jeux/plandeprojetagile.html">
+  <meta property="og:title" content="Comment nous travaillons - Jeu - Élaborer un plan de gestion de projet agile ">
+  <meta property="og:description" content="Découvrez comment vous pouvez utiliser l’approche Agile et la méthode Scrum pour la gestion de projet.">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/jeux/plandeprojetagile.html">
+  <meta property="twitter:title" content="Comment nous travaillons - Jeu - Élaborer un plan de gestion de projet agile ">
+  <meta property="twitter:description" content="Découvrez comment vous pouvez utiliser l’approche Agile et la méthode Scrum pour la gestion de projet.">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+         <![endif]-->
+  <!--[if lte IE 9]>
+         <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/[en-url].html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-fr.svg" alt=""
+                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Élaborer un plan de gestion de projet agile </h1>
+    <p class="gc-byline"><strong>Agile est une méthode de travail qui cherche à créer rapidement un produit ou un service, à tester ce qui a été créé et à répéter ou à faire fonctionner le processus en fonction des commentaires réguliers des utilisateurs ou des intervenants. </strong></p>
+    <div class="row">
+      <div class="col-md-12">
+        <p><strong>Utilisez ce jeu pour...</strong></p>
+        <ul>
+          <li>Découvrez comment vous pouvez utiliser Agile ou Scrum dans la gestion de votre projet ou initiative.</li>
+          <li>Planifiez et gérez votre projet ou votre initiative en fonction des itérations et des « sprints ».</li>
+          <li>Déterminez les rôles, les responsabilités et les processus de gestion d’une équipe Agile.</li>
+        </ul>
+        <section>
+          <h2>Mise en pratique</h2>
+          <div class="row" style="background-color:#ececec;">
+            <div class="col-md-12">
+              <p>Le but de ce jeu est de vous fournir une base de connaissances sur Agile et Scrum afin de déterminer si ces méthodes sont utiles pour la gestion de votre projet ou initiative.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Qu’est-ce qu’Agile?</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Agile est une approche en matière de travail qui cherche à :</p>
+              <ul>
+                <li>Permettre à de petites équipes d’experts de résoudre des problèmes et de réaliser des choses.</li>
+                <li>Se concentrer sur les utilisateurs et établir l’ordre de priorité pour fournir de la valeur aux utilisateurs rapidement et de façon répétée.</li>
+                <li>Atténuer les risques de façon continue.</li>
+                <li>Utiliser des boucles de rétroaction - tant qualitatives que quantitatives - pour améliorer les produits et les processus.</li>
+                <li>Coordonner le travail avec votre équipe.</li>
+              </ul>
+              <p>Les approches traditionnelles en matière de travail se concentrent sur des phases distinctes, séparées et consécutives d’un projet qui aboutissent à l’élaboration d’un produit unique. Toute mise à jour ou modification du produit final se
+                fait souvent à grande échelle et rarement. </p>
+              <p>L’approche Agile cherche à décomposer les projets en divers éléments et à travailler en itérations (répétitions qui visent à atteindre le résultat souhaité) afin d’accélérer l’élaboration, d’optimiser l’apport des utilisateurs et d’effectuer
+                constamment des améliorations. </p>
+              <table class="table table-hover">
+                <tbody>
+                  <tr>
+                    <td><strong>Approche Agile</strong></td>
+                    <td><strong>Approche traditionnelle </strong></td>
+                  </tr>
+                  <tr>
+                    <td>Fonctionne par it&eacute;rations.</td>
+                    <td>Fonctionne par phases.</td>
+                  </tr>
+                  <tr>
+                    <td>Produit une valeur croissante.</td>
+                    <td>Construit tout d&rsquo;un seul coup.</td>
+                  </tr>
+                  <tr>
+                    <td>Att&eacute;nue les risques tout au long du processus.</td>
+                    <td>Att&eacute;nue les risques d&rsquo;avance.</td>
+                  </tr>
+                  <tr>
+                    <td>Est centr&eacute;e sur l&rsquo;utilisateur et le produit.</td>
+                    <td>Est centr&eacute;e sur l&rsquo;organisation et les projets.</td>
+                  </tr>
+                  <tr>
+                    <td>Habilite des &eacute;quipes d&rsquo;experts.</td>
+                    <td>Demande aux &eacute;quipes de suivre un plan (dict&eacute;).</td>
+                  </tr>
+                  <tr>
+                    <td>Mesure en permanence, s&rsquo;adapte en fonction des donn&eacute;es.</td>
+                    <td>Utilise les donn&eacute;es pour planifier, mesure apr&egrave;s le lancement.</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Il existe plusieurs méthodes pour mettre en œuvre Agile, notamment les méthodes eXtreme Programming, Kanban, Lean et Scrum. Scrum est la méthode la plus fréquemment utilisée par les équipes pour lesquelles l’approche Agile est nouvelle;
+                c’est pourquoi ce jeu est principalement éclairé par Scrum.</p>
+              <p>Il convient de noter que vous devriez choisir d’incorporer des composantes qui fonctionnent pour votre projet ou initiative, ou mélanger des éléments provenant de méthodes multiples, comme le Kanban et Scrum. Les ressources mentionnées à
+                la fin du jeu fournissent de plus amples renseignements sur Agile et sur certaines des méthodes disponibles.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Comment se déroulera ce jeu :</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Au cours de ce jeu, vous passerez par plusieurs &eacute;tapes, dont les suivantes :</p>
+              <ul>
+                <li>D&eacute;terminer les r&ocirc;les dans votre &eacute;quipe de m&ecirc;l&eacute;e (scrum)</li>
+                <li>D&eacute;terminer les incr&eacute;ments pour votre produit ainsi que l&rsquo;arri&eacute;r&eacute;</li>
+                <li>Planifier les sprints</li>
+                <li>Organiser les m&ecirc;l&eacute;es</li>
+                <li>Passer en revue le sprint</li>
+                <li>Effectuer la r&eacute;trospective sur le sprint</li>
+                <li>Aller de l&rsquo;avant</li>
+              </ul>
+              <p>Vous ne savez pas tr&egrave;s bien ce que signifient les termes &laquo; sprint &raquo;, &laquo; m&ecirc;l&eacute;e &raquo; (scrum), &laquo; arri&eacute;r&eacute; &raquo; et &laquo; incr&eacute;ments &raquo;? Ne vous inqui&eacute;tez pas,
+                &agrave; mesure que vous avancerez dans le jeu, ces termes devraient vous sembler plus clairs.</p>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Matériel</h4>
+                <ul>
+                  <li>Un cas conceptuel ou un autre document sur les objectifs d’un projet ou d’une initiative.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Déterminer les rôles dans votre équipe de mêlée (scrum)</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>La premi&egrave;re &eacute;tape consiste &agrave; d&eacute;terminer les r&ocirc;les et responsabilit&eacute;s de votre &eacute;quipe de m&ecirc;l&eacute;e (scrum). La composition et les r&ocirc;les de l&rsquo;&eacute;quipe de m&ecirc;l&eacute;e
+                peuvent varier, mais en g&eacute;n&eacute;ral, on trouve les r&ocirc;les et responsabilit&eacute;s suivants :</p>
+              <p>Propri&eacute;taire de produit</p>
+              <ul>
+                <li>Agit comme repr&eacute;sentant et porte-parole pour les objectifs du projet. Le propri&eacute;taire du produit identifie les &eacute;l&eacute;ments de l&rsquo;&laquo; arri&eacute;r&eacute; &raquo;, en d&eacute;termine l&rsquo;ordre de
+                  priorit&eacute;, veille &agrave; ce que le projet soit &laquo; visible &raquo; et transparent, et est responsable du projet.</li>
+              </ul>
+              <p>Chef de m&ecirc;l&eacute;e</p>
+              <ul>
+                <li>Maintient l&rsquo;&eacute;lan du projet, aide &agrave; surmonter les obstacles et assure la gestion du projet. Le chef de m&ecirc;l&eacute;e travaille de concert avec le propri&eacute;taire du produit pour d&eacute;terminer l&rsquo;&laquo; arri&eacute;r&eacute; &raquo;
+                  dans le cas de chaque sprint ainsi que pour &eacute;tablir les priorit&eacute;s et organiser des r&eacute;unions et des discussions au besoin.</li>
+              </ul>
+              <p>&Eacute;quipe de d&eacute;veloppement</p>
+              <ul>
+                <li>Effectue le travail quotidien. En g&eacute;n&eacute;ral, les membres de cette &eacute;quipe sont&nbsp;interfonctionnels&nbsp;et peuvent jouer plusieurs r&ocirc;les au besoin.</li>
+              </ul>
+              <p>En outre, il peut y avoir des intervenants (toute personne susceptible d&rsquo;&ecirc;tre touch&eacute;e par le projet ou d&rsquo;y participer), mais ceux-ci ne sont g&eacute;n&eacute;ralement pas consid&eacute;r&eacute;s comme faisant partie de
+                l&rsquo;&eacute;quipe de m&ecirc;l&eacute;e.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Déterminer les incréments pour votre produit ainsi que l’arriéré</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Dans l’ensemble, votre projet passera par plusieurs itérations - chaque itération est appelée « incrément de produit ». L’incrément peut être un site Web, un service, un rapport ou tout autre produit utilisable. Il peut y avoir plusieurs
+                incréments à mesure qu’un produit est élaboré et peaufiné. Le propriétaire du produit et le maître de mêlée devraient se rencontrer pour déterminer les incréments prévisibles du produit et les composantes qui pourraient constituer ces
+                incréments.
+              </p>
+              <p>Les composantes de tous les incréments portent le nom d’« arriéré de produit »; il s’agit de toutes les composantes qui doivent être réalisées pour que le produit soit considéré comme terminé – essentiellement, c’est votre « liste de tâches »
+                maîtresse.
+              </p>
+              <p>La liste de l’arriéré de produit énumère tous les contenus, fonctionnalités, fonctions, améliorations et correctifs qui seront apportés à un projet. Chaque élément aura plusieurs activités associées à son élaboration. Par exemple, l’élaboration
+                d’une page de titre pour un rapport peut comporter des activités telles que les suivantes : élaboration du contenu, collaboration avec le service des communications pour les éléments graphiques, élaboration d’une maquette, obtention de
+                commentaires auprès d’intervenants concernant les éléments visuels, élaboration d’une page de titre définitive. </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Planifier les sprints</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Afin d’aider à créer un élan pour l’élaboration du projet, on utilise des « sprints » pour organiser des activités qui contribueront à réaliser un incrément de produit. </p>
+              <p><img id="myImg" style="width: 100%;" src="/hww-cnt/images/agileincrement-fr.png" alt="Visuel - Incrément de produit agile"></p>
+              <p>Un sprint est un cycle de travail régulier (habituellement un mois) pendant lequel le travail est réalisé et mis à disposition pour révision. La planification du sprint est menée en collaboration avec toute l’équipe de mêlée et devrait chercher
+                à traiter les questions suivantes :</p>
+              <ul>
+                <li>Quels sont les éléments d’arriéré qui peuvent être livrés lors du prochain sprint?</li>
+                <li>Comment le travail sera-t-il réalisé?</li>
+              </ul>
+              <p>Un ou plusieurs membres de l’équipe peuvent contribuer à divers éléments de l’arriéré au cours d’un sprint. Remarque : l’arriéré de produit que l’on entend réaliser au cours d’un sprint est appelé « arriéré de sprint » – c’est votre « liste
+                de tâches » pour le sprint.</p>
+              <img id="myImg" style="width: 100%;" src="/hww-cnt/images/agilesprint-fr.png" alt="Visuel - Sprint agile">
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Organiser les mêlées (scrums) </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les m&ecirc;l&eacute;es (scrums) sont de br&egrave;ves r&eacute;unions fr&eacute;quentes (habituellement quotidiennes) entre le chef de m&ecirc;l&eacute;e et l&rsquo;&eacute;quipe de d&eacute;veloppement qui servent &agrave; planifier les
+                activit&eacute;s ainsi qu&rsquo;&agrave; optimiser la collaboration et le rendement.</p>
+              <p>Normalement, les m&ecirc;l&eacute;es couvrent les points suivants :</p>
+              <ul>
+                <li>Qu&rsquo;est-ce qui a &eacute;t&eacute; accompli depuis la derni&egrave;re r&eacute;union de m&ecirc;l&eacute;e?</li>
+                <li>Que fera aujourd&rsquo;hui l&rsquo;&eacute;quipe de d&eacute;veloppement pour aider &agrave; progresser vers l&rsquo;objectif du sprint?</li>
+                <li>Y a-t-il des obstacles qui pourraient emp&ecirc;cher l&rsquo;&eacute;quipe de d&eacute;veloppement d&rsquo;atteindre l&rsquo;objectif du sprint?&nbsp;</li>
+              </ul>
+              <p>De plus, vous voudrez peut-&ecirc;tre aussi trouver des moyens d&rsquo;am&eacute;liorer la communication et la collaboration au sein de votre &eacute;quipe de m&ecirc;l&eacute;e en dehors des r&eacute;unions de m&ecirc;l&eacute;e. Envisagez
+                de trouver des moyens d&rsquo;encourager la collaboration physiquement (en s&rsquo;asseyant ensemble) ou par voie num&eacute;rique (en utilisant les fonctions&nbsp;&nbsp;<a href="https://www.blogger.com/start">Microsoft Teams</a>,&nbsp;
+                <a href="https://slack.com/">Slack</a>&nbsp;et&nbsp;la messagerie instantan&eacute;e plut&ocirc;t que les courriels).</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Passer en revue le sprint</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>À l’issue du sprint, effectuez une revue afin de pouvoir montrer à la direction et aux intervenants les composantes qui ont été réalisées.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Effectuer la rétrospective sur le sprint</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>De plus, à la fin de chaque sprint, organisez une rétrospective avec l’équipe de mêlée afin de discuter des leçons retenues et de trouver des améliorations pour le prochain sprint.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Aller de l’avant</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Une fois le sprint terminé, passez à la planification de votre prochain sprint.</p>
+              <p>Une fois que vous aurez effectué tous les sprints nécessaires pour produire votre incrément de produit, vous pouvez poursuivre le processus de planification et de développement pour le prochain incrément de produit et vos prochains sprints.
+                Ce processus se poursuivra lorsque le produit sera lancé.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Autres ressources sur le même sujet </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li>Aper&ccedil;u de l&rsquo;approche Agile :&nbsp;<a href="https://www.ontario.ca/fr/page/etre-agile-dans-la-fonction-publique-de-lontario">&Ecirc;tre agile dans la fonction publique de l&rsquo;Ontario</a>&nbsp;(Gouvernement de l&rsquo;Ontario,
+                  2019)
+                </li>
+                <li>Description de l&rsquo;approche Agile :&nbsp;<a href="https://www.gov.uk/service-manual/agile-delivery">Agile Delivery</a>&nbsp;(Gouvernement du Royaume-Uni, 2019) (en anglais seulement)</li>
+                <li>&Agrave; propos de la m&eacute;thode Scrum :&nbsp;<a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-French.pdf">Le Guide ScrumTM</a>&nbsp;(Ken&nbsp;Schwaber&nbsp;et Jeff Sutherland, 2017) (PDF, 423 Ko)</li>
+                <li>Une introduction &agrave; Kanban : <a href="https://www.atlassian.com/fr/agile/kanban">Qu&rsquo;est-ce que Kanban?&nbsp;</a>(Atlassian, 2019) (en anglais seulement)</li>
+                <li>Entrevue avec Todd&nbsp;Scanlan, coach agile et chef de m&ecirc;l&eacute;e :&nbsp;<a href="https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/la-vie-en-numerique/la-methode-agile-nest-pas-une-fin-en-soi-mais-un-moyen-darriver-a-ses-fins.html">La m&eacute;thode &laquo; agile &raquo; n&rsquo;est pas une fin en soi, mais un moyen d&rsquo;arriver &agrave; ses fins</a>&nbsp;(Canada,
+                  2019)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Conditions d'utilisation</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les documents que l&rsquo;on trouve sur ce site Web ont &eacute;t&eacute; produits ou rassembl&eacute;s pour offrir aux Canadiens et Canadiennes de l&rsquo;information sur les programmes et services offerts par le gouvernement du Canada.
+                Ils sont assujettis aux&nbsp;<a href="https://www.canada.ca/fr/transparence/avis.html">conditions suivantes</a>.</p>
+              <p>Divers aspects de cet ouvrage sont d&eacute;riv&eacute;s des sources suivantes :</p>
+              <ul>
+                <li>Le document &laquo; <a href="https://www.gov.uk/service-manual">Service Manual</a>]&raquo; du gouvernement du Royaume-Uni est utilis&eacute; en vertu de la licence &laquo; <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a> &raquo;
+                  (en anglais seulement).</li>
+                <li>&laquo; <a href="https://www.ontario.ca/fr/page/etre-agile-dans-la-fonction-publique-de-lontario">&Ecirc;tre agile dans la fonction publique de l&rsquo;Ontario</a> &raquo; est utilis&eacute; en vertu de la <a href="https://www.ontario.ca/fr/page/licence-du-gouvernement-ouvert-ontario">licence du gouvernement ouvert &ndash; Ontario</a>.</li>
+                <li><a href="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-French.pdf">Le Guide ScrumTM</a>&nbsp;(PDF, 423 KB), d&eacute;velopp&eacute; par Ken&nbsp;Schwaber&nbsp;et Jeff Sutherland est utilis&eacute; en vertu d&rsquo;une
+                  licence publique internationale Creative Commons Attribution 4.0 (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date de modification :&#32;</dt>
+        <dd><time property="dateModified">2019-12-16</time></dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+         <![endif]-->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
