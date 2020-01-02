@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+   <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comment nous travaillons - Jeu - Bâtir un plan de gestion de projet</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="title" content="Comment nous travaillons - Jeu -  Bâtir un plan de gestion de projet">
+  <meta name="description" content="Planifiez et suivez les projets en cinq étapes : démarrage, planification, exécution, surveillance et contrôle, et clôture.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://plpilon.github.io/hww-cnt/jeux/plandeprojet.html">
+  <meta property="og:title" content="Comment nous travaillons - Jeu -  Bâtir un plan de gestion de projet">
+  <meta property="og:description" content="Planifiez et suivez les projets en cinq étapes : démarrage, planification, exécution, surveillance et contrôle, et clôture.">
+  <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/jeux/plandeprojet.html">
+  <meta property="twitter:title" content="Comment nous travaillons - Jeu -  Bâtir un plan de gestion de projet">
+  <meta property="twitter:description" content="Planifiez et suivez les projets en cinq étapes : démarrage, planification, exécution, surveillance et contrôle, et clôture.">
+  <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+         <![endif]-->
+  <!--[if lte IE 9]>
+         <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/projectplan.html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+                        src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-fr.svg" alt=""
+                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont"> Bâtir un plan de gestion de projet</h1>
+    <p class="gc-byline"><strong>La gestion de projet est la discipline qui consiste à planifier, organiser, obtenir, gérer, diriger et contrôler des ressources en vue d’atteindre des objectifs précis.</strong></p>
+    <div class="row">
+      <div class="col-md-12">
+        <p>La gestion efficace des projets à TC est importante. Ce jeu vous guidera à travers les étapes de la gestion de projet pour vous aider à obtenir de meilleurs résultats. </p>
+        <p><strong>Utilisez ce jeu pour...</strong></p>
+        <ul>
+          <li>Planifier et exécuter des projets</li>
+          <li>Gérer la portée, les échéanciers, les ressources et les risques</li>
+          <li>Diriger l’aspect technique du changement</li>
+        </ul>
+        <section>
+          <h2>Mise en pratique</h2>
+          <div class="row" style="background-color:#ececec;">
+            <div class="col-md-12">
+              <p>Un projet est un travail dont le début et la fin sont clairement définis. Il comporte également un calendrier et des résultats clairs, et il est entrepris dans le but de créer un produit ou un service unique. La gestion de projet est une
+                activité mixte à dimensions multiples. Selon le type de projet, cette activité de gestion peut être très complexe.</p>
+              <p>L'exécution de ce jeu vous fournira une compréhension préliminaire de la gestion de projet. Utilisez ce jeu comme un point de départ et continuez à vous perfectionner sur tous les autres jeux reliés.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Pourquoi?</h2>
+          <div class="row">
+            <div class="col-md-8">
+              <p>Une bonne gestion de projet pr&eacute;sente de nombreux avantages :</p>
+              <ul>
+                <li>Elle &eacute;tablit un plan et des objectifs qui peuvent &ecirc;tre mesur&eacute;s.</li>
+                <li>Elle favorise une prise de d&eacute;cision structur&eacute;e.</li>
+                <li>Elle veille &agrave; ce que les principales parties prenantes soient consult&eacute;es.</li>
+                <li>Elle permet de s&rsquo;assurer que le temps et les ressources sont utilis&eacute;s de fa&ccedil;on appropri&eacute;e.</li>
+                <li>Elle souligne les points probl&eacute;matiques et les solutions.</li>
+                <li>Elle rel&egrave;ve les risques et permet de les contr&ocirc;ler afin d&rsquo;&eacute;viter les retards, les d&eacute;doublements et les d&eacute;passements de co&ucirc;ts.</li>
+                <li>Elle indique clairement qui est responsable des r&eacute;sultats du projet.</li>
+                <li>Elle veille &agrave; ce que les r&eacute;sultats fassent l&rsquo;objet d&rsquo;un suivi et d&rsquo;un rapport.</li>
+              </ul>
+              <p>Ce&nbsp;jeu&nbsp;vous guidera &agrave; travers les cinq phases de la gestion de projet :</p>
+              <ol>
+                <li>La phase de d&eacute;marrage : o&ugrave; la valeur et la faisabilit&eacute; du projet sont mesur&eacute;es.</li>
+                <li>La phase de planification : o&ugrave; le plan du projet est &eacute;labor&eacute;. Le plan pr&eacute;pare &eacute;galement les &eacute;quipes aux obstacles qu&rsquo;elles pourraient rencontrer.</li>
+                <li>La phase d&rsquo;ex&eacute;cution : o&ugrave; les produits livrables sont fabriqu&eacute;s, et elle repose en grande partie sur la phase de planification.</li>
+                <li>a phase de surveillance et de contr&ocirc;le : o&ugrave; les &eacute;quipes suivent leur propre progr&egrave;s. Cette phase est souvent combin&eacute;e avec la phase d&rsquo;ex&eacute;cution.</li>
+                <li>La phase de cl&ocirc;ture : o&ugrave; le projet est livr&eacute;. L&rsquo;&eacute;quipe &eacute;value et documente le projet.</li>
+              </ol>
+            </div>
+            <div class="col-md-4 ">
+              <div class="tip ">
+                <h4>Astuce</h4>
+                <p>Le&nbsp;<strong>Secr</strong><strong>&eacute;</strong><strong>tariat</strong><strong>&nbsp;du Conseil du Tr&eacute;sor</strong>&nbsp;(SCT) d&eacute;fini un&nbsp;<em>projet</em>&nbsp;comme &eacute;tant une activit&eacute; ou une s&eacute;rie
+                  d&rsquo;activit&eacute;s qui a un d&eacute;but et une fin. Un&nbsp;<em>projet</em>&nbsp;doit produire des extrants d&eacute;termin&eacute;s et des r&eacute;sultats pr&eacute;cis &agrave; l&rsquo;appui de l&rsquo;objectif d&rsquo;une
+                  politique gouvernementale, selon un calendrier et un plan de ressources clairement d&eacute;finis. Un&nbsp;<em>projet</em>&nbsp;est r&eacute;alis&eacute; suivant des param&egrave;tres pr&eacute;cis en mati&egrave;re de d&eacute;lais,
+                  de co&ucirc;t et de rendement.&nbsp;</p>
+                <p>(<a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=28007">Glossaire sur la planification des investissements et la gestion de projet</a>, SCT, 2014)&nbsp;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>La phase de démarrage</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>La phase de d&eacute;marrage permet la mise en place d&rsquo;un projet. Au cours de cette phase, nous commen&ccedil;ons &agrave; planifier les activit&eacute;s, les ressources, et les partenaires. Il est important de documenter les justifications
+                appropri&eacute;es du projet et, &agrave; partir de l&agrave;, d'&eacute;laborer un plan de travail/&eacute;ch&eacute;ancier initial qui inclue un budget. Il est important de d&eacute;finir les limites du projet et d'obtenir l'approbation
+                officielle et document&eacute;e de votre ou de vos promoteurs. Les principaux produits livrables de la phase de lancement sont&nbsp;<a href="http://mytc/rdims/15664371">la charte du projet et le registre des parties prenantes</a>.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>La phase de planification</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Lors de la phase de planification, nous expliquons et pr&eacute;sentons le concept de gestion et nous le faisons valider par les parties int&eacute;ress&eacute;es. Nous sommes alors en mesure de pr&eacute;ciser le plan du projet cr&eacute;&eacute;
+                lors de la phase pr&eacute;c&eacute;dente. Nous veillons toujours &agrave; int&eacute;grer un plan de gestion du changement bien con&ccedil;u pour augmenter la probabilit&eacute; de r&eacute;ussite du projet.</p>
+              <p>Selon les exigences et les attentes des parties int&eacute;ress&eacute;es, nous affinons les objectifs du projet; afin de les atteindre, nous d&eacute;terminons la port&eacute;e globale du travail que nous devons effectuer, et nous &eacute;laborons
+                un plan d'action complet tenant compte des diff&eacute;rents aspects de la mise en &oelig;uvre. Les principaux produits livrables de cette phase sont le plan de gestion du projet (inclus dans&nbsp;<a href="http://mytc/rdims/15664371">la chartre du projet</a>)
+                et les documents du projet, comme&nbsp;<a href="http://mytc/rdims/1569631">le tableau de bord</a>.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>La phase d’exécution</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Pendant la phase d'ex&eacute;cution, nous r&eacute;alisons le travail et cr&eacute;ons les produits livrables conform&eacute;ment aux plans de gestion du projet et de gestion du changement &eacute;labor&eacute;s lors de la phase de planification.
+                Il est &eacute;galement important &agrave; ce stade de r&eacute;soudre les probl&egrave;mes afin d'att&eacute;nuer les risques et d'assurer le succ&egrave;s du projet, ainsi que de documenter et de mesurer les activit&eacute;s du projet.
+                Le cas &eacute;ch&eacute;ant, nous organisons des formations pour donner &agrave; l'&eacute;quipe de projet les connaissances dont elle a besoin pour r&eacute;ussir. Les documents pertinents pour cette phase comprennent&nbsp;<a href="http://mytc/rdims/14232690">le registre de risques et probl&egrave;mes</a>&nbsp;et&nbsp;
+                <a
+                  href="http://mytc/rdims/15703512">le Mod&egrave;le d'&eacute;valuation simplifi&eacute;e de la complexit&eacute; et des risques des projets</a>.&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>La phase de surveillance et de contrôle</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Au cours de la phase de surveillance et de contr&ocirc;le, nous nous occupons des questions li&eacute;es &agrave; l'avancement et au rendement de notre projet. Nous comparons les progr&egrave;s accomplis &agrave; ce qui &eacute;tait pr&eacute;vu;
+                nous examinons nos progr&egrave;s et analysons notre rendement; puis, &agrave; partir de nos constatations, nous sugg&eacute;rons et amor&ccedil;ons des changements afin d'apporter les ajustements n&eacute;cessaires.</p>
+              <p>Tout cela se fait en &eacute;valuant le succ&egrave;s du projet; Nous d&eacute;terminons les possibilit&eacute;s d'am&eacute;lioration et les &laquo; pratiques exemplaires &raquo; &agrave; utiliser pour les futurs projets. Il est &eacute;galement
+                n&eacute;cessaire de fournir un document qui rend compte des le&ccedil;ons retenues, comme&nbsp;<a href="http://mytc/rdims/14554556">le registre des le&ccedil;ons apprises</a>.</p>
+              <p>En r&eacute;fl&eacute;chissant au projet, on assure le succ&egrave;s des travaux futurs. C'est &eacute;galement au cours de cette phase que nous &eacute;valuons les membres du projet et &eacute;laborons un plan de renforcement pour nous
+                assurer que nous sommes en mesure de maintenir les r&eacute;sultats du projet.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>La phase de clôture</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Lors de la phase de cl&ocirc;ture, nous mettons officiellement fin &agrave; notre projet ou une phase de notre projet en terminant l'ensemble des activit&eacute;s. Cette phase est r&eacute;alis&eacute;e par l'interm&eacute;diaire de toutes
+                les autres phases et consiste &agrave; comparer le rendement r&eacute;el de chaque &eacute;tape au rendement pr&eacute;vu. C'est pendant cette phase que nous examinons la documentation, surveillons les risques, les probl&egrave;mes et
+                la r&eacute;sistance. Tout cela nous permet d'&eacute;tayer nos r&eacute;sultats en vue d'une utilisation future pour d'autres projets, en utilisant certains documents comme&nbsp;<a href="http://mytc/rdims/14168292">le rapport de fermeture</a>&nbsp;et&nbsp;
+                <a
+                  href="http://mytc/rdims/14160347">le memo de fermeture</a>.&nbsp;</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Autres ressources sur le même sujet </h2>
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li>Secr&eacute;tariat de Conseil du Tr&eacute;sor :&nbsp;<a href="https://www.tbs-sct.gc.ca/pol/doc-fra.aspx?id=18229">Politique sur la gestion des projets</a></li>
+                <li>Transformation &agrave; TC sur&nbsp;GCPedia&nbsp;:&nbsp;<a href="https://www.gcpedia.gc.ca/wiki/Transport_Canada/TCTrans/changepro?lang=fr">La gestion des projets</a></li>
+                <li>La gestion des projets pour&nbsp;MyTC&nbsp;et des projets de TI sur&nbsp;GCPedia&nbsp;:&nbsp;<a href="https://www.gcpedia.gc.ca/wiki/Transport_Canada/IMITNational/IMagineIT/Project_Management_Framework?lang=fr">GPPedia</a></li>
+              </ul>
+              <p>Si vous avez besoin plus d&rsquo;informations&nbsp;sur la&nbsp;gestion de projet, n&rsquo;h&eacute;sitez pas&nbsp;&nbsp;communiquer avec&nbsp;une conseill&egrave;re du secr&eacute;tariat de supervision du projet :</p>
+              <p><a href="mailto:polly.leung@tc.gc.ca">Polly Leung</a></p>
+              <ul>
+                <li>Projets d&rsquo;infrastructure et de TI</li>
+                <li>Gestion de l&rsquo;information</li>
+                <li>Projets&nbsp;d&rsquo;activation de la technologie</li>
+                <li>Aviation civile et surface</li>
+              </ul>
+              <p><a href="mailto:jade.fournier@tc.gc.ca">Jade Fournier</a>&nbsp;</p>
+              <ul>
+                <li>Plan de protection des Oc&eacute;ans (PPO)</li>
+                <li>Projets des voies maritimes</li>
+                <li>Finances et ressources humaines</li>
+                <li>Politique et s&eacute;curit&eacute;</li>
+                <li>Programmes</li>
+                <li>Recouvrement des co&ucirc;ts</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Terms of use</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+                  target="_blank">Terms and conditions</a>.</p>
+
+            </div>
+          </div>
+          <div class="pagedetails">
+            <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+            <dl id="wb-dtmd">
+              <dt>Date de modification :&#32;</dt>
+              <dd><time property="dateModified">2019-12-16</time></dd>
+            </dl>
+          </div>
+          <script>
+            includeHTML();
+          </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+         <![endif]-->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
