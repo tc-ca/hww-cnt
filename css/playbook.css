@@ -112,12 +112,12 @@ font-weight: bold;
 
 /* Card Layout */
 
-#header {
+.header {
 	position: relative;
 	min-height: 300px;
 }
 
-#header-content {
+.header-content {
 	position: absolute;
 	bottom: 0;
 	left: 15px;
