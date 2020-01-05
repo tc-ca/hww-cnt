@@ -791,6 +791,40 @@ Integrating change in your project management, Goal-setting, Building belonging,
           modal.style.display = "none";
         }
       </script>
+      <script>$(function() {
+   $(".grid-item-3").hide()
+   $("input[name='entry.2067656750']").click(function() {
+     if ($("#q1c").is(":checked")) {
+     $("#integratedplan").show();
+     $("#multidisciplinaryteams").show();
+     } 
+     else if ($("#q1d").is(":checked")) {
+     $("#integratedplan").show();
+     $("#multidisciplinaryteams").show();
+     }  
+   });
+   $("input[name='entry.1712329567']").click(function() {
+     if ($("#q2c").is(":checked")) {
+     $("#RACIframework").show();
+     $("#roles").show();
+     $("#capacity").show();
+     $("#culture").show();
+     $("#usermanual").show();
+     $("#inclusive").show();
+     $("#diversity").show();
+     } 
+     else if ($("#q2c").is(":checked")) {
+		 $("#RACIframework").show();
+     $("#roles").show();
+     $("#capacity").show();
+     $("#culture").show();
+     $("#usermanual").show();
+     $("#inclusive").show();
+     $("#diversity").show();
+     }  
+   });
+ });
+ </script>
   </main>
   <div w3-include-html="/hww-cnt/incl/footer.html"></div>
   <!--[if gte IE 9 | !IE ]><!-->
