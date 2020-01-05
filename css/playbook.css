@@ -117,7 +117,7 @@ font-weight: bold;
 	min-height: 300px;
 }
 
-.header-content {
+#header-content {
 	position: absolute;
 	bottom: 0;
 	left: 15px;
