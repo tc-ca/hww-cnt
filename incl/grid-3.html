@@ -130,7 +130,23 @@
   <main property="mainContentOfPage" class="container" typeof="WebPageElement">
     <h1 property="name" id="wb-cont">Comment nous travaillons - les jeux</h1>
     <div class="row">
-
+<table>
+  <tr>
+    <td style="width: 38.3155%;">We don’t work in a silo. We are well-connected with other teams (i.e. modes, branches, or other departments). We learn from each other and share ideas.</td>
+    <td style="text-align: center;">
+      <input id="q1a" name="entry.2067656750" type="radio" value="yes" />
+    </td>
+    <td style="text-align: center;">
+      <input id="q1b" name="entry.2067656750" type="radio" value="somewhat" />
+    </td>
+    <td style="text-align: center;">
+      <input id="q1c" name="entry.2067656750" type="radio" value="no" />
+    </td>
+    <td style="text-align: center;">
+      <input id="q1d" name="entry.2067656750" type="radio" value="na" />
+    </td>
+  </tr>
+</table>
       <div class="grid">
         <div class="grid-item-3 header deliver" data-category="deliver" id="recadrage">
           <h5>Redéfinir le problème </h5>
@@ -520,6 +536,16 @@
         });
       }
     </script>
+    <script>
+    $(function() {
+   $("input[name='entry.2067656750']").click(function() {
+     if ($("#q1a").is(":checked")) {
+       $("#recadrage").show();
+     } else {
+       $("#recadrage").hide();
+     }
+   });
+ });</script>
     <script>
       includeHTML();
     </script>
