@@ -793,19 +793,21 @@ Integrating change in your project management, Goal-setting, Building belonging,
         }
       </script>
       <script>
+        $(".grid-item-3").hide()
+      </script>
+      <script>
         $(function() {
-          $(".grid-item-3").hide()
           $("input[name='entry.2067656750']").click(function() {
-            if ($("#q1c").is(":checked")) {
+            if ($("#q1b").is(":checked")) {
               $("#integratedplan").show();
               $("#multidisciplinaryteams").show();
-            } else if ($("#q1d").is(":checked")) {
+            } else if ($("#q1c").is(":checked")) {
               $("#integratedplan").show();
               $("#multidisciplinaryteams").show();
             }
           });
           $("input[name='entry.1712329567']").click(function() {
-            if ($("#q2c").is(":checked")) {
+            if ($("#q2b").is(":checked")) {
               $("#RACIframework").show();
               $("#roles").show();
               $("#capacity").show();
