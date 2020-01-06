@@ -7,236 +7,255 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155358177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155358177-1');
+  </script>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-    <!-- Primary Meta Tags -->
-    <title>How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) </title>
-    <meta name="title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
+  <!-- Primary Meta Tags -->
+  <title>How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) </title>
+  <meta name="title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/STAT.html">
-    <meta property="og:title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
-    <meta property="og:description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
-    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tc-ca.github.io/hww-cnt/plays/STAT.html">
+  <meta property="og:title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
+  <meta property="og:description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
+  <meta property="og:image" content="https://tc-ca.github.io/hww-cnt/incl/How We Work.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/STAT.html">
-    <meta property="twitter:title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
-    <meta property="twitter:description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
-    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tc-ca.github.io/hww-cnt/plays/STAT.html">
+  <meta property="twitter:title" content="How We Work - Play - Use the Sustainable Transportation Assessment Tool (STAT) ">
+  <meta property="twitter:description" content="Consider potential effects of transportation policies, plans and programs on the economy, on society and on the environment. ">
+  <meta property="twitter:image" content="https://tc-ca.github.io/hww-cnt/incl/How We Work.png">
 
-    <!--[if gte IE 9 | !IE ]><!-->
-    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
-    <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
-    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
-        };
-    </script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-    <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
          <![endif]-->
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
 </head>
 
 <body>
-    <nav>
-        <ul id="wb-tphp">
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-            </li>
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-            </li>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/OETD.html">Français</a></li>
         </ul>
-    </nav>
-    <header>
-        <div id="wb-bnr" class="container">
-            <section id="wb-lng" class="text-right">
-                <h2 class="wb-inv">Language selection</h2>
-                <ul class="list-inline margin-bottom-none">
-                    <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/OETD.html">Français</a></li>
-                </ul>
-            </section>
-            <div class="row">
-                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
                         lang="fr">Gouvernement du Canada</span></span></a>
-                    <meta property="areaServed" typeof="Country" content="Canada">
-                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                </div>
-            </div>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
         </div>
-        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-        <nav id="wb-bc" property="breadcrumb">
-            <h2>You are here:</h2>
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="#">Transport Canada</a></li>
-                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                    <li><a href="/hww-cnt/plays.html">Plays</a></li>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transport Canada</a></li>
+          <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+          <li><a href="/hww-cnt/plays.html">Plays</a></li>
 
-                </ol>
-            </div>
-        </nav>
-    </header>
+        </ol>
+      </div>
+    </nav>
+  </header>
 
-    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-        <h1 property="name" id="wb-cont">Use the Sustainable Transportation Assessment Tool (STAT) </h1>
-        <section>
-		<p class="gc-byline"><strong>Do you write any of the following: Memoranda to Cabinet, Treasury Board submissions, regulatory amendments or any other material requiring Minister or Cabinet approval? If yes, you must use the Sustainable Transportation Assessment Tool (STAT). </strong></p>
-        <div class="row">
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Use the Sustainable Transportation Assessment Tool (STAT) </h1>
+    <section>
+      <p class="gc-byline"><strong>Do you write any of the following: Memoranda to Cabinet, Treasury Board submissions, regulatory amendments or any other material requiring Minister or Cabinet approval? If yes, you must use the Sustainable Transportation Assessment Tool (STAT). </strong></p>
+      <div class="row">
+        <div class="col-md-12">
+          <p><strong>Use this play to...</strong></p>
+          <ul>
+            <li>Assess potential economic, social, and environmental effects early in policy development </li>
+            <li>Help management make informed and inclusive policy decisions </li>
+          </ul>
+          <h2>Running the play</h2>
+          <div class="row" style="background-color:#ececec;">
             <div class="col-md-12">
-                <p><strong>Use this play to...</strong></p>
-                <ul>
-                    <li>Assess potential economic, social, and environmental effects early in policy development  </li>
-                    <li>Help management make informed and inclusive policy decisions </li>
-                </ul>
-                <h2>Running the play</h2>
-                    <div class="row" style="background-color:#ececec;">
-                        <div class="col-md-12">
-							<p>The&nbsp;Sustainable Transportation Assessment Tool (STAT)&nbsp;is a planning tool that allows a qualitative assessment of potential economic, social and environmental effects early in the policy and program development process. The STAT includes questions as a means to assess the potential risks of your initiative and is integrated into the&nbsp;<a href="http://mytc/strategic-environmental-assessment-3717.html">Strategic Environmental Assessment (SEA)</a> process.&nbsp;</p>
-							<p>By using this tool early in the process of developing a proposal for a policy or program, you can determine the likelihood of positive outcomes or adverse effects as a result of implementing a policy, plan, or program proposal and in turn, prepare for them.&nbsp;&nbsp;</p>
-							<p>The STAT&rsquo;s benefits include:&nbsp;&nbsp;</p>
-							<ul>
-							<li>Interactive&nbsp;&nbsp;</li>
-							<li>Easy to use&nbsp;&nbsp;</li>
-							<li>Helps management make more informed and coordinated decisions&nbsp;&nbsp;</li>
-							<li>Prompts you to think outside silos&nbsp;&nbsp;</li>
-							<li>Allows you to save time and extra work in the end&nbsp;</li>
-							</ul>
-						</div>
-					</div>
-			</div>
-		</div>
-        </section>
-	   <section>
-		  <h2>Use the STAT  </h2>
-			<div class="row">
-				<div class="col-md-12">
-					<p>Click the link below to access the interactive STAT Excel document. Created by the Environmental Management Branch, this document contains everything required to assess the potential economic, social, and environmental impacts of developing the policy or program.&nbsp;</p>
-					<p>Access the&nbsp;<a href="http://mytc/RDIMS/12588893">Sustainable Transportation Assessment Tool (RDIMS: 12588893)</a>.&nbsp;</p>
-					<p>For more information, please visit the&nbsp;<a href="http://mytc/the-sustainable-transportation-assessment-tool-stat-8121.html">Sustainable Transportation Assessment Tool (STAT)</a>&nbsp;page on&nbsp;myTC, or send an e-mail to the<a href="mailto:TC.StrategicEnvironmentalAssessment-EvaluationEnvironnementaleStrategique.tc@tc.gc.ca">&nbsp;Environmental Management Branch</a>.&nbsp;</p>
-				</div>
-			</div>
-		</section>
-	   <section>
-		  <h2>Other resources on this topic </h2>
-			<div class="row">
-				<div class="col-md-12">
-				<ul>
-				<li>Departments and agencies are expected to consider potential environmental effects when developing policies, plans and program proposals:&nbsp;<a href="https://www.canada.ca/en/impact-assessment-agency/programs/strategic-environmental-assessment/cabinet-directive-environmental-assessment-policy-plan-program-proposals.html">Cabinet Directive on&nbsp;the Environmental Assessment of Policy, Plan and Program Proposals</a>&nbsp;(Canada, 2016)&nbsp;</li>
-				<li>Transport Canada&rsquo;s vision of a sustainable transportation system is one that integrates and balances social, economic and environmental objectives:&nbsp;<a href="http://mytc/RDIMS/7936625">Policy Statement: Strategic Environmental Assessment at Transport Canada (RDIMS: 7936625)</a>&nbsp;(Transport Canada, 2013)&nbsp;(accessible only on the Transport Canada network)&nbsp;</li>
-				</ul>
-				<p>Need more help?&nbsp;<a href="mailto:TC.StrategicEnvironmentalAssessment-EvaluationEnvironnementaleStrategique.tc@tc.gc.ca">Send an e-mail to the Environmental Management Branch</a>&nbsp;</p>
-				</div>
-			</div>
-		</section>
-		<section>
-			<h2>Terms of use</h2>
-			<div class="row">
-				<div class="col-md-12">
-					<p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a>.</p>
-				  <p>This work is a derivative from, &ldquo;The Sustainable Transportation Assessment Tool&rdquo; by Transport Canada and used under the&nbsp;Open Government Licence &ndash; Canada.&nbsp;</p>
+              <p>The&nbsp;Sustainable Transportation Assessment Tool (STAT)&nbsp;is a planning tool that allows a qualitative assessment of potential economic, social and environmental effects early in the policy and program development process. The STAT
+                includes questions as a means to assess the potential risks of your initiative and is integrated into the&nbsp;<a href="http://mytc/strategic-environmental-assessment-3717.html">Strategic Environmental Assessment (SEA)</a> process.&nbsp;</p>
+              <p>By using this tool early in the process of developing a proposal for a policy or program, you can determine the likelihood of positive outcomes or adverse effects as a result of implementing a policy, plan, or program proposal and in turn,
+                prepare for them.&nbsp;&nbsp;</p>
+              <p>The STAT&rsquo;s benefits include:&nbsp;&nbsp;</p>
+              <ul>
+                <li>Interactive&nbsp;&nbsp;</li>
+                <li>Easy to use&nbsp;&nbsp;</li>
+                <li>Helps management make more informed and coordinated decisions&nbsp;&nbsp;</li>
+                <li>Prompts you to think outside silos&nbsp;&nbsp;</li>
+                <li>Allows you to save time and extra work in the end&nbsp;</li>
+              </ul>
+            </div>
+          </div>
         </div>
-			</div>
-		</section>
-        <div class="pagedetails">
-            <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-            <dl id="wb-dtmd">
-                <dt>Date modified:&#32;</dt>
-                <dd>
-                    <time property="dateModified">2019-12-12</time>
-                </dd>
-            </dl>
+      </div>
+    </section>
+    <section>
+      <h2>Use the STAT </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Click the link below to access the interactive STAT Excel document. Created by the Environmental Management Branch, this document contains everything required to assess the potential economic, social, and environmental impacts of developing
+            the policy or program.&nbsp;</p>
+          <p>Access the&nbsp;<a href="http://mytc/RDIMS/12588893">Sustainable Transportation Assessment Tool (RDIMS: 12588893)</a>.&nbsp;</p>
+          <p>For more information, please visit the&nbsp;<a href="http://mytc/the-sustainable-transportation-assessment-tool-stat-8121.html">Sustainable Transportation Assessment Tool (STAT)</a>&nbsp;page on&nbsp;myTC, or send an e-mail to the<a href="mailto:TC.StrategicEnvironmentalAssessment-EvaluationEnvironnementaleStrategique.tc@tc.gc.ca">&nbsp;Environmental Management Branch</a>.&nbsp;</p>
         </div>
-        <script>
-            includeHTML();
-        </script>
-       <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-         </script>
-    </main>
-    <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-    <!--[if gte IE 9 | !IE ]><!-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+      </div>
+    </section>
+    <section>
+      <h2>Other resources on this topic </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li>Departments and agencies are expected to consider potential environmental effects when developing policies, plans and program proposals:&nbsp;<a href="https://www.canada.ca/en/impact-assessment-agency/programs/strategic-environmental-assessment/cabinet-directive-environmental-assessment-policy-plan-program-proposals.html">Cabinet Directive on&nbsp;the Environmental Assessment of Policy, Plan and Program Proposals</a>&nbsp;(Canada,
+              2016)&nbsp;</li>
+            <li>Transport Canada&rsquo;s vision of a sustainable transportation system is one that integrates and balances social, economic and environmental objectives:&nbsp;<a href="http://mytc/RDIMS/7936625">Policy Statement: Strategic Environmental Assessment at Transport Canada (RDIMS: 7936625)</a>&nbsp;(Transport
+              Canada, 2013)&nbsp;(accessible only on the Transport Canada network)&nbsp;</li>
+          </ul>
+          <p>Need more help?&nbsp;<a href="mailto:TC.StrategicEnvironmentalAssessment-EvaluationEnvironnementaleStrategique.tc@tc.gc.ca">Send an e-mail to the Environmental Management Branch</a>&nbsp;</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Terms of use</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+              target="_blank">Terms and conditions</a>.</p>
+          <p>This work is a derivative from, &ldquo;The Sustainable Transportation Assessment Tool&rdquo; by Transport Canada and used under the&nbsp;Open Government Licence &ndash; Canada.&nbsp;</p>
+        </div>
+      </div>
+    </section>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd>
+          <time property="dateModified">2019-12-12</time>
+        </dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </body>
+
 </html>

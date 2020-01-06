@@ -7,270 +7,296 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155358177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155358177-1');
+  </script>
+
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
             wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 
-    <!-- Primary Meta Tags -->
-    <title>How We Work - Play - Conduct an end-to-end demo </title>
-    <meta name="title" content="How We Work - Play - Conduct an end-to-end demo ">
-    <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="Visualize your project and get feedback at every stage. ">
+  <!-- Primary Meta Tags -->
+  <title>How We Work - Play - Conduct an end-to-end demo </title>
+  <meta name="title" content="How We Work - Play - Conduct an end-to-end demo ">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Visualize your project and get feedback at every stage. ">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://plpilon.github.io/hww-cnt/plays/endtoenddemo.html">
-    <meta property="og:title" content="How We Work - Play - Conduct an end-to-end demo ">
-    <meta property="og:description" content="Visualize your project and get feedback at every stage. ">
-    <meta property="og:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tc-ca.github.io/hww-cnt/plays/endtoenddemo.html">
+  <meta property="og:title" content="How We Work - Play - Conduct an end-to-end demo ">
+  <meta property="og:description" content="Visualize your project and get feedback at every stage. ">
+  <meta property="og:image" content="https://tc-ca.github.io/hww-cnt/incl/How We Work.png">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://plpilon.github.io/hww-cnt/plays/endtoenddemo.html">
-    <meta property="twitter:title" content="How We Work - Play - Conduct an end-to-end demo ">
-    <meta property="twitter:description" content="Visualize your project and get feedback at every stage. ">
-    <meta property="twitter:image" content="https://plpilon.github.io/hww-cnt/incl/How We Work.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tc-ca.github.io/hww-cnt/plays/endtoenddemo.html">
+  <meta property="twitter:title" content="How We Work - Play - Conduct an end-to-end demo ">
+  <meta property="twitter:description" content="Visualize your project and get feedback at every stage. ">
+  <meta property="twitter:image" content="https://tc-ca.github.io/hww-cnt/incl/How We Work.png">
 
-    <!--[if gte IE 9 | !IE ]><!-->
-    <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
-    <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
-    <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function() {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
             }
-        };
-    </script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
          <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
          <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
          <![endif]-->
-    <!--[if lte IE 9]>
+  <!--[if lte IE 9]>
          <![endif]-->
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
 </head>
 
 <body>
-    <nav>
-        <ul id="wb-tphp">
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-cont">Skip to main content</a>
-            </li>
-            <li class="wb-slc">
-                <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
-            </li>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Skip to main content</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Language selection</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/demonstrationboutenbout.html">Français</a></li>
         </ul>
-    </nav>
-    <header>
-        <div id="wb-bnr" class="container">
-            <section id="wb-lng" class="text-right">
-                <h2 class="wb-inv">Language selection</h2>
-                <ul class="list-inline margin-bottom-none">
-                    <li><a lang="fr" hreflang="fr" href="/hww-cnt/jeux/demonstrationboutenbout.html">Français</a></li>
-                </ul>
-            </section>
-            <div class="row">
-                <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
-                    <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/en.html" property="url"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
                         lang="fr">Gouvernement du Canada</span></span></a>
-                    <meta property="areaServed" typeof="Country" content="Canada">
-                    <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
-                </div>
-            </div>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
         </div>
-        <div w3-include-html="/hww-cnt/incl/nav.html"></div>
-        <nav id="wb-bc" property="breadcrumb">
-            <h2>You are here:</h2>
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li><a href="#">Transport Canada</a></li>
-                    <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
-                    <li><a href="/hww-cnt/plays.html">Plays</a></li>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transport Canada</a></li>
+          <li><a href="/hww-cnt/index-en.html">How We Work</a></li>
+          <li><a href="/hww-cnt/plays.html">Plays</a></li>
 
-                </ol>
-            </div>
-        </nav>
-    </header>
+        </ol>
+      </div>
+    </nav>
+  </header>
 
-    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
-        <h1 property="name" id="wb-cont">Conduct an end-to-end demo </h1>
-        <section>
-		<p class="gc-byline"><strong>An end-to-end demo is a visual representation of the final product or service that will be delivered and how users will interact with it. Use this play to demonstrate products and services related to departmental operations. </strong></p>
-        <div class="row">
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Conduct an end-to-end demo </h1>
+    <section>
+      <p class="gc-byline"><strong>An end-to-end demo is a visual representation of the final product or service that will be delivered and how users will interact with it. Use this play to demonstrate products and services related to departmental operations. </strong></p>
+      <div class="row">
+        <div class="col-md-12">
+          <p><strong>Use this play to...</strong></p>
+          <ul>
+            <li>Visualize a solution, service, or product </li>
+            <li>Understand how the user will interact with it </li>
+            <li>Provide opportunities for feedback </li>
+          </ul>
+          <h2>Running the play</h2>
+          <div class="row" style="background-color:#ececec;">
             <div class="col-md-12">
-                <p><strong>Use this play to...</strong></p>
-                <ul>
-                    <li>Visualize a solution, service, or product </li>
-                    <li>Understand how the user will interact with it </li>
-                    <li>Provide opportunities for feedback </li>
-                </ul>
-                <h2>Running the play</h2>
-                    <div class="row" style="background-color:#ececec;">
-                        <div class="col-md-12">
-							<p>With so many pieces to any type of project, it’s easy to lose sight of the big picture. Often times, this can lead to integration issues on multiple levels – such as an IT solution not working with currently installed programs, or an HR innovation that doesn’t match up with the current method of hiring new employees. </p>
-							<p>Visualizing the deliverables of a project and how users will interact with it is key. This is done by using an end-to-end demo. The team can run through each step of the project, garnering feedback to make sure it works seamlessly with the existing structure upon delivery. Depending on the project, the demo may take the form of sketches or diagrams, a working prototype, or a new product. It is important to continually repeat the process and improve on it as it takes shape. </p>
-							<p>We recommend that this play be driven by the project owner, with core team members participating as necessary. A high-level decision maker can be involved in the first few sessions and any major milestone sessions afterwards. </p>
-						</div>
-					</div>
-			</div>
-		</div>
-        </section>
-		<section>  
-		 <h2>Create the end-to-end demo </h2>
-			<div class="row">
-				<div class="col-md-8">
-				<p>The end-to-end demo typically starts as a high-level, low-tech visualization of the project – such as a diagram or sketches. For a project that is an update to an existing product or service, the demo should also reflect how the work fits into the current experience.</p>
-				<p>As the project becomes more clearly defined, the demo will mature and grow. The end-to-end demo should be continually updated with new information and feedback. It’s critical to show how the user will discover the product, feature, or service, as well as how they interact with it and leave it.  </p>
-				</div>
-			<div class="col-md-4 ">
-				<div class="tip ">
-				   <h4>Materials</h4>
-						<p>To start this play, you will need:&nbsp;</p>
-						<ul>
-            <li>Paper&nbsp;</li>
-						<li>Whiteboard&nbsp;</li>
-						<li>Markers and&nbsp;pens&nbsp;</li>
-						<li>Mock-ups of the project (User Interface, etc.)&nbsp;</li>
-						</ul>
-				</div>
-			</div>
-			</div>
-	   </section>
-		<section>  
-		 <h2>The demo </h2>
-			<div class="row">
-				<div class="col-md-8">
-				<p>Set aside a 30-minute window with the project team as well as any stakeholders and high-level decision makers, if available. Walk through the entire demo, end-to-end, so everyone understands the user’s journey through the project and where it fits into the bigger picture. If this is not the first time going through the demo, you can place some focus on the parts that have changed – however it is most important to run through the demo in its entirety, and be sure to document all user feedback.  </p>
-				</div>
-			<div class="col-md-4 ">
-				<div class="tip ">
-				   <h4>Tip</h4>
-				   <p>Your end-to-end demo should be rough. Don’t worry about creating a presentation or official document – the purpose is to quickly show how a product works in order to spark conversation. </p>
-				</div>
-			</div>
-			</div>
-	   </section>
-		<section>  
-		 <h2>Evolution </h2>
-			<div class="row">
-				<div class="col-md-8">
-				<p>Make any necessary amendments to your demo based on user feedback. Consider presenting to a wide variety of test subject groups, such as other teams or individuals with the organization. By using a large test sample, especially one outside of the core project team, you may receive feedback that you might not have originally thought of.  </p>
-				<p>If the feedback indicates that more significant changes are needed, then consider prototyping and re-running the demo to ensure the product satisfies it’s intended user. The most important takeaway, however, is once the project is implemented continue to follow up with users to identify and resolve any issues. </p>
-				</div>
-			<div class="col-md-4 ">
-				<div class="tip ">
-				   <h4>Tip</h4>
-				   <p>If your project is particularly big or complex, consider checking out the&nbsp;<a href="/hww-cnt/journey.html">Map your users&rsquo; journey</a>&nbsp;to gain the perspective of the end user.&nbsp;</p>
-				</div>
-			</div>
-			</div>
-	   </section>	   
-	   <section>
-		  <h2>Other resources on this topic </h2>
-			<div class="row">
-				<div class="col-md-12">
-					<ul>
-					<li>Step-by-step instructions for tracking your team&rsquo;s health, and new ways of working:&nbsp;<a href="https://www.atlassian.com/team-playbook">The Atlassian Team Playbook</a>&nbsp;(Atlassian, 2019)&nbsp;</li>
-					<li>Set feedback from your leadership team when it matters most:&nbsp;<a href="https://www.atlassian.com/team-playbook/plays/demo-trust">Demo Trust</a>&nbsp;(Atlassian, 2019)&nbsp;(English only)&nbsp;</li>
-					<li>A quick intro to prototyping, and the differences between two different approaches to prototyping:&nbsp;<a href="https://medium.com/ucsddesignco/iterative-vs-parallel-prototyping-575d455da5b5">Prototyping: Iterative vs. Parallel</a>&nbsp;(HOHL, Michael, 2017.&nbsp;Medium.) (English only)&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section>
-			<h2>Terms of use</h2>
-			<div class="row">
-				<div class="col-md-12">
-					<p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html" target="_blank">Terms and conditions</a>.</p>
-          <p>This work is a derivative of&nbsp;&ldquo;<a href="https://www.atlassian.com/team-playbook/plays/end-to-end-demo">End-to-end Demo</a>&ldquo;&nbsp;by&nbsp;<a href="https://www.atlassian.com/">Atlassian</a>&nbsp;and used under a Creative Commons Attribution 4.0 International Public License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).&nbsp;</p>
-				</div>
-			</div>
-		</section>
-        <div class="pagedetails">
-            <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
-            <dl id="wb-dtmd">
-                <dt>Date modified:&#32;</dt>
-                <dd>
-                    <time property="dateModified">2019-12-12</time>
-                </dd>
-            </dl>
+              <p>With so many pieces to any type of project, it’s easy to lose sight of the big picture. Often times, this can lead to integration issues on multiple levels – such as an IT solution not working with currently installed programs, or an HR
+                innovation that doesn’t match up with the current method of hiring new employees. </p>
+              <p>Visualizing the deliverables of a project and how users will interact with it is key. This is done by using an end-to-end demo. The team can run through each step of the project, garnering feedback to make sure it works seamlessly with the
+                existing structure upon delivery. Depending on the project, the demo may take the form of sketches or diagrams, a working prototype, or a new product. It is important to continually repeat the process and improve on it as it takes shape.
+                </p>
+              <p>We recommend that this play be driven by the project owner, with core team members participating as necessary. A high-level decision maker can be involved in the first few sessions and any major milestone sessions afterwards. </p>
+            </div>
+          </div>
         </div>
-        <script>
-            includeHTML();
-        </script>
-       <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-            
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            var img = document.getElementById("myImg");
-            var modalImg = document.getElementById("img01");
-            var captionText = document.getElementById("caption");
-            img.onclick = function(){
-              modal.style.display = "block";
-              modalImg.src = this.src;
-              captionText.innerHTML = this.alt;
-            }
-            
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-         </script>
-    </main>
-    <div w3-include-html="/hww-cnt/incl/footer.html"></div>
-    <!--[if gte IE 9 | !IE ]><!-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
-    <!--<![endif]-->
-    <!--[if lt IE 9]>
+      </div>
+    </section>
+    <section>
+      <h2>Create the end-to-end demo </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>The end-to-end demo typically starts as a high-level, low-tech visualization of the project – such as a diagram or sketches. For a project that is an update to an existing product or service, the demo should also reflect how the work fits into
+            the current experience.</p>
+          <p>As the project becomes more clearly defined, the demo will mature and grow. The end-to-end demo should be continually updated with new information and feedback. It’s critical to show how the user will discover the product, feature, or service,
+            as well as how they interact with it and leave it. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Materials</h4>
+            <p>To start this play, you will need:&nbsp;</p>
+            <ul>
+              <li>Paper&nbsp;</li>
+              <li>Whiteboard&nbsp;</li>
+              <li>Markers and&nbsp;pens&nbsp;</li>
+              <li>Mock-ups of the project (User Interface, etc.)&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>The demo </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Set aside a 30-minute window with the project team as well as any stakeholders and high-level decision makers, if available. Walk through the entire demo, end-to-end, so everyone understands the user’s journey through the project and where it
+            fits into the bigger picture. If this is not the first time going through the demo, you can place some focus on the parts that have changed – however it is most important to run through the demo in its entirety, and be sure to document all
+            user feedback. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Tip</h4>
+            <p>Your end-to-end demo should be rough. Don’t worry about creating a presentation or official document – the purpose is to quickly show how a product works in order to spark conversation. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Evolution </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Make any necessary amendments to your demo based on user feedback. Consider presenting to a wide variety of test subject groups, such as other teams or individuals with the organization. By using a large test sample, especially one outside of
+            the core project team, you may receive feedback that you might not have originally thought of. </p>
+          <p>If the feedback indicates that more significant changes are needed, then consider prototyping and re-running the demo to ensure the product satisfies it’s intended user. The most important takeaway, however, is once the project is implemented
+            continue to follow up with users to identify and resolve any issues. </p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="tip ">
+            <h4>Tip</h4>
+            <p>If your project is particularly big or complex, consider checking out the&nbsp;<a href="/hww-cnt/journey.html">Map your users&rsquo; journey</a>&nbsp;to gain the perspective of the end user.&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Other resources on this topic </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li>Step-by-step instructions for tracking your team&rsquo;s health, and new ways of working:&nbsp;<a href="https://www.atlassian.com/team-playbook">The Atlassian Team Playbook</a>&nbsp;(Atlassian, 2019)&nbsp;</li>
+            <li>Set feedback from your leadership team when it matters most:&nbsp;<a href="https://www.atlassian.com/team-playbook/plays/demo-trust">Demo Trust</a>&nbsp;(Atlassian, 2019)&nbsp;(English only)&nbsp;</li>
+            <li>A quick intro to prototyping, and the differences between two different approaches to prototyping:&nbsp;<a href="https://medium.com/ucsddesignco/iterative-vs-parallel-prototyping-575d455da5b5">Prototyping: Iterative vs. Parallel</a>&nbsp;(HOHL,
+              Michael, 2017.&nbsp;Medium.) (English only)&nbsp;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Terms of use</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Materials on this website were produced and/or compiled for the purpose of providing Canadians with access to information about the programs and services offered by the Government of Canada. It is subject to the following <a href="https://www.canada.ca/en/transparency/terms.html"
+              target="_blank">Terms and conditions</a>.</p>
+          <p>This work is a derivative of&nbsp;&ldquo;<a href="https://www.atlassian.com/team-playbook/plays/end-to-end-demo">End-to-end Demo</a>&ldquo;&nbsp;by&nbsp;<a href="https://www.atlassian.com/">Atlassian</a>&nbsp;and used under a Creative Commons
+            Attribution 4.0 International Public License (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">CC BY-SA 4.0</a>).&nbsp;</p>
+        </div>
+      </div>
+    </section>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/feedback.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date modified:&#32;</dt>
+        <dd>
+          <time property="dateModified">2019-12-12</time>
+        </dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/footer.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
          <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
          <![endif]-->
-    <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 </body>
+
 </html>
