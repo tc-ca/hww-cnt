@@ -119,7 +119,8 @@ font-weight: bold;
 
 #header-content {
 	position: absolute;
-	bottom: 0; 
+	bottom: 0;
+	left: 15px;
 }
 
 .gcweb-menu {
@@ -261,6 +262,9 @@ div.tip {
   -webkit-transform: rotate(45deg);
 }
 
+details {
+font-size: 16px;
+}
 
 /* Colors */
 
@@ -274,11 +278,3 @@ div.tip {
 .corner-ribbon.red{background: #e43;}
 .corner-ribbon.orange{background: #e82;}
 .corner-ribbon.yellow{background: #ec0;}
-
-
-/* theme.min.css | https://tc-ca.github.io/hww-cnt/css/theme.min.css */
-
-.gc-rprt-prblm-frm .form-group, .gc-rprt-prblm-frm label[for="problem6"] {
-  display: block !important;
-}
-
