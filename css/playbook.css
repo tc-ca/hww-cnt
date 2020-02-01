@@ -17,7 +17,6 @@ p.lp:before {
    vertical-align: middle;
    font-weight:900;
 }
-
 li.checkbox:before {
    font-family: "Font Awesome 5 Free";
    content: "\f0c8";
