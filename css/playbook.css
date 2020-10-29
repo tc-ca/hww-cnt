@@ -26,7 +26,7 @@ li.checkbox:before {
    font-weight:300;
    list-style-type:none;
 }
-  
+
 
 a >p.lp {
     text-decoration: none;
@@ -185,7 +185,7 @@ div.tip {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -193,12 +193,12 @@ div.tip {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -285,7 +285,7 @@ p.lp:before {
    vertical-align: middle;
    font-weight:900;
 }
- 
+
 li.checkbox:before {
    font-family: "Font Awesome 5 Free";
    content: "\f0c8";
@@ -453,7 +453,7 @@ div.tip {
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -461,12 +461,12 @@ div.tip {
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
+  from {-webkit-transform:scale(0)}
   to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
+  from {transform:scale(0)}
   to {transform:scale(1)}
 }
 
@@ -568,3 +568,8 @@ header .brand {
 .corner-ribbon.red{background: #e43;}
 .corner-ribbon.orange{background: #e82;}
 .corner-ribbon.yellow{background: #ec0;}
+
+/* Table style */
+
+table, th, td {
+  border: 1px solid black;
