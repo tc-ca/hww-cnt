@@ -571,6 +571,6 @@ header .brand {
 
 /* Table style */
 
-table, th, td {
+div table, th, td {
   border: 1px solid black;
 }
