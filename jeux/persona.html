@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+ <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155358177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155358177-1');
+  </script>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+   wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comprendre vos utilisateurs à l’aide de personas </title>
+  <meta name="title" content="Comprendre vos utilisateurs à l’aide de personas ">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Créez des représentations de vos utilisateurs pour mettre à l’essai des solutions susceptibles de s’appliquer à votre politique, programme ou service.">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tc-ca.github.io/hww-cnt/jeux/persona.html">
+  <meta property="og:title" content="Comprendre vos utilisateurs à l’aide de personas ">
+  <meta property="og:description" content="Créez des représentations de vos utilisateurs pour mettre à l’essai des solutions susceptibles de s’appliquer à votre politique, programme ou service.">
+  <meta property="og:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tc-ca.github.io/hww-cnt/jeux/persona.html">
+  <meta property="twitter:title" content="Comprendre vos utilisateurs à l’aide de personas ">
+  <meta property="twitter:description" content="Découvrez comment vous pouvez utiliser l’approche Agile et la méthode Scrum pour la gestion de projet.">
+  <meta property="twitter:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+   <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+   <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+   <![endif]-->
+  <!--[if lte IE 9]>
+   <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/persona.html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+      src="/hww-cnt/images/TC_Transformation.png" alt="logo - TC Transformation"
+      property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Comprendre vos utilisateurs à l’aide de personas </h1>
+    <p class="gc-byline"><strong>Créez des représentations de vos utilisateurs pour mettre à l’essai des solutions susceptibles de s’appliquer à votre politique, programme ou service. </strong></p>
+    <div class="row">
+      <div class="col-md-12">
+        <section>
+          <h2>Introduction</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les personas sont une méthode de conception centrée sur la personne qui permet de mieux comprendre vos utilisateurs. Les personas ne constituent pas un profil exact et précis de vos utilisateurs. Elles constituent plutôt une caractérisation d’une personne représentative d’un segment de votre population cible. </p>
+
+              <p>Vous devrez peut-être créer plusieurs personas pour représenter la diversité des besoins, préférences et façons de penser des utilisateurs. Pour être utiles à votre population cible, les personas que vous créez doivent représenter les besoins des utilisateurs.</p>
+                
+              <p>Les personas d’utilisateurs sont des outils que vous pouvez utiliser dans le processus de conception et pour décrire les objectifs, les comportements et les défis auxquels un groupe d’utilisateurs est confronté. Les personas d’utilisateurs efficaces sont différentes de celles utilisées aux fins de marketing, qui sont axées sur les profils démographiques des utilisateurs. </p>
+            </div>
+          </div>
+        </section>
+        <p><strong>Utilisez ce jeu pour...</strong></p>
+        <ul>
+          <li>apprendre à mieux connaître vos utilisateurs et leurs besoins;</li>
+          <li>veiller à ce que les utilisateurs soient pris en compte tout au long du processus de conception;</li>
+          <li>trouver des idées en lien avec les besoins des utilisateurs;</li>
+          <li>développer des produits et des services mieux adaptés aux besoins des utilisateurs.</li>
+        </ul>
+        <section>
+          <h2>Pourquoi ai-je besoin de personas?</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les personas aident les équipes à comprendre les besoins et les comportements de leurs utilisateurs. Elles permettent de développer une plus grande empathie pour vos utilisateurs tout au long du processus de conception. Lorsque vous avez un sens profond de l’identité de vos utilisateurs, vous pouvez prendre des décisions de conception en fonction de leurs besoins.</p>
+
+              <p>Des personas efficaces permettent à votre équipe de savoir qui sont vos utilisateurs et de déterminer ce dont ils ont besoin. Elles permettent d’obtenir cette information en complémentant les recherches de première main par des hypothèses qui fournissent des représentations convaincantes des utilisateurs éventuels. Ces représentations aident votre équipe à prendre des décisions éclairées. Vous pouvez également utiliser des personas pour faire l’essai de prototypes.</p>
+                
+              <p>Les personas aident à générer de nouvelles idées en permettant de se mettre à la place des utilisateurs. Vous pouvez utiliser des personas à chaque étape du processus:</p>
+              <ul>
+                <li>Équipes logicielles : utilisez des personas aux prises avec le problème que vous essayez de résoudre pour mener à bien vos projets de flux et d’interfaces.</li>
+                <li>Équipes des politiques : utilisez des personas représentant les personnes que vous essayez d’aider pour analyser les effets de votre politique et anticiper ses répercussions.</li>
+                <li>Équipes de programme : utilisez des personas représentant les intervenants de l’écosystème du programme pour concevoir votre projet et vous sensibiliser à la diversité des intervenants.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Ce qu’une persona n’est pas</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les personas peuvent constituer un atout dynamique et probant lors du processus de conception, mais elles peuvent facilement être mal comprises et mal utilisées. Elles ne sont pas une solution miracle pour concevoir de meilleurs produits. Elles ne sont pas un résultat ou un produit final. Les personas constituent l’un des nombreux outils et procédés qui permettent de tenir compte des utilisateurs dans votre processus afin de les aider à régler leurs problèmes.</p>
+
+              <p>Il est important de vérifier l’efficacité d’une solution au problème que vous essayez de régler en l’appliquant à des personas. Elles permettent de tester vos solutions à chaque étape du processus. Sinon, vos personas ne sont qu’un moyen de visualiser des données.</p>
+                
+            </div>
+          </div>
+         </div> 
+        </section>
+        <section>
+          <h2>Situations où l’utilisation de personas n’est pas recommandée</h2>
+          <div class="row">
+            <div class="col-md-12"> 
+              <p>Bien que les personas puissent être un excellent outil pour apprendre à connaître vos utilisateurs, leur utilisation peut ne pas être recommandée dans certains cas.</p>
+              <p>N’utilisez pas de personas si:</p>
+              <ul>
+                <li>vous ne disposez pas d’études ou de données probantes pour informer vos hypothèses et les appuyer. Vous devez d’abord faire des recherches et parler aux utilisateurs éventuels;</li>
+                <li>vous évaluez un service de production ou un produit. Procédez plutôt à des essais d’utilisation ou effectuez des recherches sur les utilisateurs.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Qui devrait participer?</h2>
+          <div class="row">
+            <div class="col-md-12"> 
+              <ul>
+                <li>L’équipe de recherche</li> 
+                <li>Les concepteurs qui utiliseront les personas</li>
+                <li>Les personnes qui peuvent vous aider à comprendre vos utilisateurs/intervenants (les utilisateurs eux-mêmes, les intervenants du programme, les détenteurs de données)</li>
+                <li>Les personnes qui prendront les décisions en fonction de leurs personas (concepteurs, collaborateurs du projet, développeurs, etc.)</li>
+                <li>Tout autre participant enthousiaste ayant un intérêt direct dans la réussite de votre projet</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Déroulement du jeu</h2>
+          <div class="row">
+            <div class="col-md-12"> 
+              <h3>Étape 1 : Objectifs et planification</h3>
+              <p><strong>Déterminer les besoins motivant la création de personas:</strong> La première étape consiste à déterminer la raison pour laquelle vous avez besoin de personas. Cette raison doit être liée à un besoin précis dont la solution est susceptible d’améliorer le produit final. Les personas doivent être spécifiques au contexte. Elles doivent refléter les comportements et les objectifs des utilisateurs en regard d’un volet spécifique de votre produit ou service. Les personas ne doivent pas être réutilisées par des groupes d’une même organisation qui travaillent sur des produits/services différents. À titre d’exemple, les objectifs et les besoins d’un inspecteur diffèrent selon qu’il procède à une préinspection ou effectue une autre tâche à une étape ultérieure de son flux de travail. </p>
+              <p><strong>Déterminer les archétypes d’une persona:</strong> Une persona n’est pas censée représenter l’ensemble de la population de vos utilisateurs. Elle doit refléter un archétype précis de la population d’utilisateurs. C’est pourquoi vous devrez peut-être créer plusieurs personas pour obtenir une représentation fidèle de vos utilisateurs.</p>
+              <p>Chaque persona doit être associée à certains défis que votre produit ou service vise à résoudre et à certains de ses objectifs. Par exemple, une étude récente montre que les fonctions des inspecteurs de TC sont similaires, mais qu’ils disposent d’outils différents selon qu’il s’agit d’inspecteurs maritimes, terrestres ou aériens. L’équipe de recherche a donc prévu d’interroger des inspecteurs maritimes, terrestres et aériens pour tenir compte de tous les environnements.</p>
+              <p>La principale différence entre les archétypes de vos différentes personas doit être de nature comportementale, comme des besoins différents, et non de nature démographique, comme l’âge. Si, par exemple, les inspecteurs ne sont pas confrontés à des objectifs ou à des défis liés à l’âge des clients, il n’est pas nécessaire de créer des personas distinctes pour chaque groupe d’âge.</p>
+              
+              <h3>Étape 2 : Recueillir des données probantes</h3>
+              <p>Quand vous aurez déterminé vos objectifs et vos groupes d’utilisateurs, vous pourrez commencer à recueillir de l’information pour créer vos personas.</p>
+              <p>L’efficacité des personas que vous créez dépend de la qualité de l’information recueillie, laquelle doit provenir de recherches sur les utilisateurs ciblés. Pour obtenir cette information, vous pouvez mener des entretiens avec vos utilisateurs/groupes d’utilisateurs (voir le jeu <a href="https://tc-ca.github.io/hww-cnt/jeux/entrevue.html" target="_blank" title="Comment nous travaillons- Jeux - Passez vos utilisateurs en entrevue">Passez vos utilisateurs en entrevue</a>). Bien qu’il ne soit pas toujours possible de faire des recherches sur les utilisateurs, c’est la norme. Vous devriez toujours essayer de faire des recherches sur les utilisateurs pour assurer que vos personas sont des représentations fidèles et valables.</p>
+              <p>S’il vous est impossible de mener une recherche sur les utilisateurs, utilisez d’autres moyens de recueillir de l’information sur vos utilisateurs pour créer une persona préliminaire. Il peut s’agir de données marketing sur vos utilisateurs ou d’interroger des intervenants qui connaissent vos utilisateurs. Toutes les autres sources d’information auxquelles vous pouvez penser pour vous renseigner sur vos utilisateurs sont valables. Les personas créées à partir de ces sources peuvent servir de solutions temporaires jusqu’à ce que vous puissiez faire des recherches sur les utilisateurs pour valider vos constatations.</p>
+
+              <h3>Étape 3 : Créer des personas</h3>
+              <p>Au terme de vos recherches sur les utilisateurs, vous disposerez d’une grande quantité de données et de constatations. Vous devrez sélectionner l’information la plus pertinente à vos populations cibles. L’information que vous n’utiliserez pas pour créer vos personas pourra toujours vous être utile pour d’autres projets, par exemple pour définir le parcours client.</p>
+              <h4>Éléments qu’il n’est pas recommandé d’intégrer à vos personas</h4>
+              <p>Vos fiches de personas doivent tenir dans une page et ne comporter que l’information nécessaire.</p>
+              <p>Le site Web <a href="https://careerfoundry.com/en/blog/ux-design/how-to-define-a-user-persona/" target="_blank" title="How to Define a User Persona">Career Foundry</a> recommande ce qui suit :</p>
+                <blockquote>En règle générale, évitez d’ajouter de l’information qui n’aura aucune incidence sur la conception. Si l’information n’a aucune incidence sur la conception finale ou ne facilite pas la prise de décision : ne l’ajoutez pas. Bien qu’il est souhaitable de créer une persona réaliste, il n’est pas nécessaire d’ajouter de l’information qui n’influera pas sur la conception finale. Si vous concevez une application de réservation pour des vacances, il n’est pas logique d’ajouter de l’information sur les préférences en matière de programmes télévisés ou d’équipes sportives. En résumé, seule l’information utile à la conception doit figurer dans une fiche de persona.</blockquote>
+              <h4>Aperçu et exemples de personas</h4>
+              <p>Selon Kim Goodwin, une spécialiste renommée de l’expérience utilisateur, les fiches de personas doivent être « des descriptions d’une à deux pages contenant de l’information sur des comportements habituels, des objectifs, des compétences, des attitudes et des environnements et quelques (très peu) détails personnels fictifs pour donner vie à la persona » [traduction].</p>
+              <p>Voyons les différentes sections d’une fiche de persona:</p>
+              <ul>
+                <li><strong>Comportements habituels</strong>: ce que fait la personne durant la journée. Son rituel de productivité.</li>
+                <li><strong>Objectif et motivation</strong>: l’objectif que la personne essaie d’atteindre et la raison pour laquelle elle s’est fixé cet objectif.</li>
+                <li><strong>Besoins</strong>: les besoins de la personne dans le contexte de sa motivation et de son objectif.</li>
+                <li><strong>Tâches</strong>: les activités que la personne exerce et la raison pour laquelle elle mène ces activités.</li>
+                <li><strong>Compétences</strong>: les compétences de la personne. Son niveau de compétence technique. Est-elle très compétente sur Excel ou passe-t-elle la plupart de ses journées à écrire?</li>
+                <li><strong>Environnement</strong>: le contexte physique et social de la personne.</li>
+                <li><strong>Interaction/communauté</strong>: les personnes et les communautés avec lesquelles le sujet interagit et la raison de ces interactions.</li> 
+                <li><strong>Détails personnels fictifs</strong>: nom, âge, trait de personnalité.</li> 
+              </ul>
+              <h4>Valider vos personas</h4>
+              <p>Après avoir créé vos premières ébauches de personas, vous devrez les valider auprès de vos utilisateurs et des intervenants pour vous assurer qu’elles sont des représentations fidèles.</p>
+              <p>Un bon moyen de valider vos personas est d’effectuer un sondage auprès des utilisateurs. Vous engagerez ainsi un plus grand nombre d’utilisateurs pour valider vos constatations. Les sondages requièrent peu de temps et, comme ils ne nécessitent pas de modérateur, vous pouvez engager beaucoup plus d’utilisateurs par ce moyen que par des entretiens.</p>
+              <p>Autres moyens de valider vos personas:</p>
+              <ul>
+                <li><strong>Obtenir l’approbation d’experts en la matière</strong> – soumettez vos personas à l’approbation du plus grand nombre possible d’experts en la matière. Analysez leurs rétroactions en fonction de leurs compétences et de leurs expériences respectives.</li>
+                <li><strong>Limiter l’information</strong> – les personas sont des représentations et, en tant que telles, sont des généralisations qui peuvent parfois manquer de précision. Si vous rajoutez de l’information et des données plus précises, les gens pourraient considérer votre persona comme un fait plutôt qu’un guide. Ne tombez pas dans ce piège. Faites en sorte que votre persona demeure simple.</li>
+                <li><strong>Utiliser des données quantitatives</strong> – si vous intégrez des données quantitatives précises à votre fiche de persona, validez-la par rapport aux données factuelles que vous avez recueillies au cours du processus. Vérifiez vos personas.</li>
+                <li><strong>Vérifier si les utilisateurs s’identifient à la persona</strong> – si vous avez interrogé des experts en la matière ou des utilisateurs pour créer votre persona, interrogez les utilisateurs à nouveau après avoir créé votre persona. Veillez à interroger les mêmes utilisateurs et d’autres utilisateurs. Vérifiez s’ils s’identifient à l’une des personas que vous avez créées. Si aucun de vos utilisateurs ne s’identifie à l’une de vos personas, vous pourrez conclure qu’elle n’est pas valable. Il est fort possible que quelqu’un ne se reconnaisse pas dans une de vos personas. Ce n’est pas grave.</li>
+              </ul>
+
+              <h3>Étape 4 : Utiliser des personas</h3>
+              <p>La création d’un scénario de persona est un moyen précieux de voir comment les gens pourraient utiliser vos solutions en fonction de leur contexte, de leurs besoins particuliers et de leurs motivations. Les scénarios reflètent l’expérience probable des utilisateurs lorsqu’ils utilisent une solution idéale.</p>
+              <p>Ce sont des outils adaptables qui permettent de tester le concept, l’itération et la facilité d’utilisation d’une solution. Ils indiquent souvent des aspects essentiels à tester. Les scénarios aident les équipes à comprendre les besoins des utilisateurs et peuvent être utilisés pour aligner les intervenants sur une vision commune.</p>
+              <p>Ils peuvent être des récits très visuels ou de simples énoncés écrits. Un scénario doit:</p>
+              <ul>
+                <li>Fournir des renseignements contextuels, notamment les suivants:</li>
+                  <ul>
+                    <li>Qui est la persona?</li>
+                    <li>Quels sont ses objectifs?</li>
+                    <li>Quand est-elle susceptible d’effectuer des tâches et de se heurter à des obstacles?</li>
+                    <li>Où est-elle susceptible d’effectuer ces tâches ou de rencontrer ces obstacles?</li>
+                    <li>Pourquoi veut-elle effectuer ces tâches?</li>
+                  </ul>
+                <li>Se concentrer sur la situation globale, montrer ce qui conduit à l’interaction, ce qui a un impact sur le monde de l’utilisateur et influe sur sa façon d’interagir avec une solution (par exemple, le contexte culturel) et ce dont il a besoin avant de pouvoir utiliser la solution (par exemple, des informations).</li>
+                <li>Être assez simple pour que les personnes sans formation technique, y compris les intervenants, puissent le suivre.</li>
+                <li>Être centré sur l’utilisateur et faire en sorte que les pistes de solutions soient ancrées dans la réalité du contexte des utilisateurs.</li>
+              </ul>
+              <p>Voici un exemple de scénario d’utilisateur:</p>
+              <blockquote>
+                <p>Pat, 42 ans, est inspectrice principale à Transports Canada. Elle travaille dans le secteur maritime et est très qualifiée, organisée et diligente. Elle doit prendre des notes lorsqu’elle est à bord d’un navire. Elle a déjà essayé d’utiliser un téléphone intelligent et une tablette, mais a renoncé en raison de la frustration provoquée par le manque de connectivité et les problèmes techniques. Elle doit utiliser du papier et un crayon. Quand elle revient d’une inspection, elle doit généralement transcrire ses notes dans un système sécurisé.</p>
+                <p>Dans l’idéal, Pat souhaiterait disposer d’une application qui lui permettrait de prendre des notes directement dans le système sécurisé lors d’une inspection. Elle souhaiterait que l’application soit simple, facile à utiliser, même d’une seule main, et installée sur un appareil robuste et étanche muni d’un appareil photo et d’un flash.</p>
+              </blockquote>
+
+              <h3>Étape 5 : Revue des personas</h3>
+              <p>Il est important de revoir vos personas tout au long du cycle de vie du concept/produit et à mesure que les postes, les capacités et la technologie évoluent pour assurer qu’elles conservent leur pertinence. Vous devrez peut-être effectuer des recherches supplémentaires pour déterminer si les besoins de vos utilisateurs ont changé de manière significative ou créer d’autres personas ou éliminer celles qui ont perdu leur actualité.</p>
+              
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Modèles de persona</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p><a href="/hww-cnt/assets/TC_Structure_Personas.pptx" target="_blank" title="TC Structure Personas">TC Structure Personas</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Autres ressources</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p><a href="https://articles.uie.com/perfecting_personas/" target="_blank" title="Perfecting Your Personas">UIE – Perfecting Your Personas [en anglais]</a></p>
+              <p><a href="http://www.uxforthemasses.com/5-ways-use-personas/" target="_blank" title="5 ways to use personas in your projects">UX for the Masses – 5 Ways to use personas in your projects [en anglais]</a></p>
+              <p><a href="https://blog.adobe.com/en/publish/2017/09/29/putting-personas-to-work-in-ux-design-what-they-are-and-why-theyre-important.html#gs.s0hkv8" target="_blank" title="Putting Personas to Work in UX Design: What They Are and Why They’re Important">Adobe Blog – Putting Personas to Work in UX Design: What They Are and Why They’re Important [en anglais]</a></p>
+              <p><a href="https://www.thisisservicedesigndoing.com/methods/creating-personas" target="_blank" title="Co-Creating personas">This is Service Design Doing – Creating Personas [en anglais]</a></p>
+              <p><a href="https://www.thisisservicedesigndoing.com/methods/creating-personas-2" target="_blank" title="Creating personas">This is Service Design Doing – Creating Personas, part 2 [en anglais]</a></p>
+              <p><a href="https://www.atlassian.com/software/confluence/templates/persona" target="_blank" title="Persona template">Atlassian Persona Template [en anglais]</a></p>
+              <!--<p><a href="https://www.atlassian.com/company/events/summit-us/watch-sessions/2014/archives/collaboration-teams/bring-your-customers-to-life-with-personas" target="_blank" title=""></a></p>-->
+              <p><a href="https://careerfoundry.com/en/blog/ux-design/how-to-define-a-user-persona/" target="_blank" title="How to Define a User Persona">Career Foundry: How to Define a User Persona [en anglais]</a></p>
+            </div>
+          </div>
+        </section>
+        
+
+
+        <section>
+          <h2>Conditions d'utilisation</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les documents que l’on trouve sur ce site Web ont été produits ou rassemblés pour offrir aux Canadiens et Canadiennes de l’information sur les programmes et services offerts par le gouvernement du Canada. Ils sont assujettis aux <a href="https://www.canada.ca/fr/transparence/avis.html"
+                  target="_blank">conditions suivantes</a>.</p>
+
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date de modification :&#32;</dt>
+        <dd><time property="dateModified">2019-12-16</time></dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+   <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+   <![endif]-->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
