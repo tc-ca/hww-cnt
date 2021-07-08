@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+   <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155358177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155358177-1');
+  </script>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comment nous travaillons - Jeu - Qu’est-ce que la gestion du changement?</title>
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="title" content="Acquérir une meilleure compréhension de la gestion du changement et de la façon dont elle peut s'appliquer à vous.">
+  <meta name="description" content="Apprenez à comprendre le parcours utilisateur du point de vue d’une persona donnée.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tc-ca.github.io/hww-cnt/jeux/frchangem.html">
+  <meta property="og:title" content="Comment nous travaillons - Jeu - Qu’est-ce que la gestion du changement?">
+  <meta property="og:description" content="Acquérir une meilleure compréhension de la gestion du changement et de la façon dont elle peut s'appliquer à vous.">
+  <meta property="og:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tc-ca.github.io/hww-cnt/jeux/frchangem.html">
+  <meta property="twitter:title" content="Comment nous travaillons - Jeu - Qu’est-ce que la gestion du changement?">
+  <meta property="twitter:description" content="Acquérir une meilleure compréhension de la gestion du changement et de la façon dont elle peut s'appliquer à vous.">
+  <meta property="twitter:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+
+
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+         <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+         <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+         <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+         <![endif]-->
+  <!--[if lte IE 9]>
+         <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/changem.html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+                        src="/hww-cnt/images/TC_Transformation.png" alt="logo - TC Transformation"
+                        property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+                        lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+
+        </ol>
+      </div>
+    </nav>
+  </header>
+    <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+        <h1 style="color:#396a93" property="name" id="wb-cont">Qu’est-ce que la gestion du changement? </h1>
+        <div class="row">
+            <div class="col-md-12">
+                <p><strong>Index</strong></p>
+                <ul>
+                    <li><strong><a href= "#Introduction">Introduction</a></strong></li>
+                    <li><strong><a href= "#Déroulement du jeu">Déroulement du jeu</a></strong></li>
+                    <li><strong><a href= "#Changement ou transformation">Changement ou transformation</a></strong></li>
+                    <li><strong><a href= "#Comprendre le changement">Comprendre le changement</a></strong></li>
+                    <li><strong><a href= "#Types de changement">Types de changement</a></strong></li>
+                    <li><strong><a href= "#Modèles courants de gestion du changement">Modèles courants de gestion du changement</a></strong></li>
+                </ul>
+                <p><small>*Veuillez noter que si vous cliquez sur un hyperlien dans cette pièce, il peut vous rediriger
+                        vers une autre page.</small></p>
+                <h2 id="Introduction">
+                    Introduction
+                </h2>
+                <p>
+                  La gestion du changement est une approche globale, cyclique et structurée visant à préparer, à soutenir et à aider les personnes, les équipes et les organisations à passer d'un état actuel à un état futur avec les résultats et les effets escomptés. La gestion efficace du changement à Transports Canada est importante.
+                </p>
+                <br>
+                <p>
+                  Ce jeu fait partie d'une série de jeux qui vous guideront dans le processus d'intégration réussie de la gestion du changement à chaque phase du Cadre de gestion de projet (CGP) de Transports Canada.
+                </p>
+                <br>
+                <p>
+                  <strong>Vous pouvez également trouver les outils de gestion du changement de TC suivants, dont la plupart se trouvent également dans <a href="https://tc-ca.github.io/hww-cnt/index-fr.html">le Guide de travail de Transports Canada,</a> sous la section Sujets de la <a href="https://tc-ca.github.io/hww-cnt/jeux.html">gestion du changement: </a></strong>
+                </p>
+                <br>
+                <img src="/hww-cnt/images/Updated V2 Topics section of Change Management - FR.png">
+                <p>
+                  <br>Pour en savoir plus sur la gestion de projet et son CGP à Transports Canada, veuillez consulter la page <a href="https://www.gcpedia.gc.ca/wiki/Transport_Canada/IMITNational/IMagineIT/Project_Management_Framework?lang=fr">PMPedia.</a>
+                </p>
+                <br>
+                <p>Pour plus de détails ou de conseils sur cette pièce ou sur la gestion du changement, veuillez
+                    consulter la page<a href="https://www.gcpedia.gc.ca/wiki/Transport_Canada/TCTrans/changemgmt?lang=fr"> GCPedia sur la gestion du changement dans le cadre de la transformation </a>, de Transports Canada. Celle-ci comprend des détails supplémentaires sur l'intégration de la gestion du changement dans un CGP, ainsi que notre Manuel de gestion du changement de Transports Canada que nous vous recommandons d'ouvrir lors de la révision de cette pièce. Si vous avez besoin d'aide supplémentaire, <a href="mailto:Kyle.dufresne@tc.gc.ca">l'équipe de gestion des changements du Bureau du portefeuille de la transformation </a> sera heureuse de vous guider dans ce jeu.
+                </p>
+                <br>
+                <p>Ce jeu vous aidera à comprendre l'importance de la gestion du changement au sein de Transports Canada
+                    pour relever les défis, préparer l'avenir et mieux servir le système de transport.<br><br><strong>Utilisez
+                        ce jeu pour...
+                    </strong>
+                </p>
+                <ul>
+                    <li><strong>Clarifier ce que l'on entend par changement et par transformation.
+                        </strong></li>
+                    <li><strong>Comprendre le processus de changement pour les individus et les groupes.
+                        </strong></li>
+                    <li><strong>Reconnaître que tous les changements ne sont pas égaux
+                        </strong></li>
+                    <li><strong>Vous familiariser avec deux des modèles les plus couramment adoptés pour gérer le
+                            changement.
+                        </strong></li>
+                </ul>
+                <section>
+                    <h2 id="Déroulement du jeu">Déroulement du jeu</h2>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <p>
+                                    Une initiative de changement est l'acte de modifier quelque chose d'important au sein d'une organisation, nécessitant une transition interne et externe (consolidation d'organisations, déménagement dans de nouveaux bureaux, lancement de nouveaux programmes ou services, mise à jour de logiciels ou modification de procédures).
+                                  </p>
+                                  <br>
+                                  <p>
+                                    L'exécution de ce jeu vous permettra d'acquérir une compréhension préliminaire de la manière dont la gestion des changements peut vous aider à faire de votre initiative de changement un succès. Utilisez ce jeu comme point de départ pour approfondir votre compréhension du changement au sein de Transports Canada, du fonctionnement du changement, du type de changement que vous vivez et des modèles à considérer pour gérer ce changement plus efficacement.
+                                  </p>
+                                  <br>
+                                  <p>
+                                    Il est recommandé de commencer par réunir l'équipe de projet de base responsable de
+                                    la mise en œuvre du changement et de définir ce qu'est le changement proposé.
+                                  </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="Changement ou transformation">Changement versus Transformation
+                    </h2>
+                    <div>
+                        <p>
+                          Pour comprendre ce que signifie <strong>la gestion du changement,</strong> il est utile de comprendre d'abord la <strong>transformation.</strong>
+                        </p>
+                        <br>
+                        <p>
+                          Les termes « transformation » et « changement » sont parfois utilisés de manière interchangeable, mais ne sont pas nécessairement identiques.
+                        </p>
+                        <br>
+                        <p>
+                          <strong>La transformation</strong> est presque toujours importante et significative. La
+                            transformation est un changement fondamental interne dans les croyances sur les raisons pour
+                            lesquelles certaines actions doivent être réalisées. La transformation ne nécessite pas
+                            d'influence extérieure pour être maintenue et, en raison de sa nature fondamentale, la
+                            transformation est plus probablement permanente. La transformation consiste
+                            à <strong>modifier les croyances </strong> de manière à ce que les actions atteignent les résultats souhaités.
+                        </p>
+                        <br>
+                        <p><strong>Le changement</strong> quant à lui, est généralement plus petit et plus progressif
+                            par nature, mais il peut aussi être important et complexe. Nous sommes tous confrontés au
+                            changement chaque jour. Le changement nous affecte tous et nous le gérons tous différemment.
+                            La seule constante dans la vie, la seule chose dont nous pouvons être sûrs qui se produira,
+                            c'est le changement, et le changement doit être <u>cconstamment surveillé, géré et
+                                maintenu</u> Lorsque nous pensons aux processus et procédures de gestion du changement,
+                            nous pensons généralement aux initiatives informatiques. Chaque initiative est entreprise
+                            pour rendre quelque chose meilleur, plus rapide, moins cher, plus allégé. Le changement a un
+                            propriétaire, des paramètres et implique des améliorations continues. Un effort conscient
+                            est nécessaire pour identifier le besoin de changement, identifier les actions de changement
+                            nécessaires pour atteindre le résultat souhaité, et maintenir l'adoption des solutions. Le
+                            changement consiste à
+                            <strong>modifier les actions</strong> pour atteindre les résultats souhaités.
+                        </p><br>
+                        <p>Au sein de Transports Canada, la <strong>transformation</strong> s'effectue à la fois au
+                            niveau du « programme » et du
+                            « projet ». La vision de transformation du Ministère consiste à « changer notre façon de
+                            travailler pour relever les défis, préparer l'avenir et mieux servir le réseau de transport
+                            ». Le Plan de Transformation de TC et ses cinq piliers ont été introduits en 2017 et
+                            conduisent depuis lors des changements critiques au sein du ministère. Pour en savoir plus
+                            sur la transformation de TC, veuillez consulter la page <a
+                                href="https://www.gcpedia.gc.ca/wiki/Transport_Canada%E2%80%99s_Transformation_Strategy?lang=fr">
+                                GCPedia Transformation de TC.
+                            </a></p><br>
+                        <p>Pour soutenir ce plan de transformation, Transports Canada doit être:
+                        </p>
+                        <img src="/hww-cnt/images/Agile Smart Trusted FR.JPG"><br>
+                    </div>
+                    <br>
+                    <p>
+                      <strong>La gestion du changement à Transports Canada</strong> se fait à la fois au niveau de « l'entreprise et de l'organisation » et au niveau du « projet ».
+                    </p>
+                    <u>
+                      La gestion du changement au niveau de l'entreprise ou de l'organisation comprend les éléments suivants:
+                    </u>
+                    <ul>
+                        <li>
+                          L'institutionnalisation des pratiques, des processus et des compétences en matière de gestion du changement dans toute l'organisation.
+                        </li>
+                        <li>
+                          Traiter et gérer « l'institutionnalisation de la gestion du changement » (ou « Making it Stick ») comme un projet et comme le changement.
+                        </li>
+                        <li>
+                          Assurer une gestion efficace du changement pour tous les projets/initiatives de l'organisation.
+                        </li>
+                    </ul>
+                    <u>
+                      La gestion du changement appliquée au niveau du projet comprend les éléments suivants l:
+                    </u>
+                    <ul>
+                        <li>Un processus structuré et un ensemble d'outils permettant de conduire le côté humain du
+                            changement vers un résultat souhaité ou un état futur.
+                        </li>
+                        <li>
+                          Favoriser la réussite du projet en soutenant les transitions individuelles requises par les projets et les initiatives.
+                        </li>
+                        <li>
+                          Les résultats organisationnels sont le résultat collectif des changements individuels.
+                        </li>
+                    </ul>
+                </section>
+                <br>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <p style="text-align: center;"><strong>CONSEIL : Évaluez votre propre changement
+                                    </strong></p> <br>
+                                <p>Il est recommandé de noter les réponses aux questions suivantes :</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <ol type="1">
+                                    <li>Qu'est-ce qui est en train de changer ?</li>
+                                    <li>Quel est l'objectif du changement proposé ?</li>
+                                    <li>Ce changement a-t-il lieu au niveau du projet ou s'agit-il d'un changement d'entreprise ou d'organisation ?</li>
+                                    <li>Quel est l'impact du changement proposé sur les cinq piliers du plan de transformation de la CT ?</li>
+                                    <li>Le changement proposé répond-il aux critères d'agilité, d'intelligence et de confiance ? </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="Comprendre le changement">Comprendre le changement</h2>
+                      <div>
+                          <p>
+                            La « <a href="https://www.ekrfoundation.org/5-stages-of-grief/change-curve/">‘courbe de changement de Kübler-Ross',</a> », également connue sous le nom de courbe de transition, est un moyen très utile de comprendre le processus de changement pour les individus et les groupes. Elle est dérivée de la théorie sur la façon dont les gens font face à la mort et au deuil. Tout changement implique l'abandon du passé et l'engagement dans un avenir différent, à mesure qu'un individu ou un groupe progresse dans la courbe. Il existe aujourd'hui de nombreuses variantes de cette courbe de changement/transition, mais le principe de base des cinq étapes est essentiel pour comprendre comment une personne peut traverser le processus de changement.
+                          </p>
+                          <br>
+                          <p>
+                            <u>Les cinq étapes du changement</u> selon Elisabeth Kubler-Ross sont les suivantes :
+                          </p>
+                      </div>
+                      <ul>
+                        <li>
+                          <strong>Le choc ou le déni: </strong> « Je ne peux pas le croire », « Cela ne peut pas arriver », « Pas à moi ! », « Pas encore ! ».
+                        </li>
+                        <li>
+                          <strong>Colère:</strong> « Pourquoi moi ? Ce n'est pas juste ! » « NON ! Je ne peux pas
+                            accepter ça ! »
+                        </li>
+                        <li>
+                          <strong>Négociation: </strong>« Laissez-moi juste vivre pour voir mes enfants obtenir leur diplôme » ; « Je ferai n'importe quoi si vous me donnez plus de temps/quelques années de plus ?".</li>
+                        <li>
+                          <strong>Dépression</strong> « Je suis si triste, pourquoi m'embêter avec quoi que ce soit ? »; « A quoi bon essayer ? »
+                        </li>
+                        <li>
+                          <strong>Acceptation</strong>« Tout va bien se passer » ; « Je ne peux pas lutter contre le changement, autant m'y préparer ».
+                        </li>
+                    </ul>
+                    <br>
+                    <p>
+                      L'utilisation du diagramme de la courbe du changement peut vous amener à croire que le processus de changement est linéaire. Il est important de reconnaître qu'à chaque point de la courbe de changement, une personne peut avancer ou reculer. Par example, une personne peut atteindre un stade où elle accepte le changement, mais en prenant un café au travail, elle entend une nouvelle qui la replonge dans la colère ou le déni. Le passage d'une étape à l'autre est normal. Il est donc important que les parties prenantes s'engagent et communiquent de manière continue. Garder un œil sur le pouls du changement est essentiel à la réussite de la gestion du changement.
+                    </p>
+                </section>
+                <br>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <p style="text-align: center;"><strong>CONSEIL : Évaluez vos parties prenantes</strong></p>
+                                <br>
+                                <p>Il est recommandé de noter les réponses aux questions suivantes :
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <ol type="1">
+                                    <li>
+                                      Qui sont les principales parties prenantes impliquées/impactées par votre changement ?
+                                    </li>
+                                    <li>
+                                      Où se situent-ils actuellement sur la courbe du changement ? Le savez-vous ?
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section><br>
+                <h2 id="Types de changement">Types de changement
+                </h2>
+                <p>
+                  Il existe de nombreux types de changement qui nécessitent différents niveaux d'aide à la gestion du changement et différents types de soutien en matière de communication et d'engagement:
+                </p>
+                <br>
+                <h5>Amélioration continue</h5>
+                <p>
+                  L’amélioration continue est une méthode qui permet de s'assurer que les processus, méthodes et pratiques du gouvernement sont aussi efficients, efficaces et économiques que possible. Pour ce faire, on examine et on améliore périodiquement les processus organisationnels afin de supprimer les goulots d'étranglement, d'utiliser les meilleurs logiciels et de tirer parti des méthodes les plus efficaces. Lean, kaizen et Six Sigma sont des exemples similaires de formes courantes d'amélioration continue. L'objectif premier de tout changement d'amélioration continue est de réduire le gaspillage et de rationaliser le travail. Dans certaines circonstances, l'amélioration continue nécessite un soutien limité en matière de communication et peu ou pas d'assistance en matière de gestion du changement.
+                </p>
+                <br>
+                <h5>Changement de développement</h5>
+                <p>
+                  Le changement de développement améliore les processus et les procédures précédemment établis et ne doit pas nécessairement être à grande échelle. Bien qu'il ne s'agisse pas nécessairement d'un changement important, le changement de développement est le type de changement organisationnel le plus fréquent. Les institutions gouvernementales vivent ces types de changements comme des améliorations progressives en réponse à un désir d'améliorer l'efficacité, de remédier à une lacune décelée ou de s'appuyer sur des succès antérieurs. Étant donné que le changement de développement est généralement progressif et non perturbateur, il présente généralement un niveau de résistance inférieur au sein d'une organisation. Au fil du temps, ces changements plus modestes renforcent et produisent des rendements positifs pour l'efficience et l'efficacité du ministère ou de l'organisme. Le fait de ne pas répondre au besoin d'amélioration peut cependant avoir l'effet inverse et représenter une perte d'efficience et d'efficacité. Dans les cas de changement de est préférable que l'initiative soit soutenue par une petite équipe de changement et de communication.
+                </p>
+                <br>
+                <h5>Changement de transition</h5>
+                <p>
+                  Souvent, les ministères et organismes savent qu'ils doivent apporter un changement plus important
+                    pour demeurer efficaces et efficients. Les changements de transition sont plus importants que les
+                    changements de développement. Ces changements peuvent inclure la fusion ou la décomposition de
+                    départements ou le remplacement et l'introduction de nouveaux systèmes et processus majeurs. Ils
+                    peuvent souvent avoir un impact sur les relations, les fonctions professionnelles, la culture et
+                    impliquer une rééducation professionnelle importante. En raison de l'importance de ces types de
+                    changements, la direction doit procéder avec prudence sans s'enliser dans un cycle d'indécision qui
+                    mènera au maintien du statu quo. Un investissement substantiel dans la gestion du changement est
+                    nécessaire dans le cas d'un changement de transition, et cela comprend des ressources dédiées en
+                    matière de communication et d'engagement.
+                </p>
+                <br>
+                <h5>Changement transformationnel</h5>
+                <p>
+                  Le changement transformationnel signifie l'ajustement dans des domaines qui résultent de facteurs
+                    technologiques, économiques, environnementaux ou politiques importants. Les organisations
+                    gouvernementales ne subissent pas fréquemment de changements transformationnels. Ces types de
+                    changements sont dramatiques et modifient fondamentalement le département ou l'organisation en
+                    question. Ce type de changement se produit lorsqu'une organisation poursuit des programmes et des
+                    services entièrement différents, subit des changements technologiques radicaux ou une nouvelle
+                    direction inaugure une refonte de la structure et de la culture organisationnelle. La pandémie
+                    COVID-19 serait un exemple de changement transformationnel.
+                </p>
+                <p>Contrairement aux autres types de changement où le résultat est connu ou peut être imaginé avec les
+                    compréhensions actuelles, le résultat du changement transformationnel ne peut généralement pas être
+                    préconçu. Il doit être développé en cours de route. Le changement crée un besoin de nouveaux
+                    comportements de la part des employés de l’organisation et des parties prenantes externes. Étant
+                    donné que ce changement est le plus prononcé, une perturbation substantielle de l'organisation se
+                    produira et sa navigation nécessitera des compétences et une expertise importantes au sein d'une
+                    équipe de gestion du changement, soutenue par une équipe de communication importante, pour
+                    développer une stratégie globale de changement et de communication, et coordonner toutes les
+                    activités de communication et d'engagement des parties prenantes.
+                </p>
+                <br>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <p style="text-align: center;"><strong>CONSEIL: Évaluer votre niveau de changement</strong></p>
+                                <br>
+                                <p>Il est recommandé de noter la réponse à la question suivante:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <ol type="1">
+                                    <li>Quel est le niveau de changement du changement proposé?
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section><br>
+                <h2 id="Modèles courants de gestion du changement">Modèles de gestion du changement courants</h2>
+                <p>
+                  La gestion du changement est difficile. Il est difficile de changer votre façon de travailler et de
+                    modifier des processus familiers pour répondre à de nouveaux besoins et objectifs. Le changement ne
+                    peut être productif que si la transition est réussie. Et pour réussir, la communication sur le
+                    changement doit être correctement intégrée dans l'initiative de changement très tôt [probablement
+                    plus tôt que la plupart ne le pensent].
+                </p>
+                <br>
+                <p>
+                  Il existe de nombreux modèles de gestion du changement. Certains sont linéaires, tandis que d'autres sont plus cycliques et itératifs, parcourant (et revenant à travers) les différentes phases du changement. Transports Canada a choisi d'appliquer une combinaison du modèle en trois étapes de Kurt Lewin (illustrant comment les mentalités collectives sont décomposées pour permettre le changement) et de la feuille de route plus détaillée du changement de John Kotter (basée sur les erreurs courantes commises par les organisations lorsqu'elles tentent d'entreprendre des changements majeurs).<b> Pour voir comment Transports Canada a intégré ces modèles dans son approche de gestion du changement, veuillez consulter notre <a href="https://www.gcpedia.gc.ca/wiki/Transport_Canada/TCTrans/changemgmt?lang=fr"> Feuille de route pour la gestion du changement</b></a>
+                </p>
+                <h2>Modèle simple en trois étapes de Kurt Lewin</h2>
+                <h5>Dégeler</h5>
+                <p>
+                  Cette phase reconnaît que les mentalités et les pratiques collectives d’un groupe doivent être
+                    décomposées avant qu’un changement ne puisse se produire - et qu’un effort ultérieur est nécessaire
+                    pour consolider la nouvelle mentalité et les nouvelles pratiques du groupe.
+                </p>
+                <br>
+                <p>Au cours de la phase de <strong>«dégel», </strong>une organisation doit:</p>
+                <ul>
+                    <li>Définissez clairement la situation actuelle. Plus ce processus peut être collaboratif, plus il
+                        sera efficace. </li>
+                    <li>Créez une vision de l'état final souhaité. Plus cela peut être détaillé, mieux c'est.
+
+                    </li>
+                    <li>Identifiez ce qui vous aidera à guider et pourrait entraîner une résistance au changement. Votre
+                        objectif sera d'activer les moteurs du changement et d'atténuer le potentiel d'augmentation de
+                        la résistance.
+                    </li>
+                </ul>
+                <h5>Changement</h5>
+                <p>
+                    À cette étape, un plan est suivi pour mettre en œuvre le (s) changement (s) prévu (s). Les parties
+                    prenantes à tous les niveaux du changement doivent être impliquées dans la recherche de solutions de
+                    résolution de problèmes. La capacité d'expérimenter des idées dans un environnement d'apprentissage
+                    sécurisé et collaboratif est essentielle. À ce stade, il est essentiel de fournir d'excellents
+                    modèles avec lesquels les acteurs du changement peuvent s'identifier.
+
+                </p><br>
+                <h5>Recongeler</h5>
+
+                <p>C'est au stade final de ce modèle que les nouvelles pratiques de travail deviennent de nouvelles
+                    habitudes de travail et que de nouvelles façons de penser deviennent la voie à suivre. C'est un
+                    moment de vigilance de la part des leaders du changement, qui doivent s'attaquer à toute tendance
+                    des parties prenantes à parler, penser ou agir selon les anciennes méthodes. À ce stade, il est
+                    important de renforcer et de récompenser les comportements et les résultats qui correspondent à
+                    l'environnement modifié.
+
+                </p><br>
+
+                <h2>L'approche en huit étapes de John Kotter
+                </h2>
+                <p>
+                  La feuille de route plus détaillée de John Kotter pour le changement est une approche communément acceptée pour le changement stratégique au niveau organisationnel. Chacune des huit étapes du modèle de Kotter consiste à corriger les huit erreurs courantes que font les organisations lorsqu'elles tentent d'entreprendre un changement majeur. L'ensemble du processus offre une feuille de route pour entreprendre le changement en mettant fortement l'accent sur le rôle d'un leadership efficace. Avec le bon processus et le bon leadership, le changement peut être planifié et géré. L'approche en huit étapes se concentre sur:
+                </p>
+                <div>
+                    <ol type="1">
+                        <li><strong>Créer un sentiment d'urgence</strong></li>
+                        <li><strong>Création de la coalition directrice</strong></li>
+                        <li><strong>Développer une vision et une stratégie</strong></li>
+                        <li><strong>Communiquer la vision du changement</strong></li>
+                        <li><strong>Autonomiser les employés pour une action à grande échelle</strong></li>
+                        <li><strong>Générer des gains à court terme</strong></li>
+                        <li><strong>Consolider les acquis et produire plus de changement</strong></li>
+                        <li><strong>Ancrer de nouvelles approches dans la culture</strong></li>
+                    </ol>
+                </div>
+                <p>
+                  Quel que soit le modèle de processus de changement adopté, la communication et l'engagement des parties prenantes sont toujours au cœur de toute initiative de changement réussie. Une stratégie de communication et d'engagement pour le changement d'effet doit décrire l'approche globale et <u>les plans de travail détaillés pour s'engager et fournir des informations pertinentes, exactes et cohérentes aux parties prenantes internes et externes affectées par l'initiative de changement.</u>
+                </p>
+                  <br>
+                <section>
+                    <div class="row" style="background-color:#ececec;">
+                        <div class="col-md-12">
+                            <div>
+                                <p style="text-align: center;"><strong>CONSEIL: Stratégie de communication et
+                                        d'engagement des parties prenantes
+                                    </strong></p> <br>
+                                <p>Dans votre stratégie, vous devez identifier et définir:
+                                    :</p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Messages clé</li>
+                            <li>les parties prenantes</li>
+                            <li>canaux de communication</li>
+                            <li>rôles et responsabilités en matière de communication</li>
+                        </ul>
+
+                        <p style="margin-left: 2px;">Il est essentiel que vous impliquiez toutes les parties prenantes
+                            appropriées aux impacts potentiels et que vous leur fournissiez les informations dont elles
+                            ont besoin pour vivre une transition réussie. Cette approche offre également à votre équipe
+                            l'occasion d'évaluer les attitudes et les sentiments des parties prenantes afin de
+                            comprendre la meilleure façon de les impliquer et de les activer, ou d'atténuer leur
+                            résistance.</p><br>
+                        <p style="margin-left: 2px;">Votre stratégie doit également être soutenue par un plan d'action
+                            de communication, qui peut fournir des décompositions tactiques des activités de
+                            communication et d'engagement à effectuer tout au long de vos trois étapes de changement:
+                            <strong>dégeler, changer et renouveler.</strong>
+                        </p>
+                    </div>
+                </section>
+                <br><br>
+                <p></p>
+                <section>
+                    <h2>Conditions d'utilisation</h2>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>Les documents que l&rsquo;on trouve sur ce site Web ont &eacute;t&eacute; produits ou rassembl&eacute;s pour offrir aux Canadiens et Canadiennes de l&rsquo;information sur les programmes et services offerts par le gouvernement du Canada.
+                          Ils sont assujettis aux&nbsp;<a href="https://www.canada.ca/fr/transparence/avis.html">conditions</a>&nbsp;suivantes.</p>
+                        <p>Contient de l&rsquo;information dont l&rsquo;utilisation est autoris&eacute;e en vertu de la&nbsp;<a href="https://ouvert.canada.ca/fr/licence-du-gouvernement-ouvert-canada">licence du gouvernement ouvert &ndash; Canada</a>.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="pagedetails">
+                <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+                <dl id="wb-dtmd">
+                  <dt>Date modified:&#32;</dt>
+                  <dd><time property="dateModified">2021-03-29</time></dd>
+                </dl>
+              </div>
+                <script>
+                    includeHTML();
+                </script>
+                 <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the image and insert it inside the modal - use its "alt" text as a caption
+                    var img = document.getElementById("myImg");
+                    var modalImg = document.getElementById("img01");
+                    var captionText = document.getElementById("caption");
+                    img.onclick = function() {
+                      modal.style.display = "block";
+                      modalImg.src = this.src;
+                      captionText.innerHTML = this.alt;
+                    }
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                  </script>
+   </main>
+   <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+   <!--[if gte IE 9 | !IE ]><!-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+   <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+   <!--<![endif]-->
+   <!--[if lt IE 9]>
+      <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+      <![endif]-->
+   <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+   </body>
+
+   </html>
