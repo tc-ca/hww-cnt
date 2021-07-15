@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="no-js lt-ie9" lang="fr" dir="ltr">
+ <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155358177-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155358177-1');
+  </script>
+  <meta charset="utf-8">
+  <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+   wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+  <!-- Primary Meta Tags -->
+  <title>Comprendre la conception et les rôles de concepteur</title>
+  <meta name="title" content="Comprendre la conception et les rôles de concepteur">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta name="description" content="Guide concis d’embauche">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tc-ca.github.io/hww-cnt/jeux/comprendre-la-conception.html">
+  <meta property="og:title" content="Comprendre la conception et les rôles de concepteur">
+  <meta property="og:description" content="Guide concis d’embauche">
+  <meta property="og:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tc-ca.github.io/hww-cnt/jeux/comprendre-la-conception.html">
+  <meta property="twitter:title" content="Comprendre la conception et les rôles de concepteur">
+  <meta property="twitter:description" content="Guide concis d’embauche">
+  <meta property="twitter:image" content="https://tc-ca.github.io/hww-cnt/incl/Comment nous travaillons.png">
+  <!--[if gte IE 9 | !IE ]><!-->
+  <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="https://getbootstrap.com/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/hww-cnt/css/theme.min.css" />
+  <link rel="stylesheet" href="/hww-cnt/css/playbook.css" />
+  <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/css/noscript.min.css" />
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /*loop through a collection of all HTML elements:*/
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /*make an HTTP request using the attribute value as the file name:*/
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {
+                elmnt.innerHTML = this.responseText;
+              }
+              if (this.status == 404) {
+                elmnt.innerHTML = "Page not found.";
+              }
+              /*remove the attribute, and call this function once more:*/
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /*exit the function:*/
+          return;
+        }
+      }
+    };
+  </script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+   <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="shortcut icon" />
+   <link rel="stylesheet" href="../GCWeb/css/ie8-theme.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+   <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/ie8-wet-boew.min.js"></script>
+   <![endif]-->
+  <!--[if lte IE 9]>
+   <![endif]-->
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <ul id="wb-tphp">
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+      </li>
+      <li class="wb-slc">
+        <a class="wb-sl" href="#wb-info">Passer à «&#160;Au sujet du gouvernement&#160;»</a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <div id="wb-bnr" class="container">
+      <section id="wb-lng" class="text-right">
+        <h2 class="wb-inv">Sélection de la langue</h2>
+        <ul class="list-inline margin-bottom-none">
+          <li><a lang="en" hreflang="en" href="/hww-cnt/plays/understandingdesign.html">English</a></li>
+        </ul>
+      </section>
+      <div class="row">
+        <div class="brand col-xs-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
+          <a href="https://www.canada.ca/fr.html" property="url"><img
+      src="/hww-cnt/images/TC_Transformation.png" alt="logo - TC Transformation"
+      property="logo"><span class="wb-inv" property="name"> Government of Canada / <span
+      lang="fr">Gouvernement du Canada</span></span></a>
+          <meta property="areaServed" typeof="Country" content="Canada">
+          <link property="logo" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg">
+        </div>
+      </div>
+    </div>
+    <div w3-include-html="/hww-cnt/incl/nav-fr.html"></div>
+    <nav id="wb-bc" property="breadcrumb">
+      <h2>You are here:</h2>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Transports Canada</a></li>
+          <li><a href="/hww-cnt/index-fr.html">Comment nous travaillons</a></li>
+          <li><a href="/hww-cnt/jeux.html">Jeux</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main property="mainContentOfPage" class="container" typeof="WebPageElement">
+    <h1 property="name" id="wb-cont">Comprendre la conception et les rôles de concepteur</h1>
+    <p class="gc-byline"><strong>Guide concis d’embauche</strong></p>
+    <div class="row">
+      <div class="col-md-12">
+
+        <section>
+          <!--<h2 id="section-toc">Table of Contents</h2>-->
+          <div class="row">
+            <div class="col-md-12">
+              <p><a href="#section-intro">Introduction</a></p>
+              <p><a href="#section-overview">Aperçu</a></p>
+              <p><a href="#section-roles">Rôles de concepteur</a></p>
+              <p><a href="#section-resources">Ressources additionnelles</a></p>
+              <p><a href="#section-help">Aide</a></p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="section-intro">Introduction</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Ce document vous permettra de mieux comprendre la conception et les différents rôles qui s’y rattachent. Cette compréhension vous aidera à cibler les éléments précis que vous recherchez en ce qui a trait aux concepteurs et vous permettra d’embaucher les concepteurs qui répondent à vos besoins.</p>
+              <p>Dans ce document, vous trouverez la réponse aux questions suivantes :</p>
+              <ul>
+                <li>Quel est le spectre de la conception?</li>
+                <li>Quelles sont les différentes méthodologies relatives à la conception du spectre de la conception?</li>
+                <li>Quels sont les types de rôles de concepteur et que font-ils?</li>
+                <li>Comment les rôles de concepteur se rattachent-ils aux méthodologies relatives à la conception?</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 id="section-overview">Aperçu</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 id="subsection-problem-solving">La conception comme résolution de problèmes</h3>
+              <p>Qu’est-ce que la conception? Laissez-nous tenter de répondre à cette question de façon courte et simple afin de donner le ton au reste du document.</p>
+              <p>La portée de la conception comprend les trois éléments suivants (figure 1) :</p>
+              <ul>
+                <li>Le problème;</li>
+                <li>L’entre-deux;</li>
+                <li>La solution.</li>
+              </ul>
+              <p><img id="imgFigure1" style="width: 100%;" src="../images/understandingdesign-figure-1-fr.png" alt="Figure 1 : Le problème, la solution et l’entre-deux">
+              <p class="figure-description">Figure 1 : Le problème, la solution et l’entre-deux</p>
+              <hr>
+              <p><strong>Le problème</strong> est l’étape à laquelle débute la conception avec l’aide des concepteurs. Le but est de :</p>
+              <ul>
+                <li>Comprendre le problème présumé de façon approfondie et complète;</li>
+                <li>Établir des hypothèses sur le problème (et NON sur la solution) qui seront validées plus tard;</li>
+                <li>Définir la portée et les objectifs des efforts qui seront déployés afin de résoudre le problème.</li>
+              </ul>
+              <p><strong>L’entre-deux</strong> est l’étape à laquelle les activités de conception passent du problème à la solution. Le but est de :</p>
+              <ul>
+                <li>Générer des idées quant aux solutions potentielles;</li>
+                <li>Définir des approches potentielles de mise en œuvre des solutions;</li>
+                <li>Vérifier les idées et peaufiner les approches.</li>
+              </ul>
+              <p><strong>La solution</strong> est l’étape à laquelle les efforts de conception sont axés sur la prestation de solutions à l’aide d’idées bien élaborées et d’approches bien peaufinées visant à les mettre en œuvre. Le but est de :</p>
+              <ul>
+                <li>Élaborer une solution de façon itérative;</li>
+                <li>Mettre la solution à l’essai fréquemment;</li>
+                <li>Peaufiner la solution en fonction de la rétroaction et des données probantes.</li>
+              </ul>
+              <p>Au sens défini plus haut, la conception est une approche de résolution des problèmes vous permettant de bien contextualiser votre problème, d’explorer avec créativité les solutions potentielles, d’élaborer efficacement une solution et d’atteindre vos objectifs de façon satisfaisante.</p>
+
+              <h3 id="subsection-spectrum">Le spectre de la conception</h3>
+              <p>La conception est composée d’un spectre de méthodologies qui varient en ce qui a trait à leur portée, c’est-à-dire à quel point la solution et le problème sont détaillés. Ces méthodologies sont illustrées dans la figure 2.</p>
+              <p>Il est important de comprendre que la conception holistique fait appel à toutes ces méthodologies tout au long du cycle de vie d’un produit ou d’un service et qu’aucune méthode n’est plus ou moins importante qu’une autre.</p>
+              <hr>
+              <p><img id="imgFigure2" style="width: 100%;" src="../images/understandingdesign-figure-2-fr.png" alt="Figure 2 : Les quatre niveaux de conception dans un spectre">
+              <p class="figure-description">Figure 2 : Les quatre niveaux de conception dans un spectre</p>
+              <hr>
+              <p>Voici une brève description de chacune des méthodes; vous trouverez davantage de détails sur chacune d’entre elles plus bas.</p>
+              <p><strong>La conception des services (niveau 4)</strong> touche tous les produits et les services de l’organisme et les personnes concernées, y compris les utilisateurs finaux qui les reçoivent et les employés qui en font la prestation. Elle est axée sur l’expérience globale et sur la façon dont les produits et les services interagissent afin de définir la mission de l’organisme et de mettre en œuvre sa vision.</p>
+              <p><strong>La conception de l’expérience client (niveau 3)</strong> vise la qualité de l’expérience du début à la fin d’un groupe précis de clients avec une organisation et est axée sur l’ajout d’une valeur du point de vue de ce groupe. Autrement dit, il s’agit de l’expérience utilisateur sur une plus longue période (voir le prochain niveau).</p>
+              <p><strong>La conception de l’expérience utilisateur (niveau 2)</strong> vise la qualité de l’expérience d’une personne lorsque celle-ci a recours à un produit ou un service précis afin de réaliser une tâche. Elle est axée sur l’utilité, l’intérêt et l’expérience de cette tâche.</p>
+              <p><strong>La conception de l’interface utilisateur (niveau 1)</strong> vise les interactions individuelles que les utilisateurs finaux ont avec certaines composantes d’un produit ou d’un service. Elle est axée sur la simplicité, l’efficacité et l’efficience de ces interactions.</p>
+              <p>Afin de vous aider à comprendre les différentes portées de ces méthodes, voici une démonstration de comment celles-ci pourraient être utilisées pour contrer certains défis relatifs à la conception auxquels pourrait faire face une banque (figure 3) :</p>
+              <hr>
+              <p><img id="imgFigure3" style="width: 100%;" src="../images/understandingdesign-figure-3-fr.png" alt="Figure 3 : Les quatre niveaux de conception pour une banque">
+              <p class="figure-description">Figure 3 : Les quatre niveaux de conception pour une banque</p>
+              <hr>
+              <p>Ces quatre niveaux de conception tentent d’atteindre différents objectifs de différentes façons. Ils sont particulièrement différents dans leur façon de trouver un équilibre entre deux axes (figure 4) :</p>
+              <ul>
+                <li>L’aspect stratégique et tactique de la résolution de problèmes;</li>
+                <li>L’aspect expérientiel et corrélatif de la solution.</li>
+              </ul>
+              <hr>
+              <p><img id="imgFigure4" style="width: 100%;" src="../images/understandingdesign-figure-4-fr.png" alt="Figure 4 : Caractéristiques des quatre niveaux de conception (niveau 1 : conception de l’interface utilisateur; niveau 2 : conception de l’expérience utilisateur; niveau 3 : conception de l’expérience client; niveau 4 : conception des services)">
+              <p class="figure-description">Figure 4 : Caractéristiques des quatre niveaux de conception (niveau 1 : conception de l’interface utilisateur; niveau 2 : conception de l’expérience utilisateur; niveau 3 : conception de l’expérience client; niveau 4 : conception des services)</p>
+              <hr>
+
+              <h3 id="subsection-sd">Conception des services</h3>
+              <p>La conception des services est la méthode ayant la plus large portée. Elle tient compte de toutes les personnes concernées : les clients qui reçoivent un produit ou un service et les employés qui en font la prestation. Elle tient également compte de comment les différents services interagissent et de comment l’organisation peut créer ou innover en matière de services afin d’atteindre sa mission et de mettre en œuvre sa vision.</p>
+              <blockquote>« La conception des services permet aux organismes de voir leurs services du point de vue des clients. Il s’agit d’une approche de conception des services qui équilibre les besoins des clients et les besoins de l’entreprise qui vise à créer une expérience des services homogène et de qualité. La conception des services est ancrée dans la pensée conceptuelle et amène un processus créatif axé sur l’humain à l’amélioration des services et à la conception de nouveaux services. Grâce à des méthodes collaboratives qui mobilisent les clients et les équipes de prestation de services, la conception des services permet aux organismes de bien comprendre leurs services de bout en bout, laissant place à des améliorations holistiques et significatives. »
+              <br><cite>Source: traduction de This Is Service Design Doing: Applying Service Design Thinking in the Real World de Marc Stickdorn, Markus Edgar Hormess, Adam Lawrence et Jakob Schneider</cite></blockquote>
+              <p>Les trois principales composantes de la conception des services sont : <a href="https://www.nngroup.com/articles/service-design-101/" target="_blank" title="Service Design 101 (Nielsen Norman Group)">les personnes, les accessoires et les processus</a>.</p>
+              <p><strong>Les personnes</strong> sont celles qui créent ou qui utilisent un service, dont tous ceux qui le font de façon indirecte (p. ex. employés, partenaires et utilisateurs).</p>
+              <p><strong>Les accessoires</strong> sont les artefacts ou les produits qui sont utilisés pour la prestation du service, tels que l’espace physique, les pages Web, les médias sociaux ou les fichiers numériques.</p>
+              <p><strong>Les processus</strong> sont les flux de travail, les procédures et les autres mécanismes suivis par un employé ou un utilisateur, tels que la résolution de problèmes à l’aide d’un soutien ou l’échange de dossiers.</p>
+              <p>La conception des services n’est pas tout simplement le fait de concevoir un service. Elle permet également d’examiner la façon dont un organisme en arrive à ses fins, comble ses lacunes organisationnelles et atteint ses buts.</p>
+
+              <h3 id="subsection-cx">Conception de l’expérience client</h3>
+              <p>La conception de l’expérience client a une portée plus étroite que la conception des services. Elle tient compte de l’expérience du début à la fin d’un groupe précis de clients avec tous les produits et les services d’une organisation et perçoit cette expérience du point de vue de ces clients.</p>
+              <p>Souvent, la conception de l’expérience client chevauche plusieurs produits ou activités étant donné que le client, tout au long de son expérience avec l’organisme, touchera à plusieurs de ses facettes, de ses voies et de ses points de service.</p>
+              <p>La conception de l’expérience client débute tout simplement avec la prise de conscience initiale du client de l’organisme ainsi que de ses produits et services. Elle tient ensuite compte de la façon dont l’organisation pourrait ajouter une valeur du point de vue du client grâce à différents produits et services.</p>
+              <p>Autrement dit, la conception de l’expérience client est une subdivision de la conception de services qui ne tient compte que des produits et des services offerts à un certain groupe de clients.</p>
+              <p>Une autre façon de voir la conception de l’expérience client est qu’elle comprend plusieurs points de la conception de l’expérience utilisateur (<a href="#subsection-ux">voir ci-dessous</a>).</p>
+
+              <h3 id="subsection-ux">Conception de l’expérience utilisateur</h3>
+              <p>La conception de l’expérience utilisateur est une méthode axée sur l’expérience d’un groupe de clients avec un produit ou un service, voire une composante d’un produit ou d’un service.</p>
+              <p>Il s’agit d’une méthode qui crée des produits tangibles avec lesquels un utilisateur peut interagir directement. Elle est axée sur des mécanismes comme la création de solutions utiles et faciles à utiliser. Elle vise à améliorer l’expérience des utilisateurs qui interagissent avec un produit ainsi qu’à garantir que les utilisateurs trouvent utile ce qu’offrent les produits.</p>
+              <p>Les questions visant à savoir pourquoi un produit ou un point de service en particulier sont nécessaires sont examinées aux autres niveaux de conception (souvent lors de la <a href="#subsection-cx">conception de l’expérience client</a>), tout comme les questions sur leur intégration à l’organisme (souvent lors de la <a href="#subsection-sd">conception des services</a>).</p>
+              <p>Il est faux que la conception de l’expérience utilisateur est entièrement numérique. La conception de l’expérience utilisateur touche tous les points de service où les utilisateurs interagissent avec un produit ou un service. Par exemple, l’interaction entre un utilisateur et un centre d’appels relève de la conception de l’expérience utilisateur.</p>
+
+              <h3 id="subsection-ui">Conception de l’interface utilisateur</h3>
+              <p>La conception de l’interface utilisateur est axée sur un élément précis d’un point de service. Il peut s’agit par exemple du mot utilisé sur un bouton d’une page Web servant à payer les articles d’un panier, de la couleur ou de l’emplacement de bouton sur la page.</p>
+              <p>La conception de l’interface utilisateur a pour but de permettre à l’organisme : de comprendre et d’anticiper les tâches qu’un utilisateur tentera d’accomplir à un point de service; de veiller à ce que les éléments du point de service soient accessibles, faciles à comprendre et conviviaux; et de faciliter des tâches de façon simple et efficace.</p>
+
+              <hr>
+              <a href="#top">Haut</a>
+              <hr>
+             </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="section-roles">Rôles de concepteur</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 id="subsection-bigpicture">Vue d’ensemble</h3>
+              <p>Les différents rôles de concepteur peuvent vous aider avec les différents niveaux de conception (figure 5) :</p>
+              <hr>
+              <p><img id="imgFigure5" style="width: 100%;" src="../images/understandingdesign-figure-5-fr.png" alt="Figure 5 : Les rôles de concepteur et les quatre niveaux du spectre de conception qu’ils couvrent">
+              <p class="figure-description">Figure 5 : Les rôles de concepteur et les quatre niveaux du spectre de conception qu’ils couvrent</p>
+              <hr>
+              <p>Le rôle d’un concepteur ne couvre pas nécessairement qu’un seul niveau. Par exemple, un stratège en conception peut participer à la conception de l’expérience utilisateur et à la conception de l’expérience client.</p>
+              <p>Parmi les rôles de concepteur les plus communs, on compte les rôles généraux suivants. Il est important de noter que ces rôles peuvent porter différents titres. Notre objectif est de les décrire de façon générale et claire :</p>
+              <ul>
+                <li><a href="#subsection-role-sd">Concepteur de services;</a></li>
+                <li><a href="#subsection-role-dr">Chercheur en conception;</a></li>
+                <li><a href="#subsection-role-dw">Rédacteur de conception;</a></li>
+                <li><a href="#subsection-role-ux">Concepteur de l’expérience utilisateur;</a></li>
+                <li><a href="#subsection-role-ui">Concepteur de l’interface utilisateur;</a></li>
+                <li><a href="#subsection-role-ds">Stratège en conception;</a></li>
+                <li><a href="#subsection-role-dm">Gestionnaire de la conception;</a></li>
+                <li><a href="#subsection-role-uxu">Licorne de l’expérience utilisateur.</a></li>
+              </ul>
+
+              <h3 id="subsection-role-sd">Concepteur de services</h3>
+              <p>Le <em>concepteur de services</em> planifie, élabore et dirige l’amélioration du rendement d’un service ou la création de nouveaux services. Il s’assure que les services de l’organisme permettent au client d’atteindre ses objectifs, il aide le client à comprendre comment ces services s’harmonisent du point de vue de ce dernier et il travaille en vue d’améliorer l’expérience globale des utilisateurs auprès de l’organisme.</p>
+              <p>Parmi les responsabilités du concepteur de services, on compte :</p>
+              <ul>
+                <li>Contextualiser la demande et aider à définir la nécessité d’un service;</li>
+                <li>Définir le succès et la façon de le mesurer;</li>
+                <li>Personnaliser l’approche de conception et élaborer des spécifications sur mesure;</li>
+                <li>Faciliter les communications internes afin de décloisonner les services ou les intervenants concernés par la réalisation du projet;</li>
+                <li>Faire état des différentes options et modalités de la mise en œuvre du projet;</li>
+                <li>Veiller à la cohérence du projet en mettant en perspective les besoins et la stratégie de l’organisme.</li>
+              </ul>
+              <p>Le concepteur de services peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception des services (niveau 4);</li>
+                <li>Conception de l’expérience client (niveau 3).</li>
+              </ul>
+
+              <h3 id="subsection-role-dr">Chercheur en conception</h3>
+              <p>Le <em>chercheur en conception</em> communique avec l’utilisateur tout en réalisant des recherches quantitatives et qualitatives afin d’aider l’organisme à prendre des décisions en fonction de la valeur de ses services.</p>
+              <p>Parmi les responsabilités du chercheur en conception, on compte :</p>
+              <ul>
+                <li>Créer des stratégies de recherche sur les utilisateurs qui s’harmonisent aux objectifs de conception;</li>
+                <li>Réaliser des recherches sur les utilisateurs;</li>
+                <li>Réaliser et examiner des recherches quantitatives et qualitatives;</li>
+                <li>Réaliser des études de convivialité auprès des utilisateurs finaux;</li>
+                <li>Poser des questions, recueillir et analyser des données.</li>
+              </ul>
+              <p>Le chercheur en conception peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception des services (niveau 4);</li>
+                <li>Conception de l’expérience client (niveau 3);</li>
+                <li>Conception de l’expérience utilisateur (niveau 2);</li>
+                <li>Conception de l’interface utilisateur (niveau 1).</li>
+              </ul>
+
+              <h3 id="subsection-role-dw">Rédacteur de conception</h3>
+              <p>Le <em>rédacteur de conception</em> écrit sur les produits et les services. Il guide l’utilisateur dans son utilisation de ces produits et de ces services afin de veiller à ce que celui-ci atteigne ses objectifs.</p>
+              <p>Il crée des mots afin de rendre efficace, concis et clair le texte lu par les utilisateurs dans le cadre de l’utilisation d’un produit ou d’un service. Le rédacteur de conception est un conteur qui se soucie du contenu du texte et qui tente de capter l’attention des utilisateurs.</p>
+              <p>Parmi les responsabilités du rédacteur de conception, on compte :</p>
+              <ul>
+                <li>Aider les autres à réaliser des tâches transactionnelles et informationnelles;</li>
+                <li>Écrire de façon accessible (rédiger du contenu qui sera lu par un large éventail de personnes, y compris des personnes handicapées);</li>
+                <li>Écrire en langage clair et simple;</li>
+                <li>Écrire avec un ton approprié;</li>
+                <li>Prioriser les renseignements importants ou pertinents.</li>
+              </ul>
+              <p>Le rédacteur de conception peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception de l’expérience client (niveau 3);</li>
+                <li>Conception de l’expérience utilisateur (niveau 2);</li>
+                <li>Conception de l’interface utilisateur (niveau 1).</li>
+              </ul>
+
+              <h3 id="subsection-role-ux">Concepteur de l’expérience utilisateur</h3>
+              <p>Le <em>concepteur de l’expérience utilisateur</em> conçoit les conditions et le contexte dans lequel les utilisateurs réalisent les tâches prévues d’un produit ou d’un service de façon efficace, efficiente et satisfaisante, principalement en créant des maquettes fonctionnelles (aperçu d’un produit ou d’un service), des flux de tâches et des spécifications relatives aux caractéristiques.</p>
+              <p>Parmi les responsabilités du concepteur de l’expérience utilisateur, on compte :</p>
+              <ul>
+                <li>Comprendre et définir les spécifications d’un produit;</li>
+                <li>Définir un bon modèle d’interaction et en évaluer le succès;</li>
+                <li>Élaborer des maquettes fonctionnelles et des prototypes en fonction des besoins des clients;</li>
+                <li>Trouver des façons créatives de résoudre les problèmes liés à l’expérience utilisateur (p. ex. convivialité et repérabilité);</li>
+                <li>Collaborer avec les concepteurs de l’interface utilisateur afin de mettre en place une conception attrayante.</li>
+              </ul>
+              <p>Le concepteur de l’expérience utilisateur peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception de l’expérience client (niveau 3);</li>
+                <li>Conception de l’expérience utilisateur (niveau 2);</li>
+                <li>Conception de l’interface utilisateur (niveau 1).</li>
+              </ul>
+
+              <h3 id="subsection-role-ui">Concepteur de l’interface utilisateur</h3>
+              <p>Le <em>concepteur de l’interface utilisateur</em> conçoit l’interface (numérique ou autre) au moyen de laquelle l’utilisateur ou le client entre en contact avec un produit ou un service.</p>
+              <p>Parmi les responsabilités du concepteur de l’interface utilisateur, on compte :</p>
+              <ul>
+                <li>Collaborer de près avec les développeurs, les concepteurs-rédacteurs et les concepteurs de l’expérience utilisateur;</li>
+                <li>Créer et améliorer des maquettes fonctionnelles, des prototypes, des guides de styles et des flux d’utilisateurs;</li>
+                <li>Faire part de décisions et d’idées de conception.</li>
+              </ul>
+              <p>Le concepteur de l’interface utilisateur peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception de l’interface utilisateur (niveau 1).</li>
+              </ul>
+
+              <h3 id="subsection-role-ds">Stratège en conception</h3>
+              <p>Le <em>stratège en conception</em> équilibre la mise en œuvre de la conception. Il établit des pratiques exemplaires et une base solide en ce qui a trait à l’expérience utilisateur pour les équipes et pour leurs projets.</p>
+              <p>Parmi les responsabilités du stratège en conception, on compte :</p>
+              <ul>
+                <li>Recueillir et assimiler les données relatives aux clients afin d’orienter la conception;</li>
+                <li>Veiller à ce que les équipes de conception de l’expérience utilisateur harmonisent leur orientation au plan d’activité de leur organisme;</li>
+                <li>Faciliter la prise de décisions stratégique axée sur les clients;</li>
+                <li>Établir des relations entre les différents organismes pour aider les efforts de conception de l’expérience client à réussir.</li>
+              </ul>
+              <p>Le stratège en conception peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception des services (niveau 4);</li>
+                <li>Conception de l’expérience client (niveau 3);</li>
+                <li>Conception de l’expérience utilisateur (niveau 2).</li>
+              </ul>
+
+              <h3 id="subsection-role-dm">Gestionnaire de la conception</h3>
+              <p>Tout comme les autres types de gestionnaires, le <em>gestionnaire de la conception</em> gère l’équipe de conception et le rôle que celle-ci joue en ce qui a trait aux objectifs et aux projets de conception en général.</p>
+              <p>Le rôle du gestionnaire de la conception peut porter différents titres au sein de différents organismes en fonction de l’étendue de ses responsabilités. Les gestionnaires de la conception des services, les gestionnaires de l’expérience client, les gestionnaires de l’expérience utilisateur et les gestionnaires de l’interface utilisateur sont tous des gestionnaires de la conception; chacun d’entre eux se spécialise dans un aspect différent de la conception, bien que leurs rôles relèvent tous du volet de conception de la gestion.</p>
+              <p>Parmi les responsabilités du gestionnaire de la conception, on compte :</p>
+              <ul>
+                <li>Veiller au perfectionnement du personnel de l’équipe de conception;</li>
+                <li>Superviser les professionnels de la conception qui font partie de l’équipe;</li>
+                <li>Travailler en collaboration avec l’organisme afin de définir ce qui est attendu de la part de l’équipe;</li>
+                <li>Cibler les occasions de conception;</li>
+                <li>Créer et gérer de nouveaux projets de conception;</li>
+                <li>Créer et gérer de nouveaux produits (sur le plan de la conception);</li>
+                <li>Communiquer avec la haute direction et lui faire part de la stratégie de conception, des projets de conception et de la conception des produits.</li>
+              </ul>
+              <p>Le gestionnaire de la conception peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>Conception des services (niveau 4);</li>
+                <li>Conception de l’expérience client (niveau 3);</li>
+                <li>Conception de l’expérience utilisateur (niveau 2);</li>
+                <li>Conception de l’interface utilisateur (niveau 1).</li>
+              </ul>
+
+              <h3 id="subsection-role-uxu">Licorne de l’expérience utilisateur</h3>
+              <p>Malheureusement, la licorne de l’expérience utilisateur n’existe pas.</p>
+              <p>Ce concept erroné a porté plusieurs personnes à croire qu’un seul employé peut combler tous les besoins de conception possibles. Cette affirmation est terriblement fausse.</p>
+              <p>Il y a de fortes chances qu’il vous soit très peu probable de trouver une seule personne étant en mesure de tout faire sur le spectre de la conception. Il s’agit d’une autre raison pourquoi il est essentiel de bien cibler et spécifier vos besoins.</p>
+              <p>Il y a en effet des concepteurs dont les diverses compétences leur permettent de faire différentes tâches en lien avec la conception; vous pourriez avoir besoin d’eux plus souvent que vous ne le croyez. Il est important de noter, par contre, que, de nos jours, la conception est presque toujours un effort collaboratif.</p>
+              <blockquote>« La plupart des artistes, s’ils sont honnêtes, ne sont pas des artistes solos… » — Thom Yorke</blockquote>
+              <p>La licorne de l’expérience utilisateur peut vous aider aux niveaux de conception suivants :</p>
+              <ul>
+                <li>(Aucun) Si quelqu’un vous dit le contraire, ne croyez pas aux miracles.</li>
+              </ul>
+
+              <hr>
+              <a href="#top">Haut</a>
+              <hr>
+
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="section-resources">Ressources additionnelles (en anglais seulement<sup>*</sup>)</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>* Les auteurs s'engagent à ajouter ou à remplacer par des ressources équivalentes en français au fur et à mesure de leur création et de leur découverte, tout en fournissant les meilleures ressources disponibles, quelle que soit leur langue. Si vous préférez lire les ressources en français, il existe des outils comme Google Translate, qui sont disponibles gratuitement pour traduire des documents ou des pages web de l'anglais au français.</p>
+              <ul>
+                <li><a href="https://www.nngroup.com/articles/service-design-101/" target="_blank" title="Service Design 101">Service Design 101</a></li>
+                <li><a href="https://www.interaction-design.org/literature/topics/service-design" target="_blank" title="What is Service Design">What is Service Design</a></li>
+                <li><a href="https://www.interaction-design.org/literature/article/the-principles-of-service-design-thinking-building-better-services" target="_blank" title="The Principles of Service Design Thinking - Building Better Services">The Principles of Service Design Thinking - Building Better Services</a></li>
+                <li><a href="https://www.thisisservicedesigndoing.com/methods" target="_blank" title="This is Service Design Doing Method Library">This is Service Design Doing Method Library</a></li>
+                <li><a href="https://www.interaction-design.org/literature/topics/customer-experience" target="_blank" title="What is Customer Experience Design">What is Customer Experience Design</a></li>
+                <li><a href="https://www.nngroup.com/articles/definition-user-experience/" target="_blank" title="The Definition of User Experience (UX)">The Definition of User Experience (UX)</a></li>
+                <li><a href="https://www.nngroup.com/articles/design-operations-101/" target="_blank" title="DesignOps 101">DesignOps 101</a></li>
+                <li><a href="https://www.nngroup.com/articles/ux-career-advice/" target="_blank" title="What a UX Career Looks Like Today">What a UX Career Looks Like Today</a></li>
+                <li><a href="https://uxdesign.cc/ux-writing-ux-copywriting-content-strategy-and-content-design-are-not-the-same-job-a32f4878a5df" target="_blank" title="UX Writing, UX Copywriting, Content Strategy, and Content Design are not the same job">UX Writing, UX Copywriting, Content Strategy, and Content Design are not the same job</a></li>
+                <li><a href="https://www.interaction-design.org/literature/topics/ux-research" target="_blank" title="What is UX Research">What is UX Research</a></li>
+                <li><a href="https://uxplanet.org/introduction-to-ux-strategy-cd4deba3a5af" target="_blank" title="Introduction to UX Strategy">Introduction to UX Strategy</a></li>
+                <li><a href="https://www.interaction-design.org/literature/topics/ux-management" target="_blank" title="What is UX Management">What is UX Management</a></li>
+                <li><a href="https://medium.com/capitalonedesign/just-what-is-a-ux-manager-de02566997e4" target="_blank" title="What is a UX Manager">What is a UX Manager</a></li>
+                <li><a href="https://www.interaction-design.org/literature/article/unicorns-foxes-hedgehogs-the-ux-design-bestiary" target="_blank" title="Unicorns, Foxes, Hedgehogs, the UX Design Bestiary">Unicorns, Foxes, Hedgehogs, the UX Design Bestiary</a></li>
+                <li><a href="https://uxplanet.org/the-rise-of-the-ux-writer-8beb836c13f1" target="_blank" title="The Rise of UX Writer">The Rise of UX Writer</a></li>                
+              </ul>
+
+              <hr>
+              <a href="#top">Haut</a>
+              <hr>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="section-help">Aide</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Le Centre d’expertise en conception axée sur l’être humain peut vous aider à évaluer vos besoins en matière d’embauche de concepteurs.</p>
+              <p>Pour nous joindre, <a href="mailto:HumanCenteredDesignTeam-EquipeConceptionCentreeHumain@tc.gc.ca" title="send us an email">envoyez-nous un courriel</a>, ou <a href="https://teams.microsoft.com/l/team/19%3a67ae889ffdce4636add6319148875cb9%40thread.skype/conversations?groupId=8399024b-84ca-4d18-876a-f68309e688b8&tenantId=2008ffa9-c9b2-4d97-9ad9-4ace25386be7" target="_blank" title="join our official Microsoft Teams group">joignez-vous à notre groupe officiel sur Microsoft Teams</a>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Conditions d'utilisation</h2>
+          <div class="row">
+            <div class="col-md-12">
+              <p>Les documents que l’on trouve sur ce site Web ont été produits ou rassemblés pour offrir aux Canadiens et Canadiennes de l’information sur les programmes et services offerts par le gouvernement du Canada. Ils sont assujettis aux <a href="https://www.canada.ca/fr/transparence/avis.html"
+                  target="_blank">conditions suivantes</a>.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="pagedetails">
+      <div w3-include-html="/hww-cnt/incl/retroaction.html"></div>
+      <dl id="wb-dtmd">
+        <dt>Date de modification :&#32;</dt>
+        <dd><time property="dateModified">2021-07-13</time></dd>
+      </dl>
+    </div>
+    <script>
+      includeHTML();
+    </script>
+  </main>
+  <div w3-include-html="/hww-cnt/incl/basdepage.html"></div>
+  <!--[if gte IE 9 | !IE ]><!-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lt IE 9]>
+   <script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+   <![endif]-->
+  <script src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/js/theme.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+</body>
+
+</html>
